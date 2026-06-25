@@ -214,13 +214,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Try ElevenLabs only if master toggle is ON and child has a voice
     const voiceId = currentChild?.selectedVoiceId;
-    console.log('[VOICE DEBUG] toggle enabled?', elevenLabsEnabled, '| child voiceId:', voiceId, '| presetVoices loaded:', presetVoices.length);
     if (elevenLabsEnabled && voiceId) {
       const voice = findVoiceById(voiceId);
-      console.log('[VOICE DEBUG] resolved voice:', voice, '| elevenLabsVoiceId:', voice?.elevenLabsVoiceId, '| locked?', lockedVoiceIds.has(voice?.elevenLabsVoiceId));
       if (voice?.elevenLabsVoiceId) {
         const blob = await generateSpeechElevenLabs(text, voice.elevenLabsVoiceId);
-        console.log('[VOICE DEBUG] audio blob from server?', !!blob, blob ? `(${blob.size} bytes)` : '');
         if (blob) {
           try {
             const url = URL.createObjectURL(blob);
@@ -229,15 +226,11 @@ document.addEventListener('DOMContentLoaded', () => {
             await audio.play();
             return; // success — don't fall through to browser TTS
           } catch (e) {
-            console.warn('[VOICE DEBUG] ❌ Audio.play() blocked/failed — falling back to TTS:', e);
+            console.warn('[VOICE] Audio play failed, falling back to TTS:', e);
           }
         }
         // If we got here, ElevenLabs failed — fall through to browser TTS
-      } else {
-        console.warn('[VOICE DEBUG] ❌ Assigned voice has no elevenLabsVoiceId (or not found in list) — falling back.');
       }
-    } else {
-      console.warn('[VOICE DEBUG] ❌ Falling back because:', !elevenLabsEnabled ? 'master toggle is OFF at runtime' : 'no voice assigned to this child');
     }
 
     // Fallback: browser TTS (original behavior)
