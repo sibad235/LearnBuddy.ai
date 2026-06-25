@@ -1,0 +1,2046 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LearnBuddy.ai - Fun Learning for Kids!</title>
+  <!-- Favicon: inline SVG using an owl emoji (matches the app mascot).
+       Inline avoids hosting a separate file and works in all modern browsers.
+       When we have proper Buddy artwork (Stage 6), swap this for a real icon. -->
+  <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2290%22&gt;🦉&lt;/text&gt;&lt;/svg&gt;">
+  <link rel="apple-touch-icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2290%22&gt;🦉&lt;/text&gt;&lt;/svg&gt;">
+
+  <!-- Google Fonts: Fredoka (display) + Nunito (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Chart.js for data visualization -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+  <!-- EmailJS for OTP emails -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <!-- Twemoji for consistent emoji rendering across devices (Toddler Mode) -->
+  <script src="https://cdn.jsdelivr.net/npm/@twemoji/api@latest/dist/twemoji.min.js"></script>
+
+  <!-- Firebase Modular SDK v10+ via CDN -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
+    import {
+      getAuth,
+      createUserWithEmailAndPassword,
+      signInWithEmailAndPassword,
+      onAuthStateChanged,
+      signOut,
+      sendEmailVerification
+    } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js";
+    import {
+      getFirestore,
+      doc,
+      setDoc,
+      collection,
+      getDocs,
+      deleteDoc,
+      getDoc,
+      updateDoc
+    } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyA-4Kk5Y3-nL1Q9XbM1_Fo_H3V5exrxHCY",
+      authDomain: "learn-buddy-ai-444b5.firebaseapp.com",
+      projectId: "learn-buddy-ai-444b5",
+      storageBucket: "learn-buddy-ai-444b5.firebasestorage.app",
+      messagingSenderId: "416732405921",
+      appId: "1:416732405921:web:4c25623eebf157691510e0"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const db = getFirestore(app);
+
+    window.auth = auth;
+    window.db = db;
+    window.createUserWithEmailAndPassword = createUserWithEmailAndPassword;
+    window.signInWithEmailAndPassword = signInWithEmailAndPassword;
+    window.onAuthStateChanged = onAuthStateChanged;
+    window.signOut = signOut;
+    window.sendEmailVerification = sendEmailVerification;
+    window.doc = doc;
+    window.setDoc = setDoc;
+    window.collection = collection;
+    window.getDocs = getDocs;
+    window.deleteDoc = deleteDoc;
+    window.getDoc = getDoc;
+    window.updateDoc = updateDoc;
+
+    console.log("Firebase + Firestore initialized!");
+  </script>
+
+  <style>
+    /* ── Base ── */
+    *, *::before, *::after { box-sizing: border-box; }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: #fef6e4;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, .brand {
+      font-family: 'Fredoka One', cursive;
+    }
+
+    /* ── Animated Sky Background ── */
+    .sky-bg {
+      background: linear-gradient(180deg, #a8edea 0%, #fed6e3 50%, #fef6e4 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Floating clouds */
+    .cloud {
+      position: absolute;
+      background: white;
+      border-radius: 50px;
+      opacity: 0.8;
+      filter: drop-shadow(0 4px 8px rgba(0,0,0,0.08));
+      animation: float-cloud linear infinite;
+    }
+    .cloud::before, .cloud::after {
+      content: '';
+      position: absolute;
+      background: white;
+      border-radius: 50%;
+    }
+    @keyframes float-cloud {
+      0%   { transform: translateX(-120%); }
+      100% { transform: translateX(120vw); }
+    }
+
+    /* Floating stars */
+    .star-float {
+      position: fixed;
+      pointer-events: none;
+      animation: star-drift linear infinite;
+      font-size: 1.5rem;
+      z-index: 0;
+      opacity: 0.35;
+    }
+    @keyframes star-drift {
+      0%   { transform: translateY(110vh) rotate(0deg); opacity: 0; }
+      10%  { opacity: 0.35; }
+      90%  { opacity: 0.35; }
+      100% { transform: translateY(-10vh) rotate(360deg); opacity: 0; }
+    }
+
+    /* ── Floating background decorations (every screen) ──
+       The #bg-stars container is a fullscreen, pointer-events-none layer that
+       sits behind everything. Shapes inside it drift slowly upward + sideways
+       on randomized timing so they never feel synchronized.
+       Low opacity so they decorate without distracting from the UI. */
+    #bg-stars {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+    .float-shape {
+      position: absolute;
+      font-size: 2rem;
+      opacity: 0;          /* fade in via animation */
+      will-change: transform, opacity;
+      user-select: none;
+    }
+    @keyframes shape-drift-up {
+      0%   { transform: translateY(110vh) translateX(0) rotate(0deg); opacity: 0; }
+      10%  { opacity: 0.22; }
+      50%  { transform: translateY(60vh) translateX(20px) rotate(180deg); opacity: 0.28; }
+      90%  { opacity: 0.22; }
+      100% { transform: translateY(-15vh) translateX(-10px) rotate(360deg); opacity: 0; }
+    }
+    @keyframes shape-drift-sway {
+      0%   { transform: translateY(110vh) translateX(0) rotate(-10deg); opacity: 0; }
+      10%  { opacity: 0.22; }
+      50%  { transform: translateY(50vh) translateX(-30px) rotate(15deg); opacity: 0.3; }
+      90%  { opacity: 0.22; }
+      100% { transform: translateY(-15vh) translateX(15px) rotate(-15deg); opacity: 0; }
+    }
+    /* Make sure the main app content sits above the decoration layer.
+       IMPORTANT: scope this to ONLY the app shell — NOT modals/overlays/dashboard,
+       which are also direct body children and manage their own higher z-index.
+       A broad `body > div` rule would trap those behind the app and break them. */
+    .app-shell { position: relative; z-index: 1; }
+
+    /* ── Card ── */
+    .buddy-card {
+      background: white;
+      border-radius: 28px;
+      box-shadow: 0 8px 0 #e0c8f8, 0 12px 40px rgba(130,80,200,0.13);
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* ── Header Banner ── */
+    .header-banner {
+      background: linear-gradient(135deg, #ff6b9d 0%, #c44dff 50%, #4ecdc4 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .header-banner::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.08'%3E%3Ccircle cx='30' cy='30' r='20'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      background-size: 60px 60px;
+    }
+    .header-banner .mascot {
+      font-size: 3.5rem;
+      animation: mascot-bounce 2s ease-in-out infinite;
+      display: inline-block;
+    }
+    @keyframes mascot-bounce {
+      0%, 100% { transform: translateY(0) rotate(-5deg); }
+      50%       { transform: translateY(-10px) rotate(5deg); }
+    }
+
+    /* ── Tab buttons ── */
+    .tab-btn {
+      flex: 1;
+      padding: 12px 8px;
+      font-family: 'Fredoka One', cursive;
+      font-size: 1.05rem;
+      border-bottom: 4px solid transparent;
+      color: #9ca3af;
+      transition: all 0.25s;
+      cursor: pointer;
+      background: none;
+      border-top: none; border-left: none; border-right: none;
+    }
+    .tab-btn.active {
+      color: #c44dff;
+      border-bottom-color: #c44dff;
+    }
+
+    /* ── Inputs ── */
+    .buddy-input {
+      width: 100%;
+      padding: 14px 18px;
+      border: 3px solid #e8d5f5;
+      border-radius: 16px;
+      font-family: 'Nunito', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #3d2c5e;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      outline: none;
+      background: #fdf9ff;
+    }
+    .buddy-input:focus {
+      border-color: #c44dff;
+      box-shadow: 0 0 0 4px rgba(196,77,255,0.12);
+    }
+    .buddy-input::placeholder { color: #c4a7df; font-weight: 600; }
+
+    .buddy-label {
+      display: block;
+      font-weight: 800;
+      color: #5b3d8a;
+      margin-bottom: 6px;
+      font-size: 0.9rem;
+      letter-spacing: 0.3px;
+    }
+
+    /* ── Buttons ── */
+    .btn-primary {
+      width: 100%;
+      padding: 15px;
+      background: linear-gradient(135deg, #c44dff, #7b2fff);
+      color: white;
+      border: none;
+      border-radius: 18px;
+      font-family: 'Fredoka One', cursive;
+      font-size: 1.2rem;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+      box-shadow: 0 6px 0 #5a1fc4, 0 8px 20px rgba(123,47,255,0.3);
+      transition: transform 0.12s, box-shadow 0.12s;
+      position: relative;
+      overflow: hidden;
+    }
+    .btn-primary::after {
+      content: '';
+      position: absolute;
+      top: 0; left: -100%;
+      width: 60%; height: 100%;
+      background: rgba(255,255,255,0.2);
+      transform: skewX(-20deg);
+      transition: left 0.4s;
+    }
+    .btn-primary:hover::after { left: 150%; }
+    .btn-primary:active {
+      transform: translateY(3px);
+      box-shadow: 0 3px 0 #5a1fc4;
+    }
+
+    .btn-green {
+      background: linear-gradient(135deg, #43e97b, #38f9d7);
+      box-shadow: 0 6px 0 #0fa86b, 0 8px 20px rgba(56,249,215,0.25);
+      color: #0a4f30;
+    }
+    .btn-green:active { box-shadow: 0 3px 0 #0fa86b; }
+
+    .btn-red {
+      background: linear-gradient(135deg, #ff6b6b, #ee0979);
+      box-shadow: 0 6px 0 #a80030, 0 8px 20px rgba(238,9,121,0.25);
+      color: white;
+    }
+    .btn-red:active { box-shadow: 0 3px 0 #a80030; }
+
+    .btn-outline {
+      width: 100%;
+      padding: 14px;
+      background: white;
+      color: #8b5cf6;
+      border: 3px solid #ddd5fb;
+      border-radius: 18px;
+      font-family: 'Fredoka One', cursive;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .btn-outline:hover { background: #faf5ff; border-color: #8b5cf6; }
+
+    /* Small interactive feedback — back arrows, sub-action links, etc.
+       Applies a subtle lift on hover and a clear press on active.
+       Used wherever there's a clickable element that doesn't have its own
+       hover/tap states baked in. */
+    .interactive-feedback {
+      transition: transform 0.15s ease, background 0.15s ease, color 0.15s ease;
+      cursor: pointer;
+    }
+    .interactive-feedback:hover {
+      transform: translateY(-2px);
+    }
+    .interactive-feedback:active {
+      transform: translateY(1px);
+    }
+
+    /* Locked badge tiles also need a (small) lift so they feel clickable
+       even though they don't do anything yet — visual consistency. */
+    .badge-tile.locked:hover {
+      transform: translateY(-2px);
+      opacity: 0.78;
+    }
+
+    /* ── LLM "thinking" loading state ──
+       Shown briefly while we wait for Groq to generate questions.
+       Friendly bouncing emoji + animated dots so the wait feels active. */
+    .llm-loading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      padding: 32px 16px;
+      background: linear-gradient(135deg, #faf5ff, #fce4f5);
+      border-radius: 20px;
+      border: 3px dashed #d8b8f0;
+      animation: llmLoadingPulse 2s ease-in-out infinite;
+    }
+    .llm-loading-emoji {
+      font-size: 3.5rem;
+      animation: llmThinkingBounce 1.5s ease-in-out infinite;
+    }
+    .llm-loading-text {
+      font-family: 'Fredoka One', cursive;
+      color: #7b2fff;
+      font-size: 1.1rem;
+      text-align: center;
+    }
+    .llm-loading-dots {
+      display: inline-block;
+      min-width: 24px;
+      text-align: left;
+    }
+    @keyframes llmThinkingBounce {
+      0%, 100% { transform: translateY(0) rotate(-5deg); }
+      50%      { transform: translateY(-12px) rotate(5deg); }
+    }
+    @keyframes llmLoadingPulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(196, 77, 255, 0.15); }
+      50%      { box-shadow: 0 0 0 12px rgba(196, 77, 255, 0); }
+    }
+    @keyframes llmDots {
+      0%   { content: ''; }
+      33%  { content: '.'; }
+      66%  { content: '..'; }
+      100% { content: '...'; }
+    }
+    .llm-loading-dots::after {
+      content: '';
+      animation: llmDots 1.2s steps(4, end) infinite;
+    }
+
+    /* ══════════════════════════════════════════════════════════
+       SPEECH-TO-TEXT mic button (Toddler Mode voice answers)
+       Three states: idle (blue) → tap to start listening
+                     listening (red, pulsing) → tap again to stop
+                     error (amber, shaken once) → didn't catch it
+       ══════════════════════════════════════════════════════════ */
+    .stt-mic-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      margin: 6px 0 14px;
+      min-height: 60px;
+    }
+    .stt-mic-btn {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: none;
+      background: linear-gradient(135deg, #60a5fa, #3b82f6);
+      box-shadow: 0 4px 0 #1d4ed8, 0 6px 14px rgba(59, 130, 246, 0.3);
+      font-size: 1.7rem;
+      cursor: pointer;
+      transition: transform 0.15s, background 0.2s, box-shadow 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      -webkit-tap-highlight-color: transparent;
+      line-height: 1;
+    }
+    .stt-mic-btn:hover:not(:disabled) {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 0 #1d4ed8, 0 8px 18px rgba(59, 130, 246, 0.4);
+    }
+    .stt-mic-btn:active:not(:disabled) {
+      transform: translateY(2px);
+      box-shadow: 0 2px 0 #1d4ed8;
+    }
+    .stt-mic-btn.listening {
+      background: linear-gradient(135deg, #f87171, #ef4444);
+      box-shadow: 0 4px 0 #b91c1c, 0 6px 14px rgba(239, 68, 68, 0.4);
+      animation: micPulse 1.2s ease-in-out infinite;
+    }
+    .stt-mic-btn.error {
+      background: linear-gradient(135deg, #fbbf24, #f59e0b);
+      box-shadow: 0 4px 0 #b45309, 0 6px 14px rgba(245, 158, 11, 0.3);
+      animation: micShake 0.5s ease-in-out;
+    }
+    .stt-mic-btn:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+      transform: none;
+    }
+    @keyframes micPulse {
+      0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 4px 0 #b91c1c, 0 0 0 0 rgba(239, 68, 68, 0.5);
+      }
+      50% {
+        transform: scale(1.08);
+        box-shadow: 0 4px 0 #b91c1c, 0 0 0 14px rgba(239, 68, 68, 0);
+      }
+    }
+    @keyframes micShake {
+      0%, 100% { transform: translateX(0); }
+      25%      { transform: translateX(-5px); }
+      75%      { transform: translateX(5px); }
+    }
+    .stt-status {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 700;
+      color: #475569;
+      font-size: 0.92rem;
+      min-width: 130px;
+    }
+    .stt-status.listening { color: #b91c1c; }
+    .stt-status.error     { color: #b45309; }
+    .stt-status.success   { color: #047857; }
+    @media (prefers-reduced-motion: reduce) {
+      .stt-mic-btn.listening { animation: none; }
+      .stt-mic-btn.error     { animation: none; }
+    }
+
+    /* ── Child Card ── */
+    .child-card {
+      background: linear-gradient(135deg, #fdf9ff 0%, #f0e8ff 100%);
+      border: 3px solid #e8d5f8;
+      border-radius: 22px;
+      padding: 18px 20px;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+      position: relative;
+      overflow: hidden;
+    }
+    .child-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(140,80,220,0.18);
+    }
+    .child-card .avatar {
+      width: 52px; height: 52px;
+      border-radius: 50%;
+      font-size: 1.6rem;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+
+    /* ── Interest Tags ── */
+    .interest-check {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 14px;
+      border: 3px solid #e8d5f5;
+      border-radius: 14px;
+      cursor: pointer;
+      transition: all 0.2s;
+      background: white;
+      font-weight: 700;
+      font-size: 0.88rem;
+      color: #5b3d8a;
+    }
+    .interest-check:has(input:checked) {
+      background: linear-gradient(135deg, #f0e0ff, #e4d0ff);
+      border-color: #c44dff;
+      color: #6b21a8;
+    }
+    .interest-check input { display: none; }
+
+    /* ── Subject buttons ── */
+    .subject-btn {
+      border: none;
+      border-radius: 24px;
+      padding: 20px 12px;
+      cursor: pointer;
+      font-family: 'Fredoka One', cursive;
+      font-size: 1.1rem;
+      display: flex; flex-direction: column;
+      align-items: center; gap: 10px;
+      transition: transform 0.2s, box-shadow 0.2s;
+      position: relative;
+      overflow: hidden;
+    }
+    .subject-btn:hover {
+      transform: scale(1.06) translateY(-4px);
+    }
+    .subject-btn:active { transform: scale(0.97); }
+    .subject-btn .subj-icon {
+      font-size: 2.8rem;
+      animation: icon-wiggle 3s ease-in-out infinite;
+    }
+    @keyframes icon-wiggle {
+      0%,100%  { transform: rotate(-5deg); }
+      50%      { transform: rotate(5deg); }
+    }
+
+    /* ── Question Card ── */
+    .question-bubble {
+      background: linear-gradient(135deg, #f0e8ff 0%, #fce4f5 100%);
+      border: 3px solid #e0c8f8;
+      border-radius: 24px;
+      padding: 28px 24px;
+      position: relative;
+    }
+
+    /* ── Answer Options ── */
+    .option-btn {
+      width: 100%;
+      padding: 18px 20px;
+      background: white;
+      border: 3px solid #ddd5fb;
+      border-radius: 18px;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
+      font-size: 1.1rem;
+      color: #3d2c5e;
+      cursor: pointer;
+      text-align: left;
+      transition: all 0.18s;
+      display: flex; align-items: center; gap: 12px;
+      position: relative;
+      overflow: hidden;
+    }
+    .option-btn::before {
+      content: attr(data-letter);
+      display: inline-flex;
+      width: 32px; height: 32px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #c44dff, #7b2fff);
+      color: white;
+      font-family: 'Fredoka One', cursive;
+      align-items: center; justify-content: center;
+      font-size: 0.9rem;
+      flex-shrink: 0;
+      transition: transform 0.2s;
+    }
+    .option-btn:hover:not(:disabled) {
+      border-color: #c44dff;
+      background: #faf5ff;
+      transform: translateX(4px);
+    }
+    .option-btn:hover:not(:disabled)::before { transform: scale(1.15); }
+    .option-btn.correct {
+      background: linear-gradient(135deg, #d1fae5, #a7f3d0);
+      border-color: #10b981;
+      color: #065f46;
+    }
+    .option-btn.correct::before { background: linear-gradient(135deg, #10b981, #059669); }
+    .option-btn.wrong {
+      background: linear-gradient(135deg, #fee2e2, #fecaca);
+      border-color: #ef4444;
+      color: #7f1d1d;
+    }
+    .option-btn.wrong::before { background: linear-gradient(135deg, #ef4444, #dc2626); }
+
+    /* ══════════════════════════════════════════════════════════
+       TODDLER MODE — 2x2 emoji grid, gentle feedback
+       ══════════════════════════════════════════════════════════ */
+    .toddler-options-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    .toddler-option-tile {
+      background: white;
+      border: 4px solid #ddd5fb;
+      border-radius: 24px;
+      padding: 20px 12px;
+      cursor: pointer;
+      transition: transform 0.18s, border-color 0.18s, box-shadow 0.18s, background 0.18s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      aspect-ratio: 1;
+      min-height: 140px;
+      box-shadow: 0 4px 0 rgba(125, 60, 200, 0.15);
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
+      color: #3d2c5e;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .toddler-emoji {
+      font-size: 5rem;
+      line-height: 1;
+      margin-bottom: 6px;
+      pointer-events: none;
+      user-select: none;
+    }
+    /* When Twemoji replaces the emoji char with an SVG <img>, size it */
+    .toddler-emoji img.twemoji {
+      width: 80px;
+      height: 80px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .toddler-option-label {
+      font-size: 1rem;
+      text-transform: capitalize;
+      color: #6b6391;
+      pointer-events: none;
+    }
+    .toddler-option-tile:hover:not(:disabled):not(.locked) {
+      border-color: #c44dff;
+      background: #faf5ff;
+      transform: translateY(-3px);
+      box-shadow: 0 7px 0 rgba(125, 60, 200, 0.2);
+    }
+    .toddler-option-tile.correct {
+      background: linear-gradient(135deg, #d1fae5, #a7f3d0);
+      border-color: #10b981;
+      box-shadow: 0 6px 0 rgba(16, 185, 129, 0.3);
+      animation: toddlerCorrectPulse 0.6s ease-out;
+    }
+    .toddler-option-tile.wrong {
+      background: linear-gradient(135deg, #fff4e6, #ffe0b3);
+      border-color: #f59e0b;
+      animation: toddlerWrongShake 0.5s ease-in-out;
+    }
+    .toddler-option-tile.locked {
+      cursor: default;
+      opacity: 0.6;
+    }
+    .toddler-option-tile.reveal {
+      animation: toddlerRevealPulse 1.4s ease-in-out infinite;
+      border-color: #10b981;
+      background: linear-gradient(135deg, #d1fae5, #a7f3d0);
+    }
+
+    @keyframes toddlerCorrectPulse {
+      0%   { transform: scale(1); }
+      40%  { transform: scale(1.1); }
+      100% { transform: scale(1.05); }
+    }
+    @keyframes toddlerWrongShake {
+      0%, 100% { transform: translateX(0); }
+      20% { transform: translateX(-8px); }
+      40% { transform: translateX(8px); }
+      60% { transform: translateX(-5px); }
+      80% { transform: translateX(5px); }
+    }
+    @keyframes toddlerRevealPulse {
+      0%, 100% { transform: scale(1); box-shadow: 0 6px 0 rgba(16, 185, 129, 0.3); }
+      50%      { transform: scale(1.04); box-shadow: 0 8px 0 rgba(16, 185, 129, 0.4); }
+    }
+
+    /* Toddler question card — bigger, friendlier */
+    .toddler-question-card {
+      background: white;
+      border-radius: 24px;
+      padding: 24px;
+      margin-bottom: 20px;
+      text-align: center;
+      box-shadow: 0 6px 20px rgba(125, 60, 200, 0.1);
+      border: 3px solid #ede9fe;
+    }
+    .toddler-question-card .question-text {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: #3d2c5e;
+      line-height: 1.3;
+    }
+
+    /* ══════════════════════════════════════════════════════════
+       ACHIEVEMENT BADGES — unlock celebration + collection grid
+       ══════════════════════════════════════════════════════════ */
+
+    /* Unlock banner shown on end-of-session screen */
+    .badge-unlock-banner {
+      background: linear-gradient(135deg, #fef3c7, #fde68a);
+      border: 3px solid #f59e0b;
+      border-radius: 24px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 6px 20px rgba(245, 158, 11, 0.25);
+      animation: badgeBannerPop 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .badge-unlock-header {
+      font-family: 'Fredoka One', cursive;
+      font-size: 1.4rem;
+      color: #92400e;
+      margin-bottom: 12px;
+    }
+    .badge-unlock-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+    }
+    .badge-unlock-card {
+      background: white;
+      border-radius: 18px;
+      padding: 14px 12px;
+      min-width: 140px;
+      max-width: 180px;
+      border: 2px solid #fbbf24;
+      box-shadow: 0 4px 0 #d97706;
+      animation: badgeCardPop 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .badge-unlock-icon {
+      font-size: 3rem;
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .badge-unlock-name {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
+      color: #92400e;
+      font-size: 1rem;
+    }
+    .badge-unlock-desc {
+      font-size: 0.78rem;
+      color: #78350f;
+      margin-top: 4px;
+      line-height: 1.3;
+    }
+    @keyframes badgeBannerPop {
+      0%   { opacity: 0; transform: scale(0.7) translateY(-20px); }
+      100% { opacity: 1; transform: scale(1) translateY(0); }
+    }
+    /* Bouncier card entrance — overshoots then settles, like the badge is HOPPING out */
+    @keyframes badgeCardPop {
+      0%   { opacity: 0; transform: scale(0.3) rotate(-15deg); }
+      50%  { opacity: 1; transform: scale(1.25) rotate(8deg); }
+      75%  { transform: scale(0.95) rotate(-3deg); }
+      100% { opacity: 1; transform: scale(1) rotate(0); }
+    }
+    /* Badge icon does its own bounce after the card lands — staggered for impact */
+    .badge-unlock-icon {
+      animation: badgeIconBounce 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) 0.3s both;
+    }
+    @keyframes badgeIconBounce {
+      0%   { transform: scale(0); }
+      60%  { transform: scale(1.4); }
+      80%  { transform: scale(0.92); }
+      100% { transform: scale(1); }
+    }
+
+    /* ── CONTINUOUS GLOW PULSE on earned badges ──
+       Uses `filter: drop-shadow` (GPU-accelerated and cheaper than animating box-shadow).
+       Slow 2.4s period — present without being distracting.
+       Applied to: unlock banner card icons, My Badges grid earned tiles, dashboard strip items */
+    @keyframes badgeGlowPulse {
+      0%, 100% {
+        filter: drop-shadow(0 0 4px rgba(245, 158, 11, 0.5))
+                drop-shadow(0 0 8px rgba(245, 158, 11, 0.25));
+      }
+      50% {
+        filter: drop-shadow(0 0 8px rgba(245, 158, 11, 0.85))
+                drop-shadow(0 0 16px rgba(245, 158, 11, 0.5));
+      }
+    }
+
+    /* Apply the glow to earned-badge icons + tiles in all three locations.
+       The unlock-banner icon already has its bounce — we layer the glow ON
+       after the bounce settles (delay matches bounce duration). */
+    .badge-unlock-icon {
+      animation: badgeIconBounce 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) 0.3s both,
+                 badgeGlowPulse 2.4s ease-in-out 1.2s infinite;
+    }
+    .badge-tile.earned .badge-tile-icon {
+      animation: badgeGlowPulse 2.4s ease-in-out infinite;
+    }
+    .badge-strip-item .badge-strip-icon {
+      animation: badgeGlowPulse 2.4s ease-in-out infinite;
+    }
+
+    /* Respect users who want less motion (browser-level setting) */
+    @media (prefers-reduced-motion: reduce) {
+      .badge-unlock-icon,
+      .badge-tile.earned .badge-tile-icon,
+      .badge-strip-item .badge-strip-icon {
+        animation: none;
+      }
+    }
+
+    /* Badge collection grid (My Badges screen + parent dashboard) */
+    .badge-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 14px;
+    }
+    .badge-tile {
+      background: white;
+      border-radius: 18px;
+      padding: 16px 10px;
+      text-align: center;
+      border: 2px solid #ede9fe;
+      transition: transform 0.18s, box-shadow 0.18s;
+      box-shadow: 0 3px 0 rgba(125, 60, 200, 0.1);
+    }
+    .badge-tile.earned {
+      background: linear-gradient(135deg, #fef3c7, #fde68a);
+      border-color: #f59e0b;
+      box-shadow: 0 4px 0 #d97706;
+    }
+    .badge-tile.earned:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 7px 0 #d97706;
+    }
+    .badge-tile.locked {
+      background: #f3f4f6;
+      border-color: #e5e7eb;
+      opacity: 0.65;
+    }
+    .badge-tile-icon {
+      font-size: 2.5rem;
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .badge-tile.locked .badge-tile-icon {
+      filter: grayscale(1);
+    }
+    .badge-tile-name {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
+      color: #3d2c5e;
+      font-size: 0.95rem;
+      margin-bottom: 4px;
+    }
+    .badge-tile.locked .badge-tile-name {
+      color: #6b7280;
+    }
+    .badge-tile-desc {
+      font-size: 0.75rem;
+      color: #6b6391;
+      line-height: 1.3;
+    }
+    .badge-tile-status {
+      margin-top: 6px;
+      font-size: 0.7rem;
+      font-weight: 800;
+    }
+    .badge-tile.earned .badge-tile-status {
+      color: #b45309;
+    }
+    .badge-tile.locked .badge-tile-status {
+      color: #9ca3af;
+    }
+
+    /* Compact badge strip for parent dashboard */
+    .badge-strip {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .badge-strip-item {
+      background: linear-gradient(135deg, #fef3c7, #fde68a);
+      border: 2px solid #f59e0b;
+      border-radius: 14px;
+      padding: 6px 10px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #92400e;
+    }
+    .badge-strip-item .badge-strip-icon {
+      font-size: 1.2rem;
+    }
+
+    /* ── Progress bar ── */
+    .progress-track {
+      background: #ede9fe;
+      border-radius: 999px;
+      height: 14px;
+      overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%;
+      border-radius: 999px;
+      background: linear-gradient(90deg, #c44dff, #7b2fff);
+      transition: width 0.5s cubic-bezier(.34,1.56,.64,1);
+      position: relative;
+      overflow: hidden;
+    }
+    .progress-fill::after {
+      content: '';
+      position: absolute;
+      top: 0; left: -100%;
+      width: 50%; height: 100%;
+      background: rgba(255,255,255,0.3);
+      animation: shimmer 1.5s infinite;
+    }
+    @keyframes shimmer {
+      0%   { left: -100%; }
+      100% { left: 200%; }
+    }
+
+    /* ── Score Stars ── */
+    .score-star {
+      font-size: 2.4rem;
+      filter: grayscale(1) opacity(0.4);
+      transition: filter 0.4s, transform 0.4s;
+    }
+    .score-star.lit {
+      filter: none;
+      animation: star-pop 0.5s cubic-bezier(.34,1.56,.64,1) forwards;
+    }
+    @keyframes star-pop {
+      0%   { transform: scale(0) rotate(-20deg); }
+      70%  { transform: scale(1.3) rotate(5deg); }
+      100% { transform: scale(1) rotate(0deg); }
+    }
+
+    /* ── Hint box ── */
+    .hint-box {
+      background: linear-gradient(135deg, #fff9c4, #fff3a3);
+      border: 3px solid #fbbf24;
+      border-radius: 20px;
+      padding: 18px 20px;
+    }
+
+    /* ── Feedback popup ── */
+    .feedback-pop {
+      animation: pop-in 0.35s cubic-bezier(.34,1.56,.64,1) forwards;
+    }
+    @keyframes pop-in {
+      0%   { transform: scale(0.5); opacity: 0; }
+      100% { transform: scale(1);   opacity: 1; }
+    }
+
+    /* ── Confetti-style burst ── */
+    .confetti-burst {
+      position: fixed;
+      pointer-events: none;
+      z-index: 9999;
+      font-size: 1.8rem;
+      animation: confetti-fly 1.2s ease-out forwards;
+    }
+    @keyframes confetti-fly {
+      0%   { transform: translate(0,0) scale(0) rotate(0deg); opacity: 1; }
+      100% { transform: translate(var(--tx), var(--ty)) scale(1) rotate(var(--rot)); opacity: 0; }
+    }
+
+    /* ── Modal ── */
+    .modal-overlay {
+      position: fixed; inset: 0;
+      background: rgba(60,20,100,0.55);
+      backdrop-filter: blur(6px);
+      display: flex; align-items: center; justify-content: center;
+      z-index: 50;
+      animation: fade-in 0.2s ease;
+    }
+    .modal-card {
+      background: white;
+      border-radius: 28px;
+      padding: 36px 32px;
+      max-width: 380px; width: 90%;
+      text-align: center;
+      box-shadow: 0 20px 60px rgba(100,30,180,0.3);
+      animation: modal-slide-up 0.3s cubic-bezier(.34,1.56,.64,1);
+    }
+    @keyframes modal-slide-up {
+      0%   { transform: translateY(60px) scale(0.9); opacity: 0; }
+      100% { transform: translateY(0)    scale(1);   opacity: 1; }
+    }
+    @keyframes fade-in {
+      from { opacity: 0; } to { opacity: 1; }
+    }
+
+    /* ── PIN pad ── */
+    .pin-display {
+      display: flex; gap: 14px; justify-content: center; margin: 20px 0;
+    }
+    .pin-dot {
+      width: 18px; height: 18px;
+      border-radius: 50%;
+      border: 3px solid #c44dff;
+      background: transparent;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .pin-dot.filled {
+      background: #c44dff;
+      transform: scale(1.2);
+    }
+    .pin-pad {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      max-width: 260px; margin: 0 auto;
+    }
+    .pin-key {
+      aspect-ratio: 1;
+      border-radius: 16px;
+      border: 3px solid #e8d5f5;
+      background: white;
+      font-family: 'Fredoka One', cursive;
+      font-size: 1.5rem;
+      color: #5b3d8a;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .pin-key:hover { background: #f0e8ff; border-color: #c44dff; transform: scale(1.05); }
+    .pin-key:active { transform: scale(0.94); background: #e8d5f5; }
+
+    /* ── Badge toast ── */
+    .badge-toast {
+      position: fixed;
+      top: 20px; right: 20px;
+      background: linear-gradient(135deg, #ffd700, #ff8c00);
+      color: #3d2000;
+      border-radius: 20px;
+      padding: 14px 20px;
+      font-family: 'Fredoka One', cursive;
+      font-size: 1rem;
+      box-shadow: 0 8px 24px rgba(255,140,0,0.4);
+      z-index: 9999;
+      display: flex; align-items: center; gap: 10px;
+      animation: badge-slide-in 0.4s cubic-bezier(.34,1.56,.64,1);
+    }
+    @keyframes badge-slide-in {
+      0%   { transform: translateX(120%); opacity: 0; }
+      100% { transform: translateX(0);    opacity: 1; }
+    }
+
+    /* ── Level pill ── */
+    .level-pill {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: linear-gradient(135deg, #fce7f3, #ede9fe);
+      border: 2px solid #e0c8f8;
+      border-radius: 999px;
+      padding: 4px 14px;
+      font-weight: 800;
+      font-size: 0.82rem;
+      color: #7c3aed;
+    }
+
+    /* ── Scrollbar ── */
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #faf5ff; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb { background: #d8b4fe; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #c084fc; }
+
+    /* ── PIN shake ── */
+    @keyframes shake {
+      0%,100% { transform: translateX(0); }
+      20%      { transform: translateX(-10px); }
+      40%      { transform: translateX(10px); }
+      60%      { transform: translateX(-8px); }
+      80%      { transform: translateX(8px); }
+    }
+
+    /* ── OTP digit inputs ── */
+    .otp-digit {
+      width: 48px;
+      height: 56px;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: 800;
+      font-family: 'Fredoka One', cursive;
+      border: 3px solid #bfdbfe;
+      border-radius: 12px;
+      background: white;
+      color: #1e40af;
+      transition: all 0.2s;
+      outline: none;
+    }
+    .otp-digit:focus {
+      border-color: #3b82f6;
+      box-shadow: 0 0 0 4px rgba(59,130,246,0.15);
+      transform: scale(1.08);
+    }
+
+    /* ── Utility ── */
+    .hidden { display: none !important; }
+    .section-slide-in { animation: slide-in-up 0.4s ease forwards; }
+    @keyframes slide-in-up {
+      0%   { transform: translateY(24px); opacity: 0; }
+      100% { transform: translateY(0);    opacity: 1; }
+    }
+
+    /* ── Dashboard Filter Buttons ── */
+    .dashboard-filter-btn {
+      padding: 0.625rem 1.5rem;
+      border-radius: 9999px;
+      font-weight: 600;
+      font-size: 0.875rem;
+      background: white;
+      border: 2px solid #e5e7eb;
+      color: #6b7280;
+      cursor: pointer;
+      transition: all 0.3s;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .dashboard-filter-btn:hover {
+      border-color: #a78bfa;
+      color: #7c3aed;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 8px rgba(124, 58, 237, 0.2);
+    }
+    .dashboard-filter-btn.active {
+      background: linear-gradient(135deg, #a78bfa, #7c3aed);
+      color: white;
+      border-color: #7c3aed;
+      box-shadow: 0 4px 10px rgba(124, 58, 237, 0.3);
+      transform: scale(1.02);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ── Floating background stars ── -->
+  <div id="bg-stars" aria-hidden="true"></div>
+
+  <!-- ── Main App Shell ── -->
+  <div class="app-shell min-h-screen flex items-start justify-center px-4 py-8">
+    <div class="w-full max-w-md buddy-card section-slide-in" style="margin-top: 8px;">
+
+      <!-- ══════════════════════════════════
+           AUTH SECTION
+      ══════════════════════════════════ -->
+      <div id="auth-section">
+
+        <!-- Header Banner -->
+        <div class="header-banner px-8 pt-8 pb-10 text-center">
+          <!-- Decorative clouds -->
+          <div class="cloud" style="width:80px;height:28px;top:18px;left:-30px;animation-duration:18s;animation-delay:-3s;">
+            <div style="position:absolute;width:36px;height:36px;background:white;border-radius:50%;top:-14px;left:10px;"></div>
+            <div style="position:absolute;width:28px;height:28px;background:white;border-radius:50%;top:-10px;left:30px;"></div>
+          </div>
+          <div class="cloud" style="width:60px;height:20px;top:30px;left:55%;animation-duration:22s;animation-delay:-9s;">
+            <div style="position:absolute;width:28px;height:28px;background:white;border-radius:50%;top:-10px;left:8px;"></div>
+          </div>
+
+          <div class="mascot mb-2">🦉</div>
+          <h1 class="text-4xl text-white tracking-wide" style="font-family:'Fredoka One',cursive; text-shadow: 0 3px 12px rgba(0,0,0,0.2);">
+            LearnBuddy.ai
+          </h1>
+          <p class="text-white/80 text-base font-700 mt-1" style="font-weight:700;">
+            ✨ Fun learning for ages 2–12! ✨
+          </p>
+        </div>
+
+        <!-- Tab toggle -->
+        <div class="flex px-6 pt-5 pb-0 gap-0 border-b-2 border-purple-100">
+          <button id="btn-login" class="tab-btn active">🏠 Parent Login</button>
+          <button id="btn-signup" class="tab-btn">🌟 Sign Up</button>
+        </div>
+
+        <!-- Login Form -->
+        <form id="form-login" class="px-8 py-7 space-y-5">
+          <div>
+            <label class="buddy-label">📧 Email</label>
+            <input id="login-email" type="email" required class="buddy-input" placeholder="parent@example.com">
+          </div>
+          <div>
+            <label class="buddy-label">🔒 Password</label>
+            <input id="login-password" type="password" required class="buddy-input" placeholder="••••••••">
+          </div>
+          <button type="submit" class="btn-primary">Let's Go! 🚀</button>
+        </form>
+
+        <!-- Signup Form -->
+        <form id="form-signup" class="px-8 py-7 space-y-5 hidden">
+          <div>
+            <label class="buddy-label">👤 Your Name</label>
+            <input id="signup-name" type="text" required class="buddy-input" placeholder="Your full name">
+          </div>
+          <div>
+            <label class="buddy-label">📧 Email</label>
+            <input id="signup-email" type="email" required class="buddy-input" placeholder="parent@example.com">
+          </div>
+          <div>
+            <label class="buddy-label">🔒 Password</label>
+            <input id="signup-password" type="password" required class="buddy-input" placeholder="Strong password required">
+            <div id="password-strength" class="mt-1 space-y-1 text-xs"></div>
+          </div>
+          <button type="submit" class="btn-primary btn-green">Create Account 🎉</button>
+        </form>
+
+        <div id="auth-message" class="px-8 pb-5 text-center text-sm font-bold"></div>
+        
+        <!-- OTP Verification Screen -->
+        <div id="otp-verify-screen" class="px-8 pb-5 hidden">
+          <div class="bg-blue-50 border-2 border-blue-200 rounded-2xl p-6 text-center">
+            <div class="text-4xl mb-3">📧</div>
+            <h3 class="font-bold text-blue-700 mb-2 text-sm" style="font-family:'Fredoka One',cursive;">Check Your Email!</h3>
+            <p class="text-sm text-blue-600 font-semibold mb-1">
+              We sent a 6-digit code to:
+            </p>
+            <p class="text-sm font-bold text-blue-800 mb-4" id="otp-email-display"></p>
+            
+            <!-- OTP Input -->
+            <div class="flex justify-center gap-2 mb-4" id="otp-inputs-container">
+              <input type="text" maxlength="1" class="otp-digit" data-index="0" inputmode="numeric" pattern="\d">
+              <input type="text" maxlength="1" class="otp-digit" data-index="1" inputmode="numeric" pattern="\d">
+              <input type="text" maxlength="1" class="otp-digit" data-index="2" inputmode="numeric" pattern="\d">
+              <input type="text" maxlength="1" class="otp-digit" data-index="3" inputmode="numeric" pattern="\d">
+              <input type="text" maxlength="1" class="otp-digit" data-index="4" inputmode="numeric" pattern="\d">
+              <input type="text" maxlength="1" class="otp-digit" data-index="5" inputmode="numeric" pattern="\d">
+            </div>
+
+            <p id="otp-error" class="text-red-500 text-sm font-bold mb-3 hidden">❌ Invalid code. Try again!</p>
+            <p id="otp-success" class="text-green-600 text-sm font-bold mb-3 hidden">✅ Verified! Redirecting...</p>
+            
+            <button id="btn-verify-otp" class="btn-primary mb-3" style="font-size:1rem;padding:12px;">
+              Verify Code 🔐
+            </button>
+            
+            <button id="btn-resend-otp" class="text-blue-600 hover:text-blue-800 font-bold text-sm underline block mx-auto">
+              Didn't get it? Resend code
+            </button>
+            
+            <button id="btn-cancel-otp" class="mt-3 text-gray-400 hover:text-gray-600 text-sm font-bold">
+              ← Back to Sign Up
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ══════════════════════════════════
+           LOGGED-IN VIEW
+      ══════════════════════════════════ -->
+      <div id="logged-in-view" class="hidden">
+
+        <!-- Parent Dashboard Header -->
+        <div class="header-banner px-6 py-6 flex items-center justify-between">
+          <div>
+            <p class="text-white/70 text-sm font-bold">Welcome back,</p>
+            <p id="user-email" class="text-white font-bold text-sm truncate max-w-[180px]"></p>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="mascot text-2xl !animate-none">🦉</div>
+            <button id="btn-logout"
+              class="bg-white/20 hover:bg-white/30 text-white text-sm font-bold px-4 py-2 rounded-full border border-white/30 transition">
+              Log Out
+            </button>
+          </div>
+        </div>
+
+        <!-- ── CHILD SECTION ── -->
+        <div id="child-section" class="px-6 py-6">
+
+          <!-- Section title -->
+          <div class="flex items-center justify-between mb-5">
+            <h2 class="text-2xl text-purple-700" style="font-family:'Fredoka One',cursive;">
+              👧 Your Kids
+            </h2>
+            <button id="btn-add-child"
+              class="bg-gradient-to-r from-green-400 to-teal-400 text-white text-sm font-bold px-4 py-2 rounded-full shadow-md hover:shadow-lg transition hover:scale-105">
+              + Add Child
+            </button>
+          </div>
+
+          <div id="children-list" class="space-y-3 mb-5"></div>
+
+          <!-- Assessment Agent Test (Development Only) -->
+          <div id="assessment-test-section" class="hidden mb-5 p-4 bg-blue-50 border-2 border-blue-200 rounded-2xl">
+            <h3 class="text-base font-bold text-blue-700 mb-3">📊 Assessment Agent </h3>
+            <button id="btn-run-assessment" 
+              class="bg-blue-600 text-white px-4 py-2 rounded-xl font-bold hover:bg-blue-700 transition text-sm">
+              🧠 Analyze Performance
+            </button>
+            <div id="assessment-results" class="mt-4 text-sm"></div>
+          </div>
+
+          <!-- Add Child Form -->
+          <div id="form-add-child-wrapper" class="hidden buddy-card bg-gradient-to-br from-green-50 to-teal-50 shadow-none border-2 border-green-200 p-6 mb-4">
+            <h3 class="text-sm font-bold text-green-700 mb-5" style="font-family:'Fredoka One',cursive;">
+              🌱 Add New Child
+            </h3>
+            <form id="form-add-child" class="space-y-5">
+              <div>
+                <label class="buddy-label text-green-800">Child's Name</label>
+                <input id="child-name" type="text" required class="buddy-input" style="border-color:#bbf7d0;" placeholder="e.g., Daniyal">
+              </div>
+              <div>
+                <label class="buddy-label text-green-800">Age (2–12)</label>
+                <select id="child-age" required class="buddy-input" style="border-color:#bbf7d0;">
+                  <option value="">Select age</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="buddy-label text-green-800 mb-3">Interests 🎨</label>
+                <div class="grid grid-cols-2 gap-2 mb-3">
+                  <label class="interest-check"><input type="checkbox" name="interests" value="animals"> 🐾 Animals</label>
+                  <label class="interest-check"><input type="checkbox" name="interests" value="numbers"> 🔢 Numbers</label>
+                  <label class="interest-check"><input type="checkbox" name="interests" value="letters"> 🔤 Letters</label>
+                  <label class="interest-check"><input type="checkbox" name="interests" value="space"> 🚀 Space</label>
+                  <label class="interest-check"><input type="checkbox" name="interests" value="colors"> 🎨 Colors</label>
+                  <label class="interest-check"><input type="checkbox" name="interests" value="stories"> 📖 Stories</label>
+                </div>
+                <div>
+                  <label class="interest-check">
+                    <input type="checkbox" id="interest-other-checkbox" name="interests" value="other"> ✨ Other
+                  </label>
+                  <input type="text" id="interest-other-input" 
+                    class="buddy-input mt-2 hidden" 
+                    style="border-color:#bbf7d0;" 
+                    placeholder="e.g., dinosaurs, sports, music..."
+                    maxlength="50">
+                </div>
+              </div>
+
+              <div>
+                <label class="buddy-label text-green-800">Quiz Voice 🎙️ <span class="text-xs text-green-600 font-normal">(optional)</span></label>
+                <select id="child-voice" class="buddy-input" style="border-color:#bbf7d0;">
+                  <option value="">Default Voice (Browser)</option>
+                </select>
+                <p class="text-xs text-green-600 mt-1 font-semibold">Pick a recorded family voice for this child 💕</p>
+              </div>
+
+              <div>
+                <label class="buddy-label text-green-800">4-Digit PIN 🔐</label>
+                <input id="child-pin" type="password" maxlength="4" pattern="\d{4}" required
+                  class="buddy-input text-center text-2xl tracking-widest" style="border-color:#bbf7d0;"
+                  placeholder="• • • •">
+                <p class="text-xs text-green-600 mt-1 font-semibold">Your child uses this to log in 🎮</p>
+              </div>
+
+              <!-- Toddler Mode override toggle -->
+              <div class="rounded-2xl p-3 border-2 border-green-200" style="background: #ecfdf5;">
+                <label class="flex items-start gap-3 cursor-pointer">
+                  <input id="child-toddler-mode" type="checkbox" class="mt-1 w-5 h-5 accent-green-600">
+                  <div>
+                    <div class="font-bold text-green-800 text-sm">🧸 Use Toddler Mode (picture-based questions)</div>
+                    <div class="text-xs text-green-700 mt-1 leading-snug">
+                      Auto-enabled for ages 2-5. Check this to force picture-mode for an older child (or uncheck to let an advanced 5-year-old use the regular mode).
+                    </div>
+                  </div>
+                </label>
+              </div>
+
+              <!-- Speech-to-text answers toggle (Toddler Mode only) -->
+              <div class="rounded-2xl p-3 border-2 border-blue-200" style="background: #eff6ff;">
+                <label class="flex items-start gap-3 cursor-pointer">
+                  <input id="child-voice-answers" type="checkbox" class="mt-1 w-5 h-5 accent-blue-600">
+                  <div>
+                    <div class="font-bold text-blue-800 text-sm">🎤 Allow voice answers (Toddler Mode only)</div>
+                    <div class="text-xs text-blue-700 mt-1 leading-snug">
+                      Child can say the answer out loud instead of tapping. Tapping always works too — voice never blocks. Needs microphone permission. Works best in Chrome.
+                    </div>
+                  </div>
+                </label>
+              </div>
+
+              <div class="flex gap-3">
+                <button type="submit" class="btn-primary btn-green flex-1" style="font-size:1rem; padding:13px;">
+                  Save! 💾
+                </button>
+                <button type="button" id="btn-cancel-child"
+                  class="flex-1 py-3 rounded-2xl border-3 font-bold text-gray-500 hover:text-gray-700 bg-gray-100 hover:bg-gray-200 transition text-sm"
+                  style="border: 3px solid #e5e7eb;">
+                  Cancel
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div id="child-message" class="text-center text-sm font-bold mt-1"></div>
+        </div>
+
+        <!-- ── CHILD WELCOME ── -->
+        <div id="child-welcome" class="hidden px-6 py-6 section-slide-in">
+          <!-- Sky banner for child -->
+          <div class="header-banner rounded-2xl px-6 py-5 text-center mb-6">
+            <div class="mascot text-3xl mb-1">🌟</div>
+            <h2 class="text-3xl text-white" style="font-family:'Fredoka One',cursive;">
+              Hi, <span id="child-name-welcome" class="text-yellow-200"></span>!
+            </h2>
+            <p class="text-white/80 text-sm mt-1 font-bold">What do you want to learn today?</p>
+          </div>
+
+          <!-- Stats strip -->
+          <div id="child-stats-strip" class="flex gap-3 mb-6 justify-center"></div>
+
+          <!-- Subject grid -->
+          <div id="subject-picker" class="grid grid-cols-2 gap-4 mb-6"></div>
+
+          <!-- My Badges button -->
+          <button id="btn-my-badges"
+            class="w-full mb-3 py-3 px-4 rounded-2xl font-bold text-white text-base shadow-md transition-all hover:scale-[1.02]"
+            style="background: linear-gradient(135deg, #f59e0b, #d97706);">
+            🏆 My Badges
+          </button>
+
+          <button id="btn-back-to-parent"
+            class="interactive-feedback w-full text-center text-purple-500 hover:text-purple-700 font-bold text-sm py-2">
+            ← Back to Parent Dashboard
+          </button>
+        </div>
+
+        <!-- ── BADGE COLLECTION ── -->
+        <div id="badge-collection-view" class="hidden px-6 py-6 section-slide-in">
+          <!-- Header -->
+          <div class="header-banner rounded-2xl px-6 py-5 text-center mb-6"
+               style="background: linear-gradient(135deg, #f59e0b, #d97706);">
+            <div class="mascot text-3xl mb-1">🏆</div>
+            <h2 class="text-3xl text-white" style="font-family:'Fredoka One',cursive;">My Badges</h2>
+            <p class="text-white/90 text-sm mt-1 font-bold">
+              <span id="badge-count-display">0 of 8 earned</span>
+            </p>
+          </div>
+
+          <div id="badge-collection-grid" class="badge-grid mb-6"></div>
+
+          <button id="btn-back-from-badges"
+            class="interactive-feedback w-full text-center text-purple-500 hover:text-purple-700 font-bold text-sm py-2">
+            ← Back
+          </button>
+        </div>
+
+        <!-- ── LEARNING SESSION ── -->
+        <div id="learning-session" class="hidden px-6 py-6 section-slide-in">
+
+          <!-- Session header -->
+          <div class="flex items-center justify-between mb-4">
+            <button id="btn-back-from-learning" class="text-purple-400 hover:text-purple-700 text-2xl">←</button>
+            <div class="text-center">
+              <h2 class="text-sm text-purple-700" style="font-family:'Fredoka One',cursive;">
+                <span id="session-subject-icon"></span>
+                <span id="session-subject-name"></span>
+              </h2>
+              <div class="flex items-center gap-2">
+                <p id="question-counter" class="text-sm text-purple-400 font-bold">Question 1 of 5</p>
+                <span id="question-source-badge" class="hidden text-xs px-2 py-1 rounded-full font-bold"></span>
+              </div>
+            </div>
+            <div id="session-score-display" class="text-sm font-bold text-purple-700">⭐ 0</div>
+          </div>
+
+          <!-- Progress bar -->
+          <div class="progress-track mb-5">
+            <div id="progress-fill" class="progress-fill" style="width:20%"></div>
+          </div>
+
+          <!-- Question bubble -->
+          <div id="question-bubble-wrap" class="question-bubble mb-5">
+            <p id="question-text" class="text-sm font-bold text-gray-800 text-center leading-snug"></p>
+            <div class="flex justify-center mt-4">
+              <button id="btn-repeat-question"
+                class="flex items-center gap-2 bg-white border-2 border-purple-200 hover:border-purple-400 text-purple-600 px-5 py-2 rounded-full font-bold text-sm transition hover:scale-105">
+                🔊 Hear Again
+              </button>
+            </div>
+          </div>
+
+          <!-- Options -->
+          <div id="options-container" class="space-y-3 mb-4"></div>
+
+          <!-- Feedback -->
+          <div id="feedback" class="text-center min-h-[56px] flex items-center justify-center"></div>
+
+          <!-- Hint area -->
+          <div id="hint-area" class="hint-box hidden mt-4">
+            <button id="btn-show-hint" class="w-full text-center font-bold text-amber-700 flex items-center justify-center gap-2">
+              💡 Need a Hint? Tap here!
+            </button>
+            <p id="hint-text" class="text-amber-800 font-bold text-center mt-3 hidden"></p>
+          </div>
+
+          <!-- Next / Finish -->
+          <button id="btn-next-question"
+            class="btn-primary hidden mt-5">
+            Next Question ➡️
+          </button>
+          <button id="btn-finish-session"
+            class="btn-primary btn-green hidden mt-5">
+            Finish & See Stars! 🌟
+          </button>
+        </div>
+
+        <!-- ── SESSION END SCREEN rendered by JS ── -->
+
+        <!-- ── LOGOUT button (shown in parent view) ── -->
+        <div id="logout-row" class="hidden px-6 pb-6">
+          <button id="btn-logout-bottom"
+            class="btn-primary btn-red" style="font-size:1rem; padding:13px;">
+            🚪 Log Out
+          </button>
+        </div>
+
+      </div><!-- /logged-in-view -->
+
+    </div><!-- /buddy-card -->
+  </div><!-- /shell -->
+
+  <!-- ══════════════════════════════════
+       PIN MODAL
+  ══════════════════════════════════ -->
+  <div id="pin-modal" class="modal-overlay hidden" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <div class="text-4xl mb-3">🔐</div>
+      <h3 class="text-2xl text-purple-700 mb-1" style="font-family:'Fredoka One',cursive;">
+        Hey, <span id="pin-for-child"></span>!
+      </h3>
+      <p class="text-gray-500 text-sm font-bold mb-4">Enter your secret PIN to play</p>
+
+      <input id="pin-input-hidden" type="tel" maxlength="4" inputmode="numeric"
+        class="opacity-0 absolute pointer-events-none" autocomplete="off">
+
+      <div class="pin-display" id="pin-display">
+        <div class="pin-dot" id="pd-0"></div>
+        <div class="pin-dot" id="pd-1"></div>
+        <div class="pin-dot" id="pd-2"></div>
+        <div class="pin-dot" id="pd-3"></div>
+      </div>
+
+      <div class="pin-pad" id="pin-pad">
+        <button class="pin-key" data-k="1">1</button>
+        <button class="pin-key" data-k="2">2</button>
+        <button class="pin-key" data-k="3">3</button>
+        <button class="pin-key" data-k="4">4</button>
+        <button class="pin-key" data-k="5">5</button>
+        <button class="pin-key" data-k="6">6</button>
+        <button class="pin-key" data-k="7">7</button>
+        <button class="pin-key" data-k="8">8</button>
+        <button class="pin-key" data-k="9">9</button>
+        <button class="pin-key" data-k="back" style="font-size:1.1rem;">⌫</button>
+        <button class="pin-key" data-k="0">0</button>
+        <button class="pin-key" data-k="ok" style="background:linear-gradient(135deg,#c44dff,#7b2fff);color:white;border-color:#c44dff;">✓</button>
+      </div>
+
+      <p id="pin-error" class="mt-4 text-red-500 font-bold text-sm hidden">❌ Wrong PIN — try again!</p>
+      <button id="btn-cancel-pin" class="mt-4 text-gray-400 hover:text-gray-600 text-sm font-bold">Cancel</button>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════
+       DELETE CONFIRM MODAL
+  ══════════════════════════════════ -->
+  <div id="delete-modal" class="modal-overlay hidden" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <div class="text-4xl mb-3">🗑️</div>
+      <h3 class="text-sm font-bold text-red-600 mb-2" style="font-family:'Fredoka One',cursive;">Remove Profile?</h3>
+      <p class="text-gray-600 mb-6 font-semibold">
+        Remove <span id="delete-child-name" class="font-bold text-gray-800"></span>'s profile?
+        <br><span class="text-sm text-red-400">This cannot be undone.</span>
+      </p>
+      <div class="flex gap-3">
+        <button id="btn-confirm-delete" class="btn-primary btn-red flex-1" style="font-size:1rem;padding:13px;">
+          Yes, Remove
+        </button>
+        <button id="btn-cancel-delete" class="btn-outline flex-1" style="font-size:1rem;">
+          Cancel
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Child Settings Modal — lets parent toggle Toddler Mode + Voice Answers on an existing child ── -->
+  <div id="child-settings-modal" class="modal-overlay hidden" role="dialog" aria-modal="true">
+    <div class="modal-card" style="max-width: 420px;">
+      <div class="text-4xl mb-2">⚙️</div>
+      <h3 class="text-lg font-bold text-purple-700 mb-1" style="font-family:'Fredoka One',cursive;">
+        Settings for <span id="settings-child-name" class="text-gray-800"></span>
+      </h3>
+      <p class="text-xs text-gray-500 mb-5">Change these anytime — takes effect next session</p>
+
+      <!-- Toddler Mode toggle -->
+      <div class="rounded-2xl p-3 border-2 border-green-200 mb-3 text-left" style="background: #ecfdf5;">
+        <label class="flex items-start gap-3 cursor-pointer">
+          <input id="settings-toddler-mode" type="checkbox" class="mt-1 w-5 h-5 accent-green-600">
+          <div>
+            <div class="font-bold text-green-800 text-sm">🧸 Use Toddler Mode (picture-based questions)</div>
+            <div class="text-xs text-green-700 mt-1 leading-snug">
+              Auto-enabled for ages 2-5. Check to force on for older children, uncheck to force off.
+            </div>
+          </div>
+        </label>
+      </div>
+
+      <!-- Voice answers toggle -->
+      <div class="rounded-2xl p-3 border-2 border-blue-200 mb-5 text-left" style="background: #eff6ff;">
+        <label class="flex items-start gap-3 cursor-pointer">
+          <input id="settings-voice-answers" type="checkbox" class="mt-1 w-5 h-5 accent-blue-600">
+          <div>
+            <div class="font-bold text-blue-800 text-sm">🎤 Allow voice answers (Toddler Mode only)</div>
+            <div class="text-xs text-blue-700 mt-1 leading-snug">
+              Child can say the answer out loud instead of tapping. Tapping always works too. Needs microphone permission. Works best in Chrome.
+            </div>
+          </div>
+        </label>
+      </div>
+
+      <div class="flex gap-3">
+        <button id="btn-save-settings" class="btn-primary flex-1" style="font-size:1rem;padding:13px;">
+          Save 💾
+        </button>
+        <button id="btn-cancel-settings" class="btn-outline flex-1" style="font-size:1rem;">
+          Cancel
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./main.js"></script>
+
+  <!-- ── Background Stars & Misc JS ── -->
+  <script>
+    // Floating background emojis
+    const emojis = ['⭐','🌟','💫','✨','🎈','🎀','🌈','🦋','🌸'];
+    const container = document.getElementById('bg-stars');
+    for (let i = 0; i < 14; i++) {
+      const el = document.createElement('div');
+      el.className = 'star-float';
+      el.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+      el.style.cssText = `
+        left: ${Math.random() * 100}vw;
+        animation-duration: ${8 + Math.random() * 14}s;
+        animation-delay: ${-Math.random() * 20}s;
+        font-size: ${1 + Math.random()}rem;
+      `;
+      container.appendChild(el);
+    }
+
+    // Confetti burst helper
+    window.burstConfetti = function(x, y) {
+      const pieces = ['🌟','⭐','💥','🎊','✨','💛','💜','💚'];
+      for (let i = 0; i < 10; i++) {
+        const el = document.createElement('div');
+        el.className = 'confetti-burst';
+        el.textContent = pieces[Math.floor(Math.random() * pieces.length)];
+        const angle = (Math.random() * 360) * (Math.PI / 180);
+        const dist = 60 + Math.random() * 120;
+        el.style.cssText = `
+          left:${x}px; top:${y}px;
+          --tx: ${Math.cos(angle) * dist}px;
+          --ty: ${Math.sin(angle) * dist}px;
+          --rot: ${Math.random() * 720 - 360}deg;
+        `;
+        document.body.appendChild(el);
+        setTimeout(() => el.remove(), 1200);
+      }
+    };
+
+    // Badge toast helper
+    window.showBadge = function(msg) {
+      const t = document.createElement('div');
+      t.className = 'badge-toast';
+      t.innerHTML = `<span>🏆</span><span>${msg}</span>`;
+      document.body.appendChild(t);
+      setTimeout(() => {
+        t.style.transition = 'opacity 0.5s, transform 0.5s';
+        t.style.opacity = '0';
+        t.style.transform = 'translateX(120%)';
+        setTimeout(() => t.remove(), 500);
+      }, 3000);
+    };
+
+    // ── Floating background decorations ──
+    // Spawn whimsical shapes (stars, balloons, clouds, sparkles) drifting upward.
+    // Randomized starting positions and animation timing so they never sync up.
+    // Runs once on page load. Shapes auto-cycle (CSS infinite animation).
+    (function spawnFloatingShapes() {
+      const container = document.getElementById('bg-stars');
+      if (!container) return;
+      // Skip on very small screens (e.g. very narrow phones) — keeps mobile clean
+      if (window.innerWidth < 360) return;
+      // Respect reduced-motion preference
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+      const shapes = ['⭐', '🎈', '☁️', '✨', '🌟', '☁️', '🎈', '⭐', '✨', '🌟'];
+      const animations = ['shape-drift-up', 'shape-drift-sway'];
+
+      shapes.forEach((emoji, i) => {
+        const el = document.createElement('div');
+        el.className = 'float-shape';
+        el.textContent = emoji;
+        // Random horizontal start, size, speed, delay
+        const leftPct = (i * 10 + Math.random() * 8) % 95;     // spread across width
+        const size = 1.5 + Math.random() * 1.5;                 // 1.5rem to 3rem
+        const duration = 18 + Math.random() * 14;               // 18-32 seconds per cycle
+        const delay = -Math.random() * duration;                // negative delay = mid-cycle start
+        const anim = animations[i % animations.length];
+        el.style.cssText = `
+          left: ${leftPct}%;
+          font-size: ${size}rem;
+          animation: ${anim} ${duration}s linear ${delay}s infinite;
+        `;
+        container.appendChild(el);
+      });
+    })();
+  </script>
+
+  <!-- ══════════════════════════════════════════════════════════════ -->
+  <!-- PARENT DASHBOARD (Full-Width Standalone Page) -->
+  <!-- ══════════════════════════════════════════════════════════════ -->
+  <div id="parent-dashboard" class="hidden fixed inset-0 bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50 overflow-y-auto z-50">
+    
+    <!-- Dashboard Header (Sticky) -->
+    <div class="bg-white shadow-lg border-b-4 border-purple-300 sticky top-0 z-10">
+      <div class="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between">
+        <div>
+          <h1 class="text-2xl text-purple-700 font-black mb-1" style="font-family:'Fredoka One',cursive;">
+            📊 Progress Dashboard
+          </h1>
+          <p class="text-gray-600" id="dashboard-child-name">Select a child to view their progress</p>
+        </div>
+        <button id="btn-back-to-children" 
+          class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-5 py-2.5 rounded-full font-bold shadow-lg hover:shadow-2xl transition hover:scale-110 text-base">
+          ← Back to Children
+        </button>
+      </div>
+
+      <!-- Date Filter -->
+      <div class="max-w-6xl mx-auto px-6 pb-4 flex gap-3">
+        <button class="dashboard-filter-btn active" data-days="7">📅 Last 7 Days</button>
+        <button class="dashboard-filter-btn" data-days="30">📆 Last 30 Days</button>
+        <button class="dashboard-filter-btn" data-days="all">🗓️ All Time</button>
+      </div>
+    </div>
+
+    <!-- Dashboard Content -->
+    <div class="max-w-6xl mx-auto px-5 py-6">
+
+      <!-- Stats Cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+        <!-- Total Sessions -->
+        <div class="bg-gradient-to-br from-blue-400 to-blue-600 rounded-2xl p-5 shadow-xl hover:shadow-3xl transition transform hover:scale-105 border-4 border-white">
+          <div class="flex items-center gap-4 mb-4">
+            <span class="text-3xl">📚</span>
+            <h3 class="text-white font-black text-sm">Total<br>Sessions</h3>
+          </div>
+          <p class="text-4xl font-black text-white" id="stat-total-sessions">0</p>
+        </div>
+
+        <!-- Average Score -->
+        <div class="bg-gradient-to-br from-green-400 to-green-600 rounded-2xl p-5 shadow-xl hover:shadow-3xl transition transform hover:scale-105 border-4 border-white">
+          <div class="flex items-center gap-4 mb-4">
+            <span class="text-3xl">⭐</span>
+            <h3 class="text-white font-black text-sm">Average<br>Score</h3>
+          </div>
+          <p class="text-4xl font-black text-white" id="stat-avg-score">0%</p>
+        </div>
+
+        <!-- Current Streak -->
+        <div class="bg-gradient-to-br from-orange-400 to-orange-600 rounded-2xl p-5 shadow-xl hover:shadow-3xl transition transform hover:scale-105 border-4 border-white">
+          <div class="flex items-center gap-4 mb-4">
+            <span class="text-3xl">🔥</span>
+            <h3 class="text-white font-black text-sm">Current<br>Streak</h3>
+          </div>
+          <p class="text-4xl font-black text-white" id="stat-streak">0</p>
+          <p class="text-white text-sm font-bold mt-1">days</p>
+        </div>
+
+        <!-- Time Spent -->
+        <div class="bg-gradient-to-br from-purple-400 to-purple-600 rounded-2xl p-5 shadow-xl hover:shadow-3xl transition transform hover:scale-105 border-4 border-white">
+          <div class="flex items-center gap-4 mb-4">
+            <span class="text-3xl">⏱️</span>
+            <h3 class="text-white font-black text-sm">Time<br>Spent</h3>
+          </div>
+          <p class="text-4xl font-black text-white" id="stat-time-spent">0</p>
+          <p class="text-white text-sm font-bold mt-1">minutes</p>
+        </div>
+      </div>
+
+      <!-- Charts Row 1 -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+        <!-- Subject Performance Bar Chart -->
+        <div class="bg-white rounded-2xl p-6 border-3 border-purple-200 shadow-2xl">
+          <h3 class="text-xl font-black text-gray-800 mb-4 flex items-center gap-4" style="font-family:'Fredoka One',cursive;">
+            <span class="text-2xl">📊</span>
+            Performance by Subject
+          </h3>
+          <div style="position: relative; height: 280px;">
+            <canvas id="chart-subjects"></canvas>
+          </div>
+        </div>
+
+        <!-- Progress Over Time Line Chart -->
+        <div class="bg-white rounded-2xl p-6 border-3 border-purple-200 shadow-2xl">
+          <h3 class="text-xl font-black text-gray-800 mb-4 flex items-center gap-4" style="font-family:'Fredoka One',cursive;">
+            <span class="text-2xl">📈</span>
+            Progress Over Time
+          </h3>
+          <div style="position: relative; height: 280px;">
+            <canvas id="chart-progress"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <!-- Charts Row 2 -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+        <!-- Time Distribution Pie Chart -->
+        <div class="bg-white rounded-2xl p-6 border-3 border-purple-200 shadow-2xl">
+          <h3 class="text-xl font-black text-gray-800 mb-4 flex items-center gap-4" style="font-family:'Fredoka One',cursive;">
+            <span class="text-2xl">⏰</span>
+            Time by Subject
+          </h3>
+          <div style="position: relative; height: 280px;">
+            <canvas id="chart-time-distribution"></canvas>
+          </div>
+        </div>
+
+        <!-- Insights & Recommendations -->
+        <div class="bg-gradient-to-br from-yellow-100 to-orange-100 rounded-2xl p-6 border-3 border-yellow-400 shadow-2xl">
+          <h3 class="text-xl font-black text-orange-900 mb-4 flex items-center gap-4" style="font-family:'Fredoka One',cursive;">
+            <span class="text-2xl">💡</span>
+            Insights & Tips
+          </h3>
+          <div id="dashboard-insights" class="space-y-3 text-base">
+            <p class="text-gray-600">Loading insights...</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ═══════════════════════════════════════════════════════════ -->
+      <!-- Voice Settings Section                                       -->
+      <!-- ═══════════════════════════════════════════════════════════ -->
+      <div class="grid grid-cols-1 lg:grid-cols-1 gap-6 mb-6">
+        <div class="bg-gradient-to-br from-blue-100 to-cyan-100 rounded-2xl p-6 border-3 border-blue-300 shadow-2xl">
+          <div class="flex items-center justify-between mb-4 flex-wrap gap-3">
+            <h3 class="text-xl font-black text-blue-900 flex items-center gap-4" style="font-family:'Fredoka One',cursive;">
+              <span class="text-2xl">🎙️</span>
+              Voice Settings
+            </h3>
+          </div>
+
+          <!-- Master Toggle: AI Voice ON/OFF -->
+          <div class="bg-white border-2 border-blue-300 rounded-xl p-4 mb-5 flex items-center justify-between flex-wrap gap-3">
+            <div class="flex-1 min-w-0">
+              <p class="font-bold text-blue-900 text-base">🎵 Use AI Voice </p>
+              <p class="text-xs text-gray-600 mt-1">
+                When ON, your child hears a friendly, natural-sounding voice for questions and feedback.
+                When OFF, the browser's built-in voice is used.
+              </p>
+            </div>
+            <!-- Toggle switch -->
+            <label class="relative inline-flex items-center cursor-pointer flex-shrink-0">
+              <input type="checkbox" id="toggle-elevenlabs" class="sr-only peer">
+              <div class="w-14 h-7 bg-gray-300 peer-checked:bg-green-500 rounded-full transition-colors duration-200"></div>
+              <div class="absolute left-1 top-1 bg-white w-5 h-5 rounded-full transition-transform duration-200 peer-checked:translate-x-7 shadow"></div>
+            </label>
+          </div>
+
+          <!-- Available Voices List -->
+          <p class="text-sm text-gray-700 mb-3 font-semibold">
+            🎤 Available Voices for Kids:
+          </p>
+          <div id="voices-list" class="space-y-3 mb-4">
+            <p class="text-gray-600 text-sm">Loading voices...</p>
+          </div>
+
+          <!-- Voice Cloning Panel (locked unless VOICE_CLONING_ENABLED=true).
+               When the flag is on, applyCloningVisibility() hides the locked banner
+               and reveals #cloning-unlocked. Banner copy kept neutral as a safety net. -->
+          <div id="cloning-section" class="mt-5 pt-5 border-t-2 border-blue-300">
+            <div id="cloning-locked-banner" class="bg-gradient-to-r from-amber-100 to-yellow-100 border-2 border-amber-400 rounded-xl p-4">
+              <div class="flex items-start gap-3">
+                <span class="text-3xl flex-shrink-0">🔒</span>
+                <div class="flex-1">
+                  <p class="font-bold text-amber-900 text-base mb-1">Voice Cloning — Coming Soon</p>
+                  <p class="text-sm text-amber-800">
+                    Record your own voice (or a family member's) so your child hears a familiar voice during quizzes.
+                    This feature is being prepared and will be available shortly. ✨
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- This block stays hidden until VOICE_CLONING_ENABLED is flipped to true -->
+            <div id="cloning-unlocked" class="hidden">
+              <div class="flex items-center justify-between mb-3 flex-wrap gap-3">
+                <p class="text-sm text-gray-700 font-semibold">
+                  ✨ Your Cloned Voices:
+                </p>
+                <button id="btn-add-voice" class="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-bold hover:bg-blue-700 transition">
+                  + Add New Voice
+                </button>
+              </div>
+              <div id="cloned-voices-list" class="space-y-3 mb-4"></div>
+
+              <!-- Recording Panel (Hidden by default) -->
+              <div id="voice-recorder-panel" class="hidden buddy-card bg-white shadow-none border-2 border-blue-300 p-5 mt-4">
+                <h4 class="text-lg font-bold text-blue-900 mb-3" style="font-family:'Fredoka One',cursive;">
+                  🎤 Record New Voice
+                </h4>
+                <label class="block text-sm font-semibold text-gray-700 mb-1">Voice Name</label>
+                <input id="voice-name-input" type="text" maxlength="30" placeholder="e.g., Mommy, Daddy, Grandma"
+                  class="buddy-input mb-4" style="border-color:#bfdbfe;">
+                <div class="bg-yellow-50 border-2 border-yellow-300 rounded-xl p-4 mb-4">
+                  <p class="text-sm font-bold text-yellow-900 mb-2">📖 Please read this aloud clearly (about 30 seconds):</p>
+                  <p id="voice-script" class="text-base text-gray-800 leading-relaxed">
+                    Hello my dear, I'm so happy to learn with you today!
+                    Let's explore the wonderful world of numbers, words, and amazing facts together.
+                    Are you ready for a fun adventure? I know you can do it!
+                    Remember to think carefully, take your time, and never be afraid to make mistakes.
+                    Mistakes help us grow smarter every single day.
+                    Now let's begin our learning journey, my little superstar!
+                  </p>
+                </div>
+                <div class="flex flex-wrap gap-3 items-center mb-4">
+                  <button id="btn-start-recording"
+                    class="bg-red-500 text-white px-5 py-2 rounded-full font-bold hover:bg-red-600 transition flex items-center gap-2">
+                    <span>🎙️</span> Start Recording
+                  </button>
+                  <button id="btn-stop-recording"
+                    class="hidden bg-gray-700 text-white px-5 py-2 rounded-full font-bold hover:bg-gray-800 transition flex items-center gap-2">
+                    <span>⏹️</span> Stop Recording
+                  </button>
+                  <span id="recording-status" class="text-sm font-semibold text-gray-600"></span>
+                </div>
+                <div id="audio-preview-wrapper" class="hidden mb-4">
+                  <label class="block text-sm font-semibold text-gray-700 mb-2">🔊 Preview your recording:</label>
+                  <audio id="audio-preview" controls class="w-full"></audio>
+                </div>
+                <div class="flex flex-wrap gap-3">
+                  <button id="btn-save-voice"
+                    class="hidden bg-green-600 text-white px-5 py-2 rounded-full font-bold hover:bg-green-700 transition">
+                    💾 Save Voice
+                  </button>
+                  <button id="btn-cancel-voice"
+                    class="bg-gray-300 text-gray-800 px-5 py-2 rounded-full font-bold hover:bg-gray-400 transition">
+                    Cancel
+                  </button>
+                </div>
+                <p id="voice-save-message" class="mt-3 text-sm font-semibold"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Parent Goals Section -->
+      <div class="grid grid-cols-1 lg:grid-cols-1 gap-6 mb-6">
+        <div class="bg-gradient-to-br from-purple-100 to-pink-100 rounded-2xl p-6 border-3 border-purple-300 shadow-2xl">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="text-xl font-black text-purple-900 flex items-center gap-4" style="font-family:'Fredoka One',cursive;">
+              <span class="text-2xl">🎯</span>
+              Parent Goals
+            </h3>
+            <button id="btn-add-goal" class="bg-purple-600 text-white px-4 py-2 rounded-full text-sm font-bold hover:bg-purple-700 transition">
+              + Set New Goal
+            </button>
+          </div>
+          
+          <div id="goals-list" class="space-y-3">
+            <p class="text-gray-600 text-sm">No goals set yet. Click "+ Set New Goal" to add one!</p>
+          </div>
+
+          <!-- Add Goal Form (Hidden) -->
+          <div id="add-goal-form" class="hidden mt-4 p-4 bg-white rounded-xl border-2 border-purple-300">
+            <h4 class="font-bold text-purple-900 mb-3">Set a New Goal</h4>
+            <div class="space-y-3">
+              <div>
+                <label class="text-sm font-semibold text-gray-700">Subject</label>
+                <select id="goal-subject" class="w-full px-3 py-2 border-2 border-gray-300 rounded-lg">
+                  <option value="maths">🔢 Maths</option>
+                  <option value="english">📚 English</option>
+                  <option value="science">🔬 Science</option>
+                  <option value="general_knowledge">🌍 General Knowledge</option>
+                  <option value="computer_modern_tech">💻 Computer & Tech</option>
+                </select>
+              </div>
+              <div>
+                <label class="text-sm font-semibold text-gray-700">Target Level (1-5)</label>
+                <input type="number" id="goal-target-level" min="1" max="5" class="w-full px-3 py-2 border-2 border-gray-300 rounded-lg" value="5">
+              </div>
+              <div>
+                <label class="text-sm font-semibold text-gray-700">Deadline (Optional)</label>
+                <input type="date" id="goal-deadline" class="w-full px-3 py-2 border-2 border-gray-300 rounded-lg">
+              </div>
+              <div>
+                <label class="text-sm font-semibold text-gray-700">Priority</label>
+                <select id="goal-priority" class="w-full px-3 py-2 border-2 border-gray-300 rounded-lg">
+                  <option value="high">🔴 High</option>
+                  <option value="medium">🟡 Medium</option>
+                  <option value="low">🟢 Low</option>
+                </select>
+              </div>
+              <div class="flex gap-2">
+                <button id="btn-save-goal" class="flex-1 bg-purple-600 text-white py-2 rounded-lg font-bold hover:bg-purple-700">
+                  Save Goal
+                </button>
+                <button id="btn-cancel-goal" class="flex-1 bg-gray-300 text-gray-700 py-2 rounded-lg font-bold hover:bg-gray-400">
+                  Cancel
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recent Sessions -->
+      <div class="bg-white rounded-2xl p-6 border-3 border-purple-200 shadow-2xl">
+        <h3 class="text-xl font-black text-gray-800 mb-4 flex items-center gap-4" style="font-family:'Fredoka One',cursive;">
+          <span class="text-2xl">📋</span>
+          Recent Sessions
+        </h3>
+        <div id="recent-sessions-list" class="space-y-3">
+          <p class="text-gray-600">Loading sessions...</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- /parent-dashboard -->
+
+</body>
+</html>

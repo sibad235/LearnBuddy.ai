@@ -1,0 +1,612 @@
+{
+  "level1": [
+    {
+      "id": "a_eng_l1_001",
+      "question": "What is a noun?",
+      "options": ["Action word", "Person, place, thing or idea", "Describing word", "Joining word"],
+      "correct": "Person, place, thing or idea",
+      "hint": "A noun names something — like boy, city, happiness, or book.",
+      "tags": ["grammar", "parts_of_speech"]
+    },
+    {
+      "id": "a_eng_l1_002",
+      "question": "Choose the correct verb: She ___ to school every day.",
+      "options": ["go", "goes", "going", "gone"],
+      "correct": "goes",
+      "hint": "She is third person singular → add -s to the verb.",
+      "tags": ["verbs", "present_tense"]
+    },
+    {
+      "id": "a_eng_l1_003",
+      "question": "What is the plural of 'child'?",
+      "options": ["Childs", "Childes", "Children", "Childrens"],
+      "correct": "Children",
+      "hint": "Some nouns change completely in plural form.",
+      "tags": ["plural_nouns"]
+    },
+    {
+      "id": "a_eng_l1_004",
+      "question": "Which word is an adjective?",
+      "options": ["Run", "Beautiful", "Quickly", "And"],
+      "correct": "Beautiful",
+      "hint": "Adjectives describe or tell more about nouns.",
+      "tags": ["adjectives"]
+    },
+    {
+      "id": "a_eng_l1_005",
+      "question": "What punctuation ends a question?",
+      "options": [".", ",", "!", "?"],
+      "correct": "?",
+      "hint": "Questions need a question mark at the end.",
+      "tags": ["punctuation"]
+    },
+    {
+      "id": "a_eng_l1_006",
+      "question": "Choose the correct pronoun: ___ is my best friend.",
+      "options": ["He", "Him", "His", "Himself"],
+      "correct": "He",
+      "hint": "He is the subject pronoun.",
+      "tags": ["pronouns"]
+    },
+    {
+      "id": "a_eng_l1_007",
+      "question": "What is a synonym for 'happy'?",
+      "options": ["Sad", "Joyful", "Angry", "Tired"],
+      "correct": "Joyful",
+      "hint": "Synonyms have almost the same meaning.",
+      "tags": ["vocabulary", "synonyms"]
+    },
+    {
+      "id": "a_eng_l1_008",
+      "question": "Which sentence is correct?",
+      "options": ["She run fast.", "She runs fast.", "She running fast.", "She runned fast."],
+      "correct": "She runs fast.",
+      "hint": "Third person singular verbs take -s.",
+      "tags": ["sentence_structure"]
+    },
+    {
+      "id": "a_eng_l1_009",
+      "question": "What is the opposite (antonym) of 'big'?",
+      "options": ["Large", "Huge", "Small", "Tall"],
+      "correct": "Small",
+      "hint": "Antonyms have opposite meanings.",
+      "tags": ["vocabulary", "antonyms"]
+    },
+    {
+      "id": "a_eng_l1_010",
+      "question": "Choose the correct article: ___ apple is red.",
+      "options": ["A", "An", "The", "No article"],
+      "correct": "An",
+      "hint": "Use 'an' before vowel sounds.",
+      "tags": ["articles"]
+    },
+    {
+      "id": "a_eng_l1_011",
+      "question": "What type of word is 'quickly'?",
+      "options": ["Noun", "Verb", "Adjective", "Adverb"],
+      "correct": "Adverb",
+      "hint": "Adverbs tell how something is done.",
+      "tags": ["adverbs"]
+    },
+    {
+      "id": "a_eng_l1_012",
+      "question": "Which is a proper noun?",
+      "options": ["City", "Karachi", "River", "Mountain"],
+      "correct": "Karachi",
+      "hint": "Proper nouns name specific people, places, etc. and start with capital letters.",
+      "tags": ["nouns"]
+    },
+    {
+      "id": "a_eng_l1_013",
+      "question": "Fill in: I ___ my homework yesterday.",
+      "options": ["do", "did", "done", "doing"],
+      "correct": "did",
+      "hint": "Past tense of 'do' is 'did'.",
+      "tags": ["past_tense"]
+    },
+    {
+      "id": "a_eng_l1_014",
+      "question": "What is a conjunction?",
+      "options": ["Describing word", "Joining word", "Action word", "Naming word"],
+      "correct": "Joining word",
+      "hint": "Words like and, but, or join sentences or words.",
+      "tags": ["conjunctions"]
+    },
+    {
+      "id": "a_eng_l1_015",
+      "question": "Choose the correct spelling:",
+      "options": ["Recieve", "Receive", "Receve", "Recive"],
+      "correct": "Receive",
+      "hint": "i before e except after c.",
+      "tags": ["spelling"]
+    }
+  ],
+  "level2": [
+    {
+      "id": "a_eng_l2_001",
+      "question": "Which tense is used: She is reading a book now.",
+      "options": ["Past", "Present continuous", "Future", "Present simple"],
+      "correct": "Present continuous",
+      "hint": "am/is/are + verb-ing = present continuous.",
+      "tags": ["tenses", "present_continuous"]
+    },
+    {
+      "id": "a_eng_l2_002",
+      "question": "What is the comparative form of 'good'?",
+      "options": ["Gooder", "Better", "Best", "More good"],
+      "correct": "Better",
+      "hint": "Irregular adjectives: good → better → best.",
+      "tags": ["comparatives"]
+    },
+    {
+      "id": "a_eng_l2_003",
+      "question": "Choose the correct preposition: The cat is ___ the table.",
+      "options": ["on", "in", "at", "by"],
+      "correct": "on",
+      "hint": "We use 'on' for surfaces.",
+      "tags": ["prepositions"]
+    },
+    {
+      "id": "a_eng_l2_004",
+      "question": "What is a direct object?",
+      "options": ["Who or what does the action", "Who receives the action", "Where the action happens", "When the action happens"],
+      "correct": "Who receives the action",
+      "hint": "Example: She kicked the ball. → ball is the direct object.",
+      "tags": ["sentence_structure"]
+    },
+    {
+      "id": "a_eng_l2_005",
+      "question": "Which word is an abstract noun?",
+      "options": ["Table", "Love", "Car", "Dog"],
+      "correct": "Love",
+      "hint": "Abstract nouns are ideas or feelings you cannot touch.",
+      "tags": ["nouns"]
+    },
+    {
+      "id": "a_eng_l2_006",
+      "question": "Change to past continuous: I play football.",
+      "options": ["I played football.", "I was playing football.", "I am playing football.", "I will play football."],
+      "correct": "I was playing football.",
+      "hint": "was/were + verb-ing.",
+      "tags": ["past_continuous"]
+    },
+    {
+      "id": "a_eng_l2_007",
+      "question": "What is the superlative of 'bad'?",
+      "options": ["Badder", "Worse", "Worst", "Most bad"],
+      "correct": "Worst",
+      "hint": "Irregular: bad → worse → worst.",
+      "tags": ["superlatives"]
+    },
+    {
+      "id": "a_eng_l2_008",
+      "question": "Choose the correct: Neither the teacher nor the students ___ happy.",
+      "options": ["was", "were", "is", "are"],
+      "correct": "were",
+      "hint": "When 'neither...nor' connects subjects, verb agrees with the closest one.",
+      "tags": ["subject_verb_agreement"]
+    },
+    {
+      "id": "a_eng_l2_009",
+      "question": "What does 'synonym' mean?",
+      "options": ["Opposite meaning", "Same or similar meaning", "Different spelling", "Same sound"],
+      "correct": "Same or similar meaning",
+      "hint": "Happy = joyful = glad.",
+      "tags": ["vocabulary"]
+    },
+    {
+      "id": "a_eng_l2_010",
+      "question": "Which sentence uses correct punctuation?",
+      "options": ["I like apples, bananas and oranges.", "I like apples bananas and oranges.", "I like apples; bananas and oranges.", "I like apples: bananas and oranges."],
+      "correct": "I like apples, bananas and oranges.",
+      "hint": "Use commas in a list.",
+      "tags": ["punctuation"]
+    },
+    {
+      "id": "a_eng_l2_011",
+      "question": "What is passive voice? (example)",
+      "options": ["The dog bit the man.", "The man was bitten by the dog.", "The man bites the dog.", "The dog is biting."],
+      "correct": "The man was bitten by the dog.",
+      "hint": "Focus is on the receiver of the action.",
+      "tags": ["voice"]
+    },
+    {
+      "id": "a_eng_l2_012",
+      "question": "Choose the correct modal: You ___ finish your homework before playing.",
+      "options": ["can", "must", "may", "will"],
+      "correct": "must",
+      "hint": "Must = necessary/obligation.",
+      "tags": ["modals"]
+    },
+    {
+      "id": "a_eng_l2_013",
+      "question": "What is the past participle of 'go'?",
+      "options": ["Goed", "Went", "Gone", "Going"],
+      "correct": "Gone",
+      "hint": "Used in perfect tenses: I have gone.",
+      "tags": ["irregular_verbs"]
+    },
+    {
+      "id": "a_eng_l2_014",
+      "question": "Which is a compound sentence?",
+      "options": ["I like tea.", "I like tea, but she likes coffee.", "Because it rained.", "Running fast."],
+      "correct": "I like tea, but she likes coffee.",
+      "hint": "Two independent clauses joined by a conjunction.",
+      "tags": ["sentence_types"]
+    },
+    {
+      "id": "a_eng_l2_015",
+      "question": "What does 'metaphor' mean?",
+      "options": ["Comparison using like/as", "Direct comparison without like/as", "Exaggeration", "Question that doesn't need answer"],
+      "correct": "Direct comparison without like/as",
+      "hint": "Example: Time is money.",
+      "tags": ["literary_devices"]
+    }
+  ],
+  "level3": [
+    {
+      "id": "a_eng_l3_001",
+      "question": "Which tense: By next year, I ___ English for five years.",
+      "options": ["will study", "will have studied", "studied", "am studying"],
+      "correct": "will have studied",
+      "hint": "Future perfect = will have + past participle.",
+      "tags": ["future_perfect"]
+    },
+    {
+      "id": "a_eng_l3_002",
+      "question": "What is reported speech? (example)",
+      "options": ["She said, 'I am tired.'", "She said that she was tired.", "She says I am tired.", "She is tired."],
+      "correct": "She said that she was tired.",
+      "hint": "Change pronouns, tenses, and time words.",
+      "tags": ["reported_speech"]
+    },
+    {
+      "id": "a_eng_l3_003",
+      "question": "Choose correct conditional: If it ___ tomorrow, we will stay home.",
+      "options": ["rains", "rained", "will rain", "would rain"],
+      "correct": "rains",
+      "hint": "First conditional: If + present simple, will + infinitive.",
+      "tags": ["conditionals"]
+    },
+    {
+      "id": "a_eng_l3_004",
+      "question": "What is a gerund?",
+      "options": ["To + verb", "Verb + ing used as noun", "Past participle", "Modal verb"],
+      "correct": "Verb + ing used as noun",
+      "hint": "Swimming is fun. → gerund.",
+      "tags": ["gerunds"]
+    },
+    {
+      "id": "a_eng_l3_005",
+      "question": "Which is correct relative clause?",
+      "options": ["The boy which won is my friend.", "The boy who won is my friend.", "The boy whom won is my friend.", "The boy that win is my friend."],
+      "correct": "The boy who won is my friend.",
+      "hint": "Who for people (subject).",
+      "tags": ["relative_clauses"]
+    },
+    {
+      "id": "a_eng_l3_006",
+      "question": "Change to passive: They built the house in 2005.",
+      "options": ["The house built in 2005.", "The house was built in 2005.", "The house is built in 2005.", "They was built the house."],
+      "correct": "The house was built in 2005.",
+      "hint": "was + past participle.",
+      "tags": ["passive_voice"]
+    },
+    {
+      "id": "a_eng_l3_007",
+      "question": "What does 'idiom' mean?",
+      "options": ["Literal meaning", "Figurative expression", "Spelling rule", "Grammar rule"],
+      "correct": "Figurative expression",
+      "hint": "Example: It's raining cats and dogs = heavy rain.",
+      "tags": ["idioms"]
+    },
+    {
+      "id": "a_eng_l3_008",
+      "question": "Choose correct: Not only ___ smart but also hardworking.",
+      "options": ["she is", "is she", "she", "being she"],
+      "correct": "is she",
+      "hint": "Inversion after 'not only'.",
+      "tags": ["inversion"]
+    },
+    {
+      "id": "a_eng_l3_009",
+      "question": "What is the function of 'although'?",
+      "options": ["Addition", "Contrast", "Cause", "Time"],
+      "correct": "Contrast",
+      "hint": "Although it rained, we went out. = contrast.",
+      "tags": ["conjunctions"]
+    },
+    {
+      "id": "a_eng_l3_010",
+      "question": "Which sentence uses correct phrasal verb?",
+      "options": ["I look forward to see you.", "I look forward to seeing you.", "I look forward see you.", "I look to seeing you."],
+      "correct": "I look forward to seeing you.",
+      "hint": "look forward to + gerund.",
+      "tags": ["phrasal_verbs"]
+    },
+    {
+      "id": "a_eng_l3_011",
+      "question": "What is indirect object? (example)",
+      "options": ["She gave the book.", "She gave him the book.", "The book is red.", "He runs fast."],
+      "correct": "She gave him the book.",
+      "hint": "Him receives the direct object (the book).",
+      "tags": ["sentence_structure"]
+    },
+    {
+      "id": "a_eng_l3_012",
+      "question": "Choose correct: The news ___ shocking.",
+      "options": ["is", "are", "were", "have been"],
+      "correct": "is",
+      "hint": "News is uncountable → singular verb.",
+      "tags": ["subject_verb_agreement"]
+    },
+    {
+      "id": "a_eng_l3_013",
+      "question": "What is a cleft sentence?",
+      "options": ["It was John who broke the vase.", "John broke the vase.", "The vase was broken.", "John is breaking."],
+      "correct": "It was John who broke the vase.",
+      "hint": "Emphasizes one part of the sentence.",
+      "tags": ["advanced_structure"]
+    },
+    {
+      "id": "a_eng_l3_014",
+      "question": "Which is correct: He is taller ___ me.",
+      "options": ["then", "than", "that", "as"],
+      "correct": "than",
+      "hint": "Comparative → than.",
+      "tags": ["comparatives"]
+    },
+    {
+      "id": "a_eng_l3_015",
+      "question": "What does 'hyperbole' mean?",
+      "options": ["Understatement", "Exaggeration", "Comparison", "Personification"],
+      "correct": "Exaggeration",
+      "hint": "I'm so hungry I could eat a horse!",
+      "tags": ["literary_devices"]
+    }
+  ],
+  "level4": [
+    {
+      "id": "a_eng_l4_001",
+      "question": "Which tense: By the time we arrive, they ___ dinner.",
+      "options": ["will finish", "will have finished", "finished", "finish"],
+      "correct": "will have finished",
+      "hint": "Future perfect for action completed before another future action.",
+      "tags": ["future_perfect"]
+    },
+    {
+      "id": "a_eng_l4_002",
+      "question": "Convert to reported speech: 'I will help you,' she said.",
+      "options": ["She said she will help me.", "She said she would help me.", "She says she helps me.", "She said I will help you."],
+      "correct": "She said she would help me.",
+      "hint": "Will → would in reported speech.",
+      "tags": ["reported_speech"]
+    },
+    {
+      "id": "a_eng_l4_003",
+      "question": "Which conditional is this: If I had studied, I would have passed.",
+      "options": ["Zero", "First", "Second", "Third"],
+      "correct": "Third",
+      "hint": "Third conditional = unreal past situations.",
+      "tags": ["conditionals"]
+    },
+    {
+      "id": "a_eng_l4_004",
+      "question": "Choose correct participle clause: ___ tired, he went to bed early.",
+      "options": ["Feel", "Felt", "Feeling", "To feel"],
+      "correct": "Feeling",
+      "hint": "Feeling tired = because he felt tired.",
+      "tags": ["participle_clauses"]
+    },
+    {
+      "id": "a_eng_l4_005",
+      "question": "What is a non-defining relative clause?",
+      "options": ["Gives essential information", "Gives extra information with commas", "No commas", "Uses that only"],
+      "correct": "Gives extra information with commas",
+      "hint": "My brother, who lives in London, is a doctor.",
+      "tags": ["relative_clauses"]
+    },
+    {
+      "id": "a_eng_l4_006",
+      "question": "Change to passive: People speak English all over the world.",
+      "options": ["English speaks all over the world.", "English is spoken all over the world.", "English was spoken all over the world.", "People is spoken English."],
+      "correct": "English is spoken all over the world.",
+      "hint": "Present simple passive: is/are + past participle.",
+      "tags": ["passive_voice"]
+    },
+    {
+      "id": "a_eng_l4_007",
+      "question": "What does 'personification' mean?",
+      "options": ["Giving human qualities to non-human things", "Exaggeration", "Comparison using like", "Understatement"],
+      "correct": "Giving human qualities to non-human things",
+      "hint": "The wind whispered through the trees.",
+      "tags": ["literary_devices"]
+    },
+    {
+      "id": "a_eng_l4_008",
+      "question": "Choose correct: Had I known, I ___ helped.",
+      "options": ["would", "will", "would have", "had"],
+      "correct": "would have",
+      "hint": "Inverted third conditional: Had I known = If I had known.",
+      "tags": ["inversion", "conditionals"]
+    },
+    {
+      "id": "a_eng_l4_009",
+      "question": "Which phrasal verb means 'postpone'?",
+      "options": ["Put off", "Put on", "Put up", "Put in"],
+      "correct": "Put off",
+      "hint": "We put off the meeting until next week.",
+      "tags": ["phrasal_verbs"]
+    },
+    {
+      "id": "a_eng_l4_010",
+      "question": "What is ellipsis in grammar?",
+      "options": ["Extra words", "Omission of words for brevity", "Adding words", "Changing tense"],
+      "correct": "Omission of words for brevity",
+      "hint": "I can swim and (I can) dive.",
+      "tags": ["ellipsis"]
+    },
+    {
+      "id": "a_eng_l4_011",
+      "question": "Choose correct subjunctive: It is important that he ___ on time.",
+      "options": ["is", "be", "was", "being"],
+      "correct": "be",
+      "hint": "Subjunctive uses base form after certain expressions.",
+      "tags": ["subjunctive"]
+    },
+    {
+      "id": "a_eng_l4_012",
+      "question": "Which is correct: The number of students ___ increasing.",
+      "options": ["is", "are", "have", "were"],
+      "correct": "is",
+      "hint": "'The number of' is singular.",
+      "tags": ["subject_verb_agreement"]
+    },
+    {
+      "id": "a_eng_l4_013",
+      "question": "What is a complex sentence?",
+      "options": ["One independent clause", "Two independent clauses", "Independent + dependent clause", "Only dependent clause"],
+      "correct": "Independent + dependent clause",
+      "hint": "Although it rained, we played.",
+      "tags": ["sentence_types"]
+    },
+    {
+      "id": "a_eng_l4_014",
+      "question": "Choose the correct: She speaks English ___ than her brother.",
+      "options": ["more fluent", "fluently", "more fluently", "fluent"],
+      "correct": "more fluently",
+      "hint": "Adverb comparative: more + adverb + -ly.",
+      "tags": ["comparatives"]
+    },
+    {
+      "id": "a_eng_l4_015",
+      "question": "What is 'alliteration'?",
+      "options": ["Rhyming words", "Same sound at beginning of words", "Repetition of vowels", "Exaggeration"],
+      "correct": "Same sound at beginning of words",
+      "hint": "Peter Piper picked...",
+      "tags": ["literary_devices"]
+    }
+  ],
+  "level5": [
+    {
+      "id": "a_eng_l5_001",
+      "question": "Which structure expresses regret about the past?",
+      "options": ["I wish I study harder.", "I wish I had studied harder.", "I wish I will study.", "I wish I studying."],
+      "correct": "I wish I had studied harder.",
+      "hint": "Wish + past perfect for past regrets.",
+      "tags": ["wish", "regret"]
+    },
+    {
+      "id": "a_eng_l5_002",
+      "question": "Convert to cleft sentence: John broke the window.",
+      "options": ["It was John broke the window.", "It was John who broke the window.", "John was who broke the window.", "The window was broken by John."],
+      "correct": "It was John who broke the window.",
+      "hint": "Emphasizes John.",
+      "tags": ["cleft_sentences"]
+    },
+    {
+      "id": "a_eng_l5_003",
+      "question": "Choose correct inversion: Never ___ such a beautiful sunset.",
+      "options": ["I have seen", "have I seen", "I saw", "saw I"],
+      "correct": "have I seen",
+      "hint": "Never + auxiliary + subject + verb.",
+      "tags": ["inversion"]
+    },
+    {
+      "id": "a_eng_l5_004",
+      "question": "What is 'anastrophe'?",
+      "options": ["Normal word order", "Unusual word order for emphasis", "Repetition of words", "Omission of words"],
+      "correct": "Unusual word order for emphasis",
+      "hint": "Into the valley of Death rode the six hundred.",
+      "tags": ["advanced_structure"]
+    },
+    {
+      "id": "a_eng_l5_005",
+      "question": "Which is correct mixed conditional?",
+      "options": ["If I had won, I would be rich now.", "If I won, I would be rich now.", "If I have won, I will be rich.", "If I win, I was rich."],
+      "correct": "If I had won, I would be rich now.",
+      "hint": "Past action affecting present result.",
+      "tags": ["mixed_conditionals"]
+    },
+    {
+      "id": "a_eng_l5_006",
+      "question": "Choose the correct causative: I ___ my car serviced last week.",
+      "options": ["had", "have", "has", "having"],
+      "correct": "had",
+      "hint": "had + object + past participle = arranged for someone to do it.",
+      "tags": ["causative"]
+    },
+    {
+      "id": "a_eng_l5_007",
+      "question": "What is 'synecdoche'?",
+      "options": ["Part represents whole", "Whole represents part", "Exaggeration", "Understatement"],
+      "correct": "Part represents whole",
+      "hint": "All hands on deck = all people.",
+      "tags": ["literary_devices"]
+    },
+    {
+      "id": "a_eng_l5_008",
+      "question": "Which sentence uses correct ellipsis?",
+      "options": ["She can sing and he can too.", "She can sing and he can.", "She can sing and he.", "She can sing he can too."],
+      "correct": "She can sing and he can too.",
+      "hint": "Too replaces repeated verb phrase.",
+      "tags": ["ellipsis"]
+    },
+    {
+      "id": "a_eng_l5_009",
+      "question": "Choose correct: The committee ___ decided to postpone the event.",
+      "options": ["has", "have", "having", "is"],
+      "correct": "has",
+      "hint": "Collective nouns like committee usually take singular verb.",
+      "tags": ["subject_verb_agreement"]
+    },
+    {
+      "id": "a_eng_l5_010",
+      "question": "What is 'zeugma'?",
+      "options": ["One word used with two different meanings", "Repetition of same sound", "Comparison", "Omission"],
+      "correct": "One word used with two different meanings",
+      "hint": "She broke his car and his heart.",
+      "tags": ["literary_devices"]
+    },
+    {
+      "id": "a_eng_l5_011",
+      "question": "Which is correct subjunctive mood?",
+      "options": ["I suggest that he goes.", "I suggest that he go.", "I suggest he going.", "I suggest he went."],
+      "correct": "I suggest that he go.",
+      "hint": "Base form after suggest, demand, insist, etc.",
+      "tags": ["subjunctive"]
+    },
+    {
+      "id": "a_eng_l5_012",
+      "question": "Choose the correct: Scarcely ___ the room when the phone rang.",
+      "options": ["I entered", "had I entered", "I had entered", "did I enter"],
+      "correct": "had I entered",
+      "hint": "Scarcely + inversion + when.",
+      "tags": ["inversion"]
+    },
+    {
+      "id": "a_eng_l5_013",
+      "question": "What is 'apposition'?",
+      "options": ["Two nouns side by side explaining each other", "Verb + object", "Adjective + noun", "Preposition + noun"],
+      "correct": "Two nouns side by side explaining each other",
+      "hint": "My brother, a doctor, lives in Canada.",
+      "tags": ["advanced_structure"]
+    },
+    {
+      "id": "a_eng_l5_014",
+      "question": "Which phrasal verb means 'tolerate'?",
+      "options": ["Put up with", "Put off", "Put on", "Put in"],
+      "correct": "Put up with",
+      "hint": "I can't put up with loud music.",
+      "tags": ["phrasal_verbs"]
+    },
+    {
+      "id": "a_eng_l5_015",
+      "question": "What literary device is used here: The classroom was a zoo.",
+      "options": ["Simile", "Metaphor", "Personification", "Hyperbole"],
+      "correct": "Metaphor",
+      "hint": "Direct comparison without like/as.",
+      "tags": ["literary_devices"]
+    }
+  ]
+}

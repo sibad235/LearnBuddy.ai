@@ -1,0 +1,612 @@
+{
+  "level1": [
+    {
+      "id": "b_math_l1_001",
+      "question": "How many apples do you see? (Imagine 1 apple)",
+      "options": ["1", "2", "3", "4"],
+      "correct": "1",
+      "hint": "Just one yummy apple!",
+      "tags": ["counting", "fruits"]
+    },
+    {
+      "id": "b_math_l1_002",
+      "question": "Count the fingers on one hand. How many?",
+      "options": ["3", "5", "1", "2"],
+      "correct": "5",
+      "hint": "Thumb, pointer, middle, ring, pinky – that's five!",
+      "tags": ["counting", "body"]
+    },
+    {
+      "id": "b_math_l1_003",
+      "question": "How many legs does a dog have?",
+      "options": ["2", "4", "3", "1"],
+      "correct": "4",
+      "hint": "Dogs run on four legs!",
+      "tags": ["animals", "counting"]
+    },
+    {
+      "id": "b_math_l1_004",
+      "question": "What number comes after 1?",
+      "options": ["3", "2", "4", "1"],
+      "correct": "2",
+      "hint": "One, then two!",
+      "tags": ["numbers"]
+    },
+    {
+      "id": "b_math_l1_005",
+      "question": "How many eyes do you have?",
+      "options": ["1", "3", "2", "4"],
+      "correct": "2",
+      "hint": "Left eye and right eye – two!",
+      "tags": ["body", "counting"]
+    },
+    {
+      "id": "b_math_l1_006",
+      "question": "Count the wheels on a bicycle.",
+      "options": ["4", "3", "2", "1"],
+      "correct": "2",
+      "hint": "Front wheel and back wheel – two!",
+      "tags": ["vehicles", "counting"]
+    },
+    {
+      "id": "b_math_l1_007",
+      "question": "How many colors in a stoplight? (Red, yellow, green)",
+      "options": ["3", "2", "1", "4"],
+      "correct": "3",
+      "hint": "Red means stop, yellow means slow, green means go – three!",
+      "tags": ["colors", "counting"]
+    },
+    {
+      "id": "b_math_l1_008",
+      "question": "What number is this: ★ (one star)",
+      "options": ["2", "3", "1", "4"],
+      "correct": "1",
+      "hint": "Just one twinkly star!",
+      "tags": ["counting"]
+    },
+    {
+      "id": "b_math_l1_009",
+      "question": "How many ears does a bunny have?",
+      "options": ["3", "1", "4", "2"],
+      "correct": "2",
+      "hint": "Two floppy ears!",
+      "tags": ["animals", "counting"]
+    },
+    {
+      "id": "b_math_l1_010",
+      "question": "Count your toes on one foot.",
+      "options": ["4", "3", "5", "2"],
+      "correct": "5",
+      "hint": "Five little toes!",
+      "tags": ["body", "counting"]
+    },
+    {
+      "id": "b_math_l1_011",
+      "question": "How many balls in a pair? (Like two soccer balls)",
+      "options": ["1", "3", "2", "4"],
+      "correct": "2",
+      "hint": "One and another – two!",
+      "tags": ["counting"]
+    },
+    {
+      "id": "b_math_l1_012",
+      "question": "What comes before 3?",
+      "options": ["4", "2", "1", "3"],
+      "correct": "2",
+      "hint": "One, two, three!",
+      "tags": ["numbers"]
+    },
+    {
+      "id": "b_math_l1_013",
+      "question": "How many wings on a bird?",
+      "options": ["4", "3", "2", "1"],
+      "correct": "2",
+      "hint": "Left wing and right wing – two!",
+      "tags": ["animals", "counting"]
+    },
+    {
+      "id": "b_math_l1_014",
+      "question": "Count the sides of a triangle.",
+      "options": ["4", "3", "2", "1"],
+      "correct": "3",
+      "hint": "Three straight sides!",
+      "tags": ["shapes", "counting"]
+    },
+    {
+      "id": "b_math_l1_015",
+      "question": "How many noses do you have?",
+      "options": ["3", "2", "1", "4"],
+      "correct": "1",
+      "hint": "Just one for smelling flowers!",
+      "tags": ["body", "counting"]
+    }
+  ],
+  "level2": [
+    {
+      "id": "b_math_l2_001",
+      "question": "Count from 1 to 5. What is the last number?",
+      "options": ["3", "4", "5", "2"],
+      "correct": "5",
+      "hint": "1, 2, 3, 4, 5 – five!",
+      "tags": ["counting"]
+    },
+    {
+      "id": "b_math_l2_002",
+      "question": "How many fingers on both hands?",
+      "options": ["10", "5", "8", "6"],
+      "correct": "10",
+      "hint": "Five on left, five on right – ten!",
+      "tags": ["body", "counting"]
+    },
+    {
+      "id": "b_math_l2_003",
+      "question": "What number comes after 4?",
+      "options": ["3", "6", "5", "4"],
+      "correct": "5",
+      "hint": "Four, then five!",
+      "tags": ["numbers"]
+    },
+    {
+      "id": "b_math_l2_004",
+      "question": "How many sides on a square?",
+      "options": ["3", "5", "4", "2"],
+      "correct": "4",
+      "hint": "All equal sides – four!",
+      "tags": ["shapes"]
+    },
+    {
+      "id": "b_math_l2_005",
+      "question": "Count the petals on a simple flower (imagine 5)",
+      "options": ["4", "3", "5", "6"],
+      "correct": "5",
+      "hint": "One, two, three, four, five pretty petals!",
+      "tags": ["counting", "nature"]
+    },
+    {
+      "id": "b_math_l2_006",
+      "question": "How many wheels on a car?",
+      "options": ["3", "5", "4", "2"],
+      "correct": "4",
+      "hint": "Two in front, two in back – four!",
+      "tags": ["vehicles", "counting"]
+    },
+    {
+      "id": "b_math_l2_007",
+      "question": "What is 1 + 1?",
+      "options": ["3", "2", "1", "4"],
+      "correct": "2",
+      "hint": "One apple plus one apple makes two!",
+      "tags": ["addition"]
+    },
+    {
+      "id": "b_math_l2_008",
+      "question": "How many arms do you have?",
+      "options": ["4", "3", "2", "1"],
+      "correct": "2",
+      "hint": "Left arm and right arm – two!",
+      "tags": ["body", "counting"]
+    },
+    {
+      "id": "b_math_l2_009",
+      "question": "Count the stars: ★ ★ ★",
+      "options": ["4", "3", "2", "5"],
+      "correct": "3",
+      "hint": "One, two, three stars!",
+      "tags": ["counting"]
+    },
+    {
+      "id": "b_math_l2_010",
+      "question": "What comes before 5?",
+      "options": ["4", "6", "3", "5"],
+      "correct": "4",
+      "hint": "Three, four, five!",
+      "tags": ["numbers"]
+    },
+    {
+      "id": "b_math_l2_011",
+      "question": "How many tails on a cat?",
+      "options": ["2", "3", "1", "4"],
+      "correct": "1",
+      "hint": "Just one swishy tail!",
+      "tags": ["animals", "counting"]
+    },
+    {
+      "id": "b_math_l2_012",
+      "question": "Count your legs.",
+      "options": ["2", "1", "3", "4"],
+      "correct": "2",
+      "hint": "Two legs for running and jumping!",
+      "tags": ["body", "counting"]
+    },
+    {
+      "id": "b_math_l2_013",
+      "question": "How many corners on a triangle?",
+      "options": ["4", "3", "5", "2"],
+      "correct": "3",
+      "hint": "Three pointy corners!",
+      "tags": ["shapes", "counting"]
+    },
+    {
+      "id": "b_math_l2_014",
+      "question": "What is 2 + 1?",
+      "options": ["4", "3", "2", "1"],
+      "correct": "3",
+      "hint": "Two cookies plus one more makes three!",
+      "tags": ["addition"]
+    },
+    {
+      "id": "b_math_l2_015",
+      "question": "How many beaks on a bird?",
+      "options": ["3", "2", "1", "4"],
+      "correct": "1",
+      "hint": "One beak for chirping!",
+      "tags": ["animals", "counting"]
+    }
+  ],
+  "level3": [
+    {
+      "id": "b_math_l3_001",
+      "question": "Count from 1 to 7. What is the middle number?",
+      "options": ["4", "5", "3", "6"],
+      "correct": "4",
+      "hint": "1,2,3,4,5,6,7 – four is in the middle!",
+      "tags": ["counting"]
+    },
+    {
+      "id": "b_math_l3_002",
+      "question": "What is 3 + 2?",
+      "options": ["6", "4", "5", "3"],
+      "correct": "5",
+      "hint": "Three balls plus two more makes five!",
+      "tags": ["addition"]
+    },
+    {
+      "id": "b_math_l3_003",
+      "question": "How many days in a week?",
+      "options": ["5", "7", "6", "4"],
+      "correct": "7",
+      "hint": "Monday to Sunday – seven days!",
+      "tags": ["time", "counting"]
+    },
+    {
+      "id": "b_math_l3_004",
+      "question": "What number comes after 6?",
+      "options": ["7", "5", "8", "6"],
+      "correct": "7",
+      "hint": "Six, then seven!",
+      "tags": ["numbers"]
+    },
+    {
+      "id": "b_math_l3_005",
+      "question": "How many toes on both feet?",
+      "options": ["8", "10", "7", "5"],
+      "correct": "10",
+      "hint": "Five on each foot – ten total!",
+      "tags": ["body", "counting"]
+    },
+    {
+      "id": "b_math_l3_006",
+      "question": "Count the sides on a pentagon.",
+      "options": ["4", "6", "5", "3"],
+      "correct": "5",
+      "hint": "Five sides like a house shape!",
+      "tags": ["shapes"]
+    },
+    {
+      "id": "b_math_l3_007",
+      "question": "What is 1 + 3?",
+      "options": ["5", "4", "2", "3"],
+      "correct": "4",
+      "hint": "One plus three is four!",
+      "tags": ["addition"]
+    },
+    {
+      "id": "b_math_l3_008",
+      "question": "How many horns on a unicorn?",
+      "options": ["2", "1", "3", "4"],
+      "correct": "1",
+      "hint": "One magical horn!",
+      "tags": ["animals", "counting"]
+    },
+    {
+      "id": "b_math_l3_009",
+      "question": "Count: ★ ★ ★ ★ ★ ★",
+      "options": ["5", "7", "6", "4"],
+      "correct": "6",
+      "hint": "One to six stars!",
+      "tags": ["counting"]
+    },
+    {
+      "id": "b_math_l3_010",
+      "question": "What comes before 7?",
+      "options": ["5", "6", "8", "7"],
+      "correct": "6",
+      "hint": "Five, six, seven!",
+      "tags": ["numbers"]
+    },
+    {
+      "id": "b_math_l3_011",
+      "question": "How many wheels on a tricycle?",
+      "options": ["4", "2", "3", "5"],
+      "correct": "3",
+      "hint": "Tri means three – three wheels!",
+      "tags": ["vehicles", "counting"]
+    },
+    {
+      "id": "b_math_l3_012",
+      "question": "What is 4 + 1?",
+      "options": ["6", "5", "3", "4"],
+      "correct": "5",
+      "hint": "Four plus one is five!",
+      "tags": ["addition"]
+    },
+    {
+      "id": "b_math_l3_013",
+      "question": "How many fingers if you hold up three?",
+      "options": ["4", "2", "3", "5"],
+      "correct": "3",
+      "hint": "One, two, three fingers!",
+      "tags": ["body", "counting"]
+    },
+    {
+      "id": "b_math_l3_014",
+      "question": "Count the colors in a rainbow (basic: red, orange, yellow, green, blue, indigo, violet)",
+      "options": ["6", "5", "7", "4"],
+      "correct": "7",
+      "hint": "Seven beautiful colors!",
+      "tags": ["colors", "counting"]
+    },
+    {
+      "id": "b_math_l3_015",
+      "question": "What is 2 + 2?",
+      "options": ["5", "3", "4", "2"],
+      "correct": "4",
+      "hint": "Two plus two is four!",
+      "tags": ["addition"]
+    }
+  ],
+  "level4": [
+    {
+      "id": "b_math_l4_001",
+      "question": "What is 5 + 3?",
+      "options": ["7", "8", "6", "9"],
+      "correct": "8",
+      "hint": "Five fingers plus three more is eight!",
+      "tags": ["addition"]
+    },
+    {
+      "id": "b_math_l4_002",
+      "question": "Count from 1 to 10. How many numbers?",
+      "options": ["9", "10", "8", "7"],
+      "correct": "10",
+      "hint": "One through ten – ten numbers!",
+      "tags": ["counting"]
+    },
+    {
+      "id": "b_math_l4_003",
+      "question": "Which is bigger: 4 or 6?",
+      "options": ["4", "6", "Same", "Neither"],
+      "correct": "6",
+      "hint": "Six comes after four, so it's bigger!",
+      "tags": ["comparison"]
+    },
+    {
+      "id": "b_math_l4_004",
+      "question": "What number comes after 9?",
+      "options": ["8", "10", "11", "9"],
+      "correct": "10",
+      "hint": "Nine, then ten!",
+      "tags": ["numbers"]
+    },
+    {
+      "id": "b_math_l4_005",
+      "question": "How many legs on two dogs?",
+      "options": ["6", "8", "4", "10"],
+      "correct": "8",
+      "hint": "Four per dog, times two is eight!",
+      "tags": ["animals", "addition"]
+    },
+    {
+      "id": "b_math_l4_006",
+      "question": "What is 6 - 1?",
+      "options": ["5", "7", "4", "6"],
+      "correct": "5",
+      "hint": "Take away one from six leaves five!",
+      "tags": ["subtraction"]
+    },
+    {
+      "id": "b_math_l4_007",
+      "question": "How many sides on a hexagon?",
+      "options": ["5", "7", "6", "4"],
+      "correct": "6",
+      "hint": "Hex means six – six sides!",
+      "tags": ["shapes"]
+    },
+    {
+      "id": "b_math_l4_008",
+      "question": "What is 2 + 3?",
+      "options": ["6", "4", "5", "3"],
+      "correct": "5",
+      "hint": "Two plus three is five!",
+      "tags": ["addition"]
+    },
+    {
+      "id": "b_math_l4_009",
+      "question": "Which is smaller: 7 or 5?",
+      "options": ["7", "Same", "5", "Neither"],
+      "correct": "5",
+      "hint": "Five is before seven, so smaller!",
+      "tags": ["comparison"]
+    },
+    {
+      "id": "b_math_l4_010",
+      "question": "Count: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10. Last one?",
+      "options": ["9", "10", "8", "11"],
+      "correct": "10",
+      "hint": "Ten is the end!",
+      "tags": ["counting"]
+    },
+    {
+      "id": "b_math_l4_011",
+      "question": "How many wheels on two bicycles?",
+      "options": ["4", "6", "3", "2"],
+      "correct": "4",
+      "hint": "Two wheels each, total four!",
+      "tags": ["vehicles", "addition"]
+    },
+    {
+      "id": "b_math_l4_012",
+      "question": "What is 7 - 2?",
+      "options": ["5", "6", "4", "9"],
+      "correct": "5",
+      "hint": "Seven take away two is five!",
+      "tags": ["subtraction"]
+    },
+    {
+      "id": "b_math_l4_013",
+      "question": "How many fingers if you hold up four on one hand?",
+      "options": ["5", "3", "4", "6"],
+      "correct": "4",
+      "hint": "One, two, three, four!",
+      "tags": ["body", "counting"]
+    },
+    {
+      "id": "b_math_l4_014",
+      "question": "What is 4 + 4?",
+      "options": ["9", "7", "8", "6"],
+      "correct": "8",
+      "hint": "Four plus four is eight!",
+      "tags": ["addition"]
+    },
+    {
+      "id": "b_math_l4_015",
+      "question": "Which number is between 5 and 7?",
+      "options": ["6", "4", "8", "5"],
+      "correct": "6",
+      "hint": "Five, six, seven!",
+      "tags": ["numbers"]
+    }
+  ],
+  "level5": [
+    {
+      "id": "b_math_l5_001",
+      "question": "What comes next: 2, 4, 6, ...?",
+      "options": ["5", "7", "8", "3"],
+      "correct": "8",
+      "hint": "Adding two each time: two, four, six, eight!",
+      "tags": ["patterns"]
+    },
+    {
+      "id": "b_math_l5_002",
+      "question": "How many if you have 5 apples and eat 2?",
+      "options": ["3", "4", "2", "7"],
+      "correct": "3",
+      "hint": "5 - 2 = 3 left!",
+      "tags": ["subtraction", "fruits"]
+    },
+    {
+      "id": "b_math_l5_003",
+      "question": "What is 5 + 5?",
+      "options": ["9", "10", "8", "11"],
+      "correct": "10",
+      "hint": "Five plus five is ten!",
+      "tags": ["addition"]
+    },
+    {
+      "id": "b_math_l5_004",
+      "question": "Group: How many in two groups of 3?",
+      "options": ["5", "4", "6", "7"],
+      "correct": "6",
+      "hint": "3 + 3 = 6!",
+      "tags": ["groups", "addition"]
+    },
+    {
+      "id": "b_math_l5_005",
+      "question": "What comes next: red, blue, red, blue, ...?",
+      "options": ["Blue", "Red", "Green", "Yellow"],
+      "correct": "Red",
+      "hint": "It alternates: red, blue, red, blue, red!",
+      "tags": ["patterns", "colors"]
+    },
+    {
+      "id": "b_math_l5_006",
+      "question": "8 - 3 = ?",
+      "options": ["6", "5", "4", "7"],
+      "correct": "5",
+      "hint": "Eight take away three is five!",
+      "tags": ["subtraction"]
+    },
+    {
+      "id": "b_math_l5_007",
+      "question": "How many corners on a square?",
+      "options": ["5", "3", "4", "6"],
+      "correct": "4",
+      "hint": "Four corners where sides meet!",
+      "tags": ["shapes"]
+    },
+    {
+      "id": "b_math_l5_008",
+      "question": "What is 6 + 2?",
+      "options": ["9", "7", "8", "5"],
+      "correct": "8",
+      "hint": "Six plus two is eight!",
+      "tags": ["addition"]
+    },
+    {
+      "id": "b_math_l5_009",
+      "question": "Count backward from 5: 5,4,3,2,...",
+      "options": ["3", "1", "0", "2"],
+      "correct": "1",
+      "hint": "Five, four, three, two, one!",
+      "tags": ["counting"]
+    },
+    {
+      "id": "b_math_l5_010",
+      "question": "How many if you have 4 cookies and get 3 more?",
+      "options": ["6", "8", "7", "5"],
+      "correct": "7",
+      "hint": "4 + 3 = 7!",
+      "tags": ["addition"]
+    },
+    {
+      "id": "b_math_l5_011",
+      "question": "What comes next: 1,3,5, ...?",
+      "options": ["7", "6", "4", "8"],
+      "correct": "7",
+      "hint": "Odd numbers: one, three, five, seven!",
+      "tags": ["patterns"]
+    },
+    {
+      "id": "b_math_l5_012",
+      "question": "9 - 4 = ?",
+      "options": ["5", "6", "4", "3"],
+      "correct": "5",
+      "hint": "Nine take away four is five!",
+      "tags": ["subtraction"]
+    },
+    {
+      "id": "b_math_l5_013",
+      "question": "How many groups of 2 in 6?",
+      "options": ["4", "2", "3", "5"],
+      "correct": "3",
+      "hint": "2+2+2=6, so three groups!",
+      "tags": ["groups"]
+    },
+    {
+      "id": "b_math_l5_014",
+      "question": "What is 3 + 4?",
+      "options": ["8", "6", "7", "5"],
+      "correct": "7",
+      "hint": "Three plus four is seven!",
+      "tags": ["addition"]
+    },
+    {
+      "id": "b_math_l5_015",
+      "question": "Which is tallest: 1, 10, 5?",
+      "options": ["5", "1", "10", "Same"],
+      "correct": "10",
+      "hint": "Ten is the biggest number!",
+      "tags": ["comparison"]
+    }
+  ]
+}

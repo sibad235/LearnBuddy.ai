@@ -1,0 +1,612 @@
+{
+  "level1": [
+    {
+      "id": "a_sci_l1_001",
+      "question": "Which organ pumps blood throughout the body?",
+      "options": ["Lungs", "Heart", "Brain", "Stomach"],
+      "correct": "Heart",
+      "hint": "The heart acts like a pump that sends blood to every part of the body.",
+      "tags": ["human_body", "circulatory_system"]
+    },
+    {
+      "id": "a_sci_l1_002",
+      "question": "What gas do plants take in during photosynthesis?",
+      "options": ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"],
+      "correct": "Carbon dioxide",
+      "hint": "Plants use carbon dioxide + water + sunlight to make food (glucose) and release oxygen.",
+      "tags": ["photosynthesis", "plants"]
+    },
+    {
+      "id": "a_sci_l1_003",
+      "question": "Which planet is known as the Red Planet?",
+      "options": ["Venus", "Mars", "Jupiter", "Saturn"],
+      "correct": "Mars",
+      "hint": "Mars has a reddish color due to iron oxide (rust) on its surface.",
+      "tags": ["solar_system", "planets"]
+    },
+    {
+      "id": "a_sci_l1_004",
+      "question": "What is the main source of energy for Earth's climate system?",
+      "options": ["Moon", "Sun", "Geothermal heat", "Wind"],
+      "correct": "Sun",
+      "hint": "The Sun drives weather, ocean currents, and the entire climate system.",
+      "tags": ["earth_science", "energy"]
+    },
+    {
+      "id": "a_sci_l1_005",
+      "question": "Which blood cells fight infections?",
+      "options": ["Red blood cells", "White blood cells", "Platelets", "Plasma"],
+      "correct": "White blood cells",
+      "hint": "White blood cells are part of the immune system and attack germs.",
+      "tags": ["human_body", "immune_system"]
+    },
+    {
+      "id": "a_sci_l1_006",
+      "question": "What is the process by which water vapor turns into liquid water?",
+      "options": ["Evaporation", "Condensation", "Precipitation", "Transpiration"],
+      "correct": "Condensation",
+      "hint": "Condensation happens when warm moist air cools (clouds, dew, fog).",
+      "tags": ["water_cycle"]
+    },
+    {
+      "id": "a_sci_l1_007",
+      "question": "Which layer of Earth contains the continents and ocean floors?",
+      "options": ["Core", "Mantle", "Crust", "Outer core"],
+      "correct": "Crust",
+      "hint": "The crust is the thin, rocky outer layer where we live.",
+      "tags": ["earth_structure"]
+    },
+    {
+      "id": "a_sci_l1_008",
+      "question": "What type of energy is stored in food?",
+      "options": ["Kinetic", "Chemical", "Thermal", "Nuclear"],
+      "correct": "Chemical",
+      "hint": "Chemical energy in food is released when we digest it and used by our cells.",
+      "tags": ["energy", "biology"]
+    },
+    {
+      "id": "a_sci_l1_009",
+      "question": "Which gas makes up most of Earth's atmosphere?",
+      "options": ["Oxygen", "Carbon dioxide", "Nitrogen", "Argon"],
+      "correct": "Nitrogen",
+      "hint": "Nitrogen is about 78% of the air we breathe.",
+      "tags": ["atmosphere"]
+    },
+    {
+      "id": "a_sci_l1_010",
+      "question": "What is the basic unit of life?",
+      "options": ["Atom", "Molecule", "Cell", "Organ"],
+      "correct": "Cell",
+      "hint": "All living things are made of one or more cells.",
+      "tags": ["biology", "cells"]
+    },
+    {
+      "id": "a_sci_l1_011",
+      "question": "What force keeps planets in orbit around the Sun?",
+      "options": ["Magnetism", "Friction", "Gravity", "Electricity"],
+      "correct": "Gravity",
+      "hint": "Gravity is the attractive force between masses.",
+      "tags": ["gravity", "solar_system"]
+    },
+    {
+      "id": "a_sci_l1_012",
+      "question": "Which part of the eye controls the amount of light entering?",
+      "options": ["Retina", "Iris", "Cornea", "Lens"],
+      "correct": "Iris",
+      "hint": "The iris is the colored part that makes the pupil bigger or smaller.",
+      "tags": ["human_body", "eyes"]
+    },
+    {
+      "id": "a_sci_l1_013",
+      "question": "What is the hardest natural substance known?",
+      "options": ["Gold", "Iron", "Diamond", "Quartz"],
+      "correct": "Diamond",
+      "hint": "Diamond is pure carbon in a very strong crystal structure.",
+      "tags": ["minerals", "chemistry"]
+    },
+    {
+      "id": "a_sci_l1_014",
+      "question": "Which organ filters blood and produces urine?",
+      "options": ["Liver", "Kidneys", "Pancreas", "Spleen"],
+      "correct": "Kidneys",
+      "hint": "Kidneys remove waste and extra water from the blood.",
+      "tags": ["human_body", "excretory_system"]
+    },
+    {
+      "id": "a_sci_l1_015",
+      "question": "What is the main source of energy in a food chain?",
+      "options": ["Animals", "Plants", "Sun", "Decomposers"],
+      "correct": "Sun",
+      "hint": "The Sun provides energy → plants capture it → animals eat plants.",
+      "tags": ["ecosystems", "food_chains"]
+    }
+  ],
+  "level2": [
+    {
+      "id": "a_sci_l2_001",
+      "question": "Which blood vessel carries oxygenated blood away from the heart?",
+      "options": ["Vein", "Artery", "Capillary", "Vena cava"],
+      "correct": "Artery",
+      "hint": "Arteries have thick walls and carry blood under high pressure.",
+      "tags": ["circulatory_system"]
+    },
+    {
+      "id": "a_sci_l2_002",
+      "question": "In which part of a plant does photosynthesis mainly occur?",
+      "options": ["Roots", "Stem", "Leaves", "Flowers"],
+      "correct": "Leaves",
+      "hint": "Leaves contain chlorophyll and have stomata for gas exchange.",
+      "tags": ["photosynthesis", "plants"]
+    },
+    {
+      "id": "a_sci_l2_003",
+      "question": "Which planet has the most moons?",
+      "options": ["Mars", "Jupiter", "Saturn", "Uranus"],
+      "correct": "Saturn",
+      "hint": "Saturn currently has the highest confirmed number of moons (145+).",
+      "tags": ["solar_system"]
+    },
+    {
+      "id": "a_sci_l2_004",
+      "question": "What type of rock is formed from cooled lava or magma?",
+      "options": ["Sedimentary", "Metamorphic", "Igneous", "Fossil"],
+      "correct": "Igneous",
+      "hint": "Igneous rocks form when molten rock cools and solidifies.",
+      "tags": ["rock_cycle"]
+    },
+    {
+      "id": "a_sci_l2_005",
+      "question": "Which system includes the brain, spinal cord, and nerves?",
+      "options": ["Circulatory", "Nervous", "Digestive", "Respiratory"],
+      "correct": "Nervous",
+      "hint": "The nervous system controls body functions and responses.",
+      "tags": ["nervous_system"]
+    },
+    {
+      "id": "a_sci_l2_006",
+      "question": "What is the boiling point of water at standard pressure?",
+      "options": ["0°C", "100°C", "50°C", "212°C"],
+      "correct": "100°C",
+      "hint": "Water boils at 100°C (212°F) at sea level.",
+      "tags": ["states_of_matter"]
+    },
+    {
+      "id": "a_sci_l2_007",
+      "question": "Which gas do humans breathe out as waste?",
+      "options": ["Oxygen", "Carbon dioxide", "Nitrogen", "Helium"],
+      "correct": "Carbon dioxide",
+      "hint": "We inhale oxygen and exhale carbon dioxide from respiration.",
+      "tags": ["respiration"]
+    },
+    {
+      "id": "a_sci_l2_008",
+      "question": "What is the primary source of energy for hurricanes?",
+      "options": ["Wind", "Warm ocean water", "Lightning", "Earth's rotation"],
+      "correct": "Warm ocean water",
+      "hint": "Warm water evaporates → releases energy that powers storms.",
+      "tags": ["weather", "hurricanes"]
+    },
+    {
+      "id": "a_sci_l2_009",
+      "question": "Which part of the atom has a positive charge?",
+      "options": ["Electron", "Neutron", "Proton", "Nucleus"],
+      "correct": "Proton",
+      "hint": "Protons are positively charged and found in the nucleus.",
+      "tags": ["atomic_structure"]
+    },
+    {
+      "id": "a_sci_l2_010",
+      "question": "What type of energy is stored in a stretched rubber band?",
+      "options": ["Kinetic", "Potential", "Thermal", "Chemical"],
+      "correct": "Potential",
+      "hint": "Elastic potential energy is stored when an object is stretched or compressed.",
+      "tags": ["energy"]
+    },
+    {
+      "id": "a_sci_l2_011",
+      "question": "Which layer of the atmosphere contains the ozone layer?",
+      "options": ["Troposphere", "Stratosphere", "Mesosphere", "Thermosphere"],
+      "correct": "Stratosphere",
+      "hint": "Ozone in the stratosphere absorbs harmful UV radiation.",
+      "tags": ["atmosphere"]
+    },
+    {
+      "id": "a_sci_l2_012",
+      "question": "What is the function of chlorophyll in plants?",
+      "options": ["Store water", "Absorb sunlight", "Transport sugar", "Protect from insects"],
+      "correct": "Absorb sunlight",
+      "hint": "Chlorophyll captures light energy for photosynthesis.",
+      "tags": ["photosynthesis"]
+    },
+    {
+      "id": "a_sci_l2_013",
+      "question": "Which type of mirror is used in car side mirrors?",
+      "options": ["Plane", "Concave", "Convex", "Parabolic"],
+      "correct": "Convex",
+      "hint": "Convex mirrors give a wider field of view.",
+      "tags": ["optics"]
+    },
+    {
+      "id": "a_sci_l2_014",
+      "question": "What is the main function of the small intestine?",
+      "options": ["Store food", "Absorb nutrients", "Break down proteins", "Remove water"],
+      "correct": "Absorb nutrients",
+      "hint": "Most digestion and nutrient absorption happen in the small intestine.",
+      "tags": ["digestive_system"]
+    },
+    {
+      "id": "a_sci_l2_015",
+      "question": "What causes day and night on Earth?",
+      "options": ["Earth revolves around Sun", "Earth rotates on its axis", "Moon orbits Earth", "Sun moves around Earth"],
+      "correct": "Earth rotates on its axis",
+      "hint": "Earth spins once every ~24 hours → one side faces Sun (day), other is dark (night).",
+      "tags": ["earth_rotation"]
+    }
+  ],
+  "level3": [
+    {
+      "id": "a_sci_l3_001",
+      "question": "Which chamber of the heart receives oxygenated blood from the lungs?",
+      "options": ["Right atrium", "Left atrium", "Right ventricle", "Left ventricle"],
+      "correct": "Left atrium",
+      "hint": "Oxygenated blood returns from lungs → enters left atrium → left ventricle → body.",
+      "tags": ["circulatory_system"]
+    },
+    {
+      "id": "a_sci_l3_002",
+      "question": "What is the role of decomposers in an ecosystem?",
+      "options": ["Produce oxygen", "Break down dead matter", "Hunt prey", "Make food"],
+      "correct": "Break down dead matter",
+      "hint": "Decomposers recycle nutrients back into the soil.",
+      "tags": ["ecosystems"]
+    },
+    {
+      "id": "a_sci_l3_003",
+      "question": "Which planet has rings that are easiest to see from Earth?",
+      "options": ["Jupiter", "Saturn", "Uranus", "Neptune"],
+      "correct": "Saturn",
+      "hint": "Saturn's bright, wide rings are made mostly of ice particles.",
+      "tags": ["solar_system"]
+    },
+    {
+      "id": "a_sci_l3_004",
+      "question": "What type of rock forms when existing rock is changed by heat and pressure?",
+      "options": ["Igneous", "Sedimentary", "Metamorphic", "Volcanic"],
+      "correct": "Metamorphic",
+      "hint": "Examples: marble (from limestone), slate (from shale).",
+      "tags": ["rock_cycle"]
+    },
+    {
+      "id": "a_sci_l3_005",
+      "question": "Which part of the brain controls balance and coordination?",
+      "options": ["Cerebrum", "Cerebellum", "Medulla", "Hypothalamus"],
+      "correct": "Cerebellum",
+      "hint": "Cerebellum helps with smooth movement and posture.",
+      "tags": ["nervous_system"]
+    },
+    {
+      "id": "a_sci_l3_006",
+      "question": "What is the pH range of acids?",
+      "options": ["Above 7", "Below 7", "Exactly 7", "0 to 14"],
+      "correct": "Below 7",
+      "hint": "Acids have pH < 7; strong acids have very low pH (close to 0).",
+      "tags": ["chemistry", "acids_bases"]
+    },
+    {
+      "id": "a_sci_l3_007",
+      "question": "Which greenhouse gas is produced by burning fossil fuels?",
+      "options": ["Oxygen", "Carbon dioxide", "Nitrogen", "Argon"],
+      "correct": "Carbon dioxide",
+      "hint": "CO₂ from combustion traps heat in the atmosphere.",
+      "tags": ["climate_change"]
+    },
+    {
+      "id": "a_sci_l3_008",
+      "question": "What type of mirror is used by dentists to see inside the mouth?",
+      "options": ["Plane", "Convex", "Concave", "Parabolic"],
+      "correct": "Concave",
+      "hint": "Concave mirrors produce magnified images when object is close.",
+      "tags": ["optics"]
+    },
+    {
+      "id": "a_sci_l3_009",
+      "question": "Which vitamin is produced by the skin when exposed to sunlight?",
+      "options": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
+      "correct": "Vitamin D",
+      "hint": "UV rays help skin synthesize vitamin D.",
+      "tags": ["human_body", "nutrition"]
+    },
+    {
+      "id": "a_sci_l3_010",
+      "question": "What is the primary source of energy in Earth's interior?",
+      "options": ["Sunlight", "Radioactive decay", "Tides", "Wind"],
+      "correct": "Radioactive decay",
+      "hint": "Decay of uranium, thorium, potassium keeps the core and mantle hot.",
+      "tags": ["earth_science"]
+    },
+    {
+      "id": "a_sci_l3_011",
+      "question": "Which organelle is known as the powerhouse of the cell?",
+      "options": ["Nucleus", "Mitochondria", "Ribosome", "Golgi apparatus"],
+      "correct": "Mitochondria",
+      "hint": "Mitochondria produce ATP (energy) through cellular respiration.",
+      "tags": ["cells"]
+    },
+    {
+      "id": "a_sci_l3_012",
+      "question": "What causes tides on Earth?",
+      "options": ["Wind", "Moon's gravity", "Sun's heat", "Earth's rotation only"],
+      "correct": "Moon's gravity",
+      "hint": "Gravitational pull of the Moon (and to a lesser extent the Sun) causes ocean tides.",
+      "tags": ["oceanography"]
+    },
+    {
+      "id": "a_sci_l3_013",
+      "question": "Which element is the most abundant in the human body?",
+      "options": ["Carbon", "Oxygen", "Hydrogen", "Nitrogen"],
+      "correct": "Oxygen",
+      "hint": "Oxygen makes up ~65% of body mass (mostly in water).",
+      "tags": ["chemistry", "human_body"]
+    },
+    {
+      "id": "a_sci_l3_014",
+      "question": "What is the main difference between speed and velocity?",
+      "options": ["Speed has direction", "Velocity has direction", "Speed is scalar, velocity is vector", "Both are the same"],
+      "correct": "Velocity has direction",
+      "hint": "Velocity includes direction; speed is just how fast.",
+      "tags": ["physics", "motion"]
+    },
+    {
+      "id": "a_sci_l3_015",
+      "question": "Which layer of Earth is liquid and responsible for the magnetic field?",
+      "options": ["Crust", "Mantle", "Outer core", "Inner core"],
+      "correct": "Outer core",
+      "hint": "Liquid iron-nickel outer core generates Earth's magnetic field via convection.",
+      "tags": ["earth_structure", "magnetism"]
+    }
+  ],
+  "level4": [
+    {
+      "id": "a_sci_l4_001",
+      "question": "Which process removes carbon dioxide from the atmosphere?",
+      "options": ["Respiration", "Photosynthesis", "Combustion", "Decomposition"],
+      "correct": "Photosynthesis",
+      "hint": "Plants take in CO₂ and release O₂ during photosynthesis.",
+      "tags": ["carbon_cycle"]
+    },
+    {
+      "id": "a_sci_l4_002",
+      "question": "What type of bond involves sharing of electrons?",
+      "options": ["Ionic", "Covalent", "Metallic", "Hydrogen"],
+      "correct": "Covalent",
+      "hint": "Covalent bonds share electrons between non-metals.",
+      "tags": ["chemistry", "bonding"]
+    },
+    {
+      "id": "a_sci_l4_003",
+      "question": "Which blood group is the universal donor?",
+      "options": ["A+", "B-", "AB+", "O-"],
+      "correct": "O-",
+      "hint": "O- has no antigens → can be given to anyone.",
+      "tags": ["human_body", "blood"]
+    },
+    {
+      "id": "a_sci_l4_004",
+      "question": "What is the main cause of seasons on Earth?",
+      "options": ["Distance from Sun", "Tilt of Earth's axis", "Speed of rotation", "Moon's gravity"],
+      "correct": "Tilt of Earth's axis",
+      "hint": "23.5° axial tilt causes different parts of Earth to receive more/less direct sunlight during the year.",
+      "tags": ["earth_rotation", "seasons"]
+    },
+    {
+      "id": "a_sci_l4_005",
+      "question": "Which organelle contains DNA in plant and animal cells?",
+      "options": ["Mitochondria", "Nucleus", "Ribosome", "Vacuole"],
+      "correct": "Nucleus",
+      "hint": "The nucleus houses the cell's genetic material (DNA).",
+      "tags": ["cells"]
+    },
+    {
+      "id": "a_sci_l4_006",
+      "question": "What is the unit of electric current?",
+      "options": ["Volt", "Ampere", "Ohm", "Watt"],
+      "correct": "Ampere",
+      "hint": "Current is measured in amperes (A).",
+      "tags": ["electricity"]
+    },
+    {
+      "id": "a_sci_l4_007",
+      "question": "Which type of galaxy is the Milky Way?",
+      "options": ["Elliptical", "Irregular", "Spiral", "Lenticular"],
+      "correct": "Spiral",
+      "hint": "Milky Way is a barred spiral galaxy.",
+      "tags": ["astronomy"]
+    },
+    {
+      "id": "a_sci_l4_008",
+      "question": "What is the function of alveoli in the lungs?",
+      "options": ["Filter air", "Gas exchange", "Produce mucus", "Warm air"],
+      "correct": "Gas exchange",
+      "hint": "Alveoli are tiny sacs where oxygen enters blood and CO₂ leaves.",
+      "tags": ["respiratory_system"]
+    },
+    {
+      "id": "a_sci_l4_009",
+      "question": "Which law states that for every action there is an equal and opposite reaction?",
+      "options": ["Newton's first law", "Newton's second law", "Newton's third law", "Law of gravity"],
+      "correct": "Newton's third law",
+      "hint": "Action-reaction pairs (e.g., rocket pushes gas down → gas pushes rocket up).",
+      "tags": ["physics", "motion"]
+    },
+    {
+      "id": "a_sci_l4_010",
+      "question": "What is the primary source of energy for Earth's magnetic field?",
+      "options": ["Sun", "Moon", "Convection in outer core", "Solar wind"],
+      "correct": "Convection in outer core",
+      "hint": "Dynamo effect from moving liquid iron in outer core generates the field.",
+      "tags": ["earth_magnetism"]
+    },
+    {
+      "id": "a_sci_l4_011",
+      "question": "Which hormone regulates blood sugar levels?",
+      "options": ["Adrenaline", "Insulin", "Thyroxine", "Estrogen"],
+      "correct": "Insulin",
+      "hint": "Insulin lowers blood glucose by helping cells take in sugar.",
+      "tags": ["endocrine_system"]
+    },
+    {
+      "id": "a_sci_l4_012",
+      "question": "What type of mirror can form a real image?",
+      "options": ["Plane", "Convex", "Concave", "All of them"],
+      "correct": "Concave",
+      "hint": "Concave mirrors can produce real, inverted images when object is beyond focal point.",
+      "tags": ["optics"]
+    },
+    {
+      "id": "a_sci_l4_013",
+      "question": "Which process is responsible for the rusting of iron?",
+      "options": ["Oxidation", "Reduction", "Combustion", "Photosynthesis"],
+      "correct": "Oxidation",
+      "hint": "Iron reacts with oxygen and water → forms iron oxide (rust).",
+      "tags": ["chemistry", "reactions"]
+    },
+    {
+      "id": "a_sci_l4_014",
+      "question": "What is the main function of the large intestine?",
+      "options": ["Absorb nutrients", "Absorb water", "Digest proteins", "Produce bile"],
+      "correct": "Absorb water",
+      "hint": "Large intestine reabsorbs water and forms feces.",
+      "tags": ["digestive_system"]
+    },
+    {
+      "id": "a_sci_l4_015",
+      "question": "Which type of fault occurs when rocks slide horizontally past each other?",
+      "options": ["Normal", "Reverse", "Strike-slip", "Thrust"],
+      "correct": "Strike-slip",
+      "hint": "San Andreas Fault is a famous strike-slip fault.",
+      "tags": ["plate_tectonics"]
+    }
+  ],
+  "level5": [
+    {
+      "id": "a_sci_l5_001",
+      "question": "Which process explains why the sky appears blue?",
+      "options": ["Reflection", "Refraction", "Rayleigh scattering", "Diffraction"],
+      "correct": "Rayleigh scattering",
+      "hint": "Shorter blue wavelengths scatter more than longer red ones.",
+      "tags": ["optics", "atmosphere"]
+    },
+    {
+      "id": "a_sci_l5_002",
+      "question": "What is the primary source of Earth's internal heat?",
+      "options": ["Solar radiation", "Radioactive decay", "Tidal friction", "Meteor impacts"],
+      "correct": "Radioactive decay",
+      "hint": "Decay of U, Th, K in mantle and core produces ongoing heat.",
+      "tags": ["earth_science"]
+    },
+    {
+      "id": "a_sci_l5_003",
+      "question": "Which organelle is involved in protein synthesis?",
+      "options": ["Mitochondria", "Ribosomes", "Golgi apparatus", "Lysosomes"],
+      "correct": "Ribosomes",
+      "hint": "Ribosomes translate mRNA into polypeptide chains.",
+      "tags": ["cells"]
+    },
+    {
+      "id": "a_sci_l5_004",
+      "question": "What is the role of antidiuretic hormone (ADH)?",
+      "options": ["Increase blood sugar", "Reduce urine output", "Increase heart rate", "Dilate blood vessels"],
+      "correct": "Reduce urine output",
+      "hint": "ADH makes kidneys reabsorb more water → concentrated urine.",
+      "tags": ["endocrine_system"]
+    },
+    {
+      "id": "a_sci_l5_005",
+      "question": "Which law relates pressure, volume, temperature in gases?",
+      "options": ["Boyle's law", "Charles's law", "Ideal gas law", "Avogadro's law"],
+      "correct": "Ideal gas law",
+      "hint": "PV = nRT combines Boyle, Charles, and Avogadro.",
+      "tags": ["chemistry", "gases"]
+    },
+    {
+      "id": "a_sci_l5_006",
+      "question": "What is the main cause of coral bleaching?",
+      "options": ["Overfishing", "Ocean acidification", "Rising sea temperatures", "Plastic pollution"],
+      "correct": "Rising sea temperatures",
+      "hint": "Heat stress causes zooxanthellae algae to leave coral → bleaching.",
+      "tags": ["ecology", "climate_change"]
+    },
+    {
+      "id": "a_sci_l5_007",
+      "question": "Which particle carries the strong nuclear force?",
+      "options": ["Photon", "Gluon", "W boson", "Graviton"],
+      "correct": "Gluon",
+      "hint": "Gluons mediate the strong force that binds quarks inside protons/neutrons.",
+      "tags": ["physics", "particle_physics"]
+    },
+    {
+      "id": "a_sci_l5_008",
+      "question": "What is the primary source of energy in a star like the Sun?",
+      "options": ["Chemical burning", "Nuclear fission", "Nuclear fusion", "Gravitational collapse"],
+      "correct": "Nuclear fusion",
+      "hint": "Hydrogen fuses into helium → releases enormous energy.",
+      "tags": ["astronomy", "stars"]
+    },
+    {
+      "id": "a_sci_l5_009",
+      "question": "Which structure in the ear converts sound vibrations into electrical signals?",
+      "options": ["Eardrum", "Ossicles", "Cochlea", "Auditory nerve"],
+      "correct": "Cochlea",
+      "hint": "Hair cells in the cochlea turn mechanical vibrations into nerve impulses.",
+      "tags": ["human_body", "hearing"]
+    },
+    {
+      "id": "a_sci_l5_010",
+      "question": "What is the primary mechanism of plate tectonics?",
+      "options": ["Convection currents in mantle", "Earth's rotation", "Solar wind", "Tidal forces"],
+      "correct": "Convection currents in mantle",
+      "hint": "Heat from core causes mantle convection → moves tectonic plates.",
+      "tags": ["plate_tectonics"]
+    },
+    {
+      "id": "a_sci_l5_011",
+      "question": "Which hormone triggers the fight-or-flight response?",
+      "options": ["Insulin", "Adrenaline (epinephrine)", "Thyroxine", "Cortisol"],
+      "correct": "Adrenaline (epinephrine)",
+      "hint": "Released by adrenal glands → increases heart rate, blood pressure, etc.",
+      "tags": ["endocrine_system"]
+    },
+    {
+      "id": "a_sci_l5_012",
+      "question": "What is the unit of electrical resistance?",
+      "options": ["Ampere", "Volt", "Ohm", "Watt"],
+      "correct": "Ohm",
+      "hint": "Ohm (Ω) measures opposition to current flow.",
+      "tags": ["electricity"]
+    },
+    {
+      "id": "a_sci_l5_013",
+      "question": "Which type of cell division produces gametes?",
+      "options": ["Mitosis", "Meiosis", "Binary fission", "Budding"],
+      "correct": "Meiosis",
+      "hint": "Meiosis reduces chromosome number by half for sexual reproduction.",
+      "tags": ["biology", "reproduction"]
+    },
+    {
+      "id": "a_sci_l5_014",
+      "question": "What causes the aurora borealis (northern lights)?",
+      "options": ["Reflection of sunlight", "Charged particles from Sun hitting atmosphere", "Volcanic eruptions", "Earth's rotation"],
+      "correct": "Charged particles from Sun hitting atmosphere",
+      "hint": "Solar wind particles excite gases → emit light.",
+      "tags": ["atmosphere", "space_weather"]
+    },
+    {
+      "id": "a_sci_l5_015",
+      "question": "Which law states that energy cannot be created or destroyed?",
+      "options": ["Newton's first law", "Law of conservation of energy", "Ohm's law", "Kepler's law"],
+      "correct": "Law of conservation of energy",
+      "hint": "Energy can only change form (e.g., potential → kinetic).",
+      "tags": ["physics", "energy"]
+    }
+  ]
+}

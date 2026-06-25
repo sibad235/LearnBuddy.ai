@@ -1,0 +1,612 @@
+{
+  "level1": [
+    {
+      "id": "i_gk_l1_001",
+      "question": "How many days are in a week?",
+      "options": ["5", "6", "7", "8"],
+      "correct": "7",
+      "hint": "Sunday to Saturday – 7 days!",
+      "tags": ["time"]
+    },
+    {
+      "id": "i_gk_l1_002",
+      "question": "What day comes after Monday?",
+      "options": ["Sunday", "Tuesday", "Wednesday", "Friday"],
+      "correct": "Tuesday",
+      "hint": "Monday, Tuesday, Wednesday...",
+      "tags": ["days"]
+    },
+    {
+      "id": "i_gk_l1_003",
+      "question": "Who helps put out fires?",
+      "options": ["Teacher", "Doctor", "Firefighter", "Police"],
+      "correct": "Firefighter",
+      "hint": "Firefighters are brave heroes!",
+      "tags": ["community_helpers"]
+    },
+    {
+      "id": "i_gk_l1_004",
+      "question": "What is the capital of Pakistan?",
+      "options": ["Lahore", "Karachi", "Islamabad", "Peshawar"],
+      "correct": "Islamabad",
+      "hint": "Islamabad is our capital city",
+      "tags": ["countries"]
+    },
+    {
+      "id": "i_gk_l1_005",
+      "question": "How many months are in a year?",
+      "options": ["10", "11", "12", "13"],
+      "correct": "12",
+      "hint": "January to December – 12 months!",
+      "tags": ["time"]
+    },
+    {
+      "id": "i_gk_l1_006",
+      "question": "Who teaches children in school?",
+      "options": ["Doctor", "Police", "Teacher", "Pilot"],
+      "correct": "Teacher",
+      "hint": "Teachers help us learn new things",
+      "tags": ["community_helpers"]
+    },
+    {
+      "id": "i_gk_l1_007",
+      "question": "Which direction is the Sun in the morning?",
+      "options": ["West", "East", "North", "South"],
+      "correct": "East",
+      "hint": "Sun rises in the east",
+      "tags": ["directions"]
+    },
+    {
+      "id": "i_gk_l1_008",
+      "question": "What is the biggest continent?",
+      "options": ["Africa", "Asia", "Europe", "Australia"],
+      "correct": "Asia",
+      "hint": "Asia is the largest continent",
+      "tags": ["continents"]
+    },
+    {
+      "id": "i_gk_l1_009",
+      "question": "Who delivers letters and parcels?",
+      "options": ["Postman", "Doctor", "Engineer", "Chef"],
+      "correct": "Postman",
+      "hint": "Postman brings mail to our homes",
+      "tags": ["community_helpers"]
+    },
+    {
+      "id": "i_gk_l1_010",
+      "question": "Which month comes after February?",
+      "options": ["January", "March", "April", "December"],
+      "correct": "March",
+      "hint": "February, March, April...",
+      "tags": ["months"]
+    },
+    {
+      "id": "i_gk_l1_011",
+      "question": "What color is the traffic light when we stop?",
+      "options": ["Green", "Yellow", "Red", "Blue"],
+      "correct": "Red",
+      "hint": "Red means STOP!",
+      "tags": ["safety"]
+    },
+    {
+      "id": "i_gk_l1_012",
+      "question": "Who helps sick people in hospital?",
+      "options": ["Teacher", "Doctor", "Pilot", "Farmer"],
+      "correct": "Doctor",
+      "hint": "Doctors treat us when we are ill",
+      "tags": ["community_helpers"]
+    },
+    {
+      "id": "i_gk_l1_013",
+      "question": "How many oceans are there on Earth?",
+      "options": ["3", "4", "5", "6"],
+      "correct": "5",
+      "hint": "Pacific, Atlantic, Indian, Arctic, Southern",
+      "tags": ["earth"]
+    },
+    {
+      "id": "i_gk_l1_014",
+      "question": "What is the opposite direction of North?",
+      "options": ["East", "West", "South", "Up"],
+      "correct": "South",
+      "hint": "North and South are opposites",
+      "tags": ["directions"]
+    },
+    {
+      "id": "i_gk_l1_015",
+      "question": "Which animal is called the 'King of the Jungle'?",
+      "options": ["Elephant", "Lion", "Tiger", "Giraffe"],
+      "correct": "Lion",
+      "hint": "Lion is known as the king",
+      "tags": ["animals"]
+    }
+  ],
+  "level2": [
+    {
+      "id": "i_gk_l2_001",
+      "question": "Which continent do we live in?",
+      "options": ["Africa", "Asia", "Europe", "Australia"],
+      "correct": "Asia",
+      "hint": "Pakistan is in Asia",
+      "tags": ["continents"]
+    },
+    {
+      "id": "i_gk_l2_002",
+      "question": "Who grows food for us?",
+      "options": ["Pilot", "Farmer", "Doctor", "Teacher"],
+      "correct": "Farmer",
+      "hint": "Farmers grow fruits and vegetables",
+      "tags": ["community_helpers"]
+    },
+    {
+      "id": "i_gk_l2_003",
+      "question": "What is the national animal of Pakistan?",
+      "options": ["Lion", "Markhor", "Tiger", "Elephant"],
+      "correct": "Markhor",
+      "hint": "Markhor is our national animal",
+      "tags": ["pakistan"]
+    },
+    {
+      "id": "i_gk_l2_004",
+      "question": "How many days are in February in a normal year?",
+      "options": ["28", "29", "30", "31"],
+      "correct": "28",
+      "hint": "February has 28 days usually",
+      "tags": ["months"]
+    },
+    {
+      "id": "i_gk_l2_005",
+      "question": "Who keeps our city safe from thieves?",
+      "options": ["Firefighter", "Police", "Doctor", "Postman"],
+      "correct": "Police",
+      "hint": "Police protect us",
+      "tags": ["community_helpers"]
+    },
+    {
+      "id": "i_gk_l2_006",
+      "question": "Which direction is opposite to East?",
+      "options": ["North", "South", "West", "Up"],
+      "correct": "West",
+      "hint": "Sun sets in the west",
+      "tags": ["directions"]
+    },
+    {
+      "id": "i_gk_l2_007",
+      "question": "What is the smallest continent?",
+      "options": ["Asia", "Africa", "Australia", "Europe"],
+      "correct": "Australia",
+      "hint": "Australia is the smallest continent",
+      "tags": ["continents"]
+    },
+    {
+      "id": "i_gk_l2_008",
+      "question": "Who flies airplanes?",
+      "options": ["Pilot", "Driver", "Captain", "Engineer"],
+      "correct": "Pilot",
+      "hint": "Pilot controls the airplane",
+      "tags": ["community_helpers"]
+    },
+{
+      "id": "i_gk_l2_009",
+      "question": "Which month has 31 days and comes after October?",
+      "options": ["September", "November", "December", "January"],
+      "correct": "December",
+      "hint": "October → November (30 days) → December (31 days)",
+      "tags": ["months"]
+    },
+    {
+      "id": "i_gk_l2_010",
+      "question": "What is the national flower of Pakistan?",
+      "options": ["Rose", "Jasmine", "Tulip", "Sunflower"],
+      "correct": "Jasmine",
+      "hint": "Jasmine is our national flower",
+      "tags": ["pakistan"]
+    },
+    {
+      "id": "i_gk_l2_011",
+      "question": "Who fixes broken pipes and water supply?",
+      "options": ["Plumber", "Electrician", "Carpenter", "Mechanic"],
+      "correct": "Plumber",
+      "hint": "Plumber works with water pipes",
+      "tags": ["community_helpers"]
+    },
+    {
+      "id": "i_gk_l2_012",
+      "question": "How many continents are there?",
+      "options": ["5", "6", "7", "8"],
+      "correct": "7",
+      "hint": "7 continents on Earth",
+      "tags": ["continents"]
+    },
+    {
+      "id": "i_gk_l2_013",
+      "question": "What do we call the leader of a country?",
+      "options": ["King", "President / Prime Minister", "Teacher", "Doctor"],
+      "correct": "President / Prime Minister",
+      "hint": "In Pakistan we have a Prime Minister",
+      "tags": ["civics"]
+    },
+    {
+      "id": "i_gk_l2_014",
+      "question": "Which bird cannot fly?",
+      "options": ["Eagle", "Parrot", "Penguin", "Sparrow"],
+      "correct": "Penguin",
+      "hint": "Penguins swim instead of fly",
+      "tags": ["animals"]
+    },
+    {
+      "id": "i_gk_l2_015",
+      "question": "What is the longest river in the world?",
+      "options": ["Nile", "Amazon", "Indus", "Ganges"],
+      "correct": "Nile",
+      "hint": "Nile is the longest river",
+      "tags": ["earth"]
+    }
+  ],
+  "level3": [
+    {
+      "id": "i_gk_l3_001",
+      "question": "Who invented the telephone?",
+      "options": ["Thomas Edison", "Alexander Graham Bell", "Wright Brothers", "Albert Einstein"],
+      "correct": "Alexander Graham Bell",
+      "hint": "Bell invented the telephone",
+      "tags": ["inventions"]
+    },
+    {
+      "id": "i_gk_l3_002",
+      "question": "What is the national bird of Pakistan?",
+      "options": ["Peacock", "Chukar", "Eagle", "Parrot"],
+      "correct": "Chukar",
+      "hint": "Chukar is our national bird",
+      "tags": ["pakistan"]
+    },
+    {
+      "id": "i_gk_l3_003",
+      "question": "Which is the largest ocean?",
+      "options": ["Atlantic", "Indian", "Pacific", "Arctic"],
+      "correct": "Pacific",
+      "hint": "Pacific is the biggest ocean",
+      "tags": ["earth"]
+    },
+    {
+      "id": "i_gk_l3_004",
+      "question": "Who wrote the national anthem of Pakistan?",
+      "options": ["Allama Iqbal", "Hafeez Jalandhari", "Faiz Ahmed Faiz", "Quaid-e-Azam"],
+      "correct": "Hafeez Jalandhari",
+      "hint": "Hafeez Jalandhari wrote 'Qaumi Tarana'",
+      "tags": ["pakistan"]
+    },
+    {
+      "id": "i_gk_l3_005",
+      "question": "What is the currency of Pakistan?",
+      "options": ["Dollar", "Rupee", "Euro", "Pound"],
+      "correct": "Rupee",
+      "hint": "We use Pakistani Rupee",
+      "tags": ["pakistan"]
+    },
+    {
+      "id": "i_gk_l3_006",
+      "question": "Who was the first Prime Minister of Pakistan?",
+      "options": ["Quaid-e-Azam", "Liaquat Ali Khan", "Ayub Khan", "Zulfiqar Ali Bhutto"],
+      "correct": "Liaquat Ali Khan",
+      "hint": "Liaquat Ali Khan was the first PM",
+      "tags": ["history"]
+    },
+    {
+      "id": "i_gk_l3_007",
+      "question": "Which country is famous for the Eiffel Tower?",
+      "options": ["Italy", "France", "England", "Spain"],
+      "correct": "France",
+      "hint": "Eiffel Tower is in Paris, France",
+      "tags": ["landmarks"]
+    },
+    {
+      "id": "i_gk_l3_008",
+      "question": "What is the tallest animal in the world?",
+      "options": ["Elephant", "Giraffe", "Horse", "Camel"],
+      "correct": "Giraffe",
+      "hint": "Giraffe has the longest neck",
+      "tags": ["animals"]
+    },
+    {
+      "id": "i_gk_l3_009",
+      "question": "Who helps us when we have tooth pain?",
+      "options": ["Dentist", "Doctor", "Teacher", "Pilot"],
+      "correct": "Dentist",
+      "hint": "Dentist takes care of teeth",
+      "tags": ["community_helpers"]
+    },
+    {
+      "id": "i_gk_l3_010",
+      "question": "Which is the national sport of Pakistan?",
+      "options": ["Cricket", "Hockey", "Football", "Kabaddi"],
+      "correct": "Hockey",
+      "hint": "Field hockey is our national sport",
+      "tags": ["pakistan"]
+    },
+    {
+      "id": "i_gk_l3_011",
+      "question": "What is the largest desert in the world?",
+      "options": ["Sahara", "Gobi", "Thar", "Antarctic"],
+      "correct": "Antarctic",
+      "hint": "Antarctica is the largest cold desert",
+      "tags": ["earth"]
+    },
+    {
+      "id": "i_gk_l3_012",
+      "question": "Who built the Taj Mahal?",
+      "options": ["Akbar", "Shah Jahan", "Aurangzeb", "Babur"],
+      "correct": "Shah Jahan",
+      "hint": "Shah Jahan built it for his wife",
+      "tags": ["history", "landmarks"]
+    },
+    {
+      "id": "i_gk_l3_013",
+      "question": "What do we call a baby kangaroo?",
+      "options": ["Pup", "Joey", "Calf", "Kitten"],
+      "correct": "Joey",
+      "hint": "Baby kangaroo is called joey",
+      "tags": ["animals"]
+    },
+    {
+      "id": "i_gk_l3_014",
+      "question": "Which country is known as the Land of the Rising Sun?",
+      "options": ["China", "Japan", "India", "Korea"],
+      "correct": "Japan",
+      "hint": "Japan is called Land of the Rising Sun",
+      "tags": ["countries"]
+    },
+    {
+      "id": "i_gk_l3_015",
+      "question": "Who repairs cars and bikes?",
+      "options": ["Mechanic", "Plumber", "Electrician", "Carpenter"],
+      "correct": "Mechanic",
+      "hint": "Mechanic fixes vehicles",
+      "tags": ["community_helpers"]
+    }
+  ],
+  "level4": [
+    {
+      "id": "i_gk_l4_001",
+      "question": "What is the longest river in Pakistan?",
+      "options": ["Indus", "Jhelum", "Chenab", "Ravi"],
+      "correct": "Indus",
+      "hint": "Indus is the longest river in Pakistan",
+      "tags": ["pakistan"]
+    },
+    {
+      "id": "i_gk_l4_002",
+      "question": "Who discovered America?",
+      "options": ["Christopher Columbus", "Vasco da Gama", "Marco Polo", "Ferdinand Magellan"],
+      "correct": "Christopher Columbus",
+      "hint": "Columbus discovered America in 1492",
+      "tags": ["history"]
+    },
+    {
+      "id": "i_gk_l4_003",
+      "question": "What is the national language of Pakistan?",
+      "options": ["English", "Urdu", "Punjabi", "Sindhi"],
+      "correct": "Urdu",
+      "hint": "Urdu is our national language",
+      "tags": ["pakistan"]
+    },
+    {
+      "id": "i_gk_l4_004",
+      "question": "Which country has the most population?",
+      "options": ["India", "China", "USA", "Pakistan"],
+      "correct": "China",
+      "hint": "China has the largest population",
+      "tags": ["countries"]
+    },
+    {
+      "id": "i_gk_l4_005",
+      "question": "Who was the founder of Pakistan?",
+      "options": ["Allama Iqbal", "Quaid-e-Azam", "Liaquat Ali Khan", "Fatima Jinnah"],
+      "correct": "Quaid-e-Azam",
+      "hint": "Quaid-e-Azam Muhammad Ali Jinnah",
+      "tags": ["pakistan", "history"]
+    },
+    {
+      "id": "i_gk_l4_006",
+      "question": "What is the tallest mountain in the world?",
+      "options": ["K2", "Mount Everest", "Nanga Parbat", "Kanchenjunga"],
+      "correct": "Mount Everest",
+      "hint": "Mount Everest is the highest peak",
+      "tags": ["earth"]
+    },
+    {
+      "id": "i_gk_l4_007",
+      "question": "Which animal is the fastest on land?",
+      "options": ["Lion", "Cheetah", "Horse", "Tiger"],
+      "correct": "Cheetah",
+      "hint": "Cheetah can run up to 120 km/h",
+      "tags": ["animals"]
+    },
+    {
+      "id": "i_gk_l4_008",
+      "question": "What is the currency of India?",
+      "options": ["Rupee", "Dollar", "Euro", "Yen"],
+      "correct": "Rupee",
+      "hint": "Indian Rupee",
+      "tags": ["countries"]
+    },
+    {
+      "id": "i_gk_l4_009",
+      "question": "Who invented the light bulb?",
+      "options": ["Thomas Edison", "Nikola Tesla", "Alexander Bell", "Wright Brothers"],
+      "correct": "Thomas Edison",
+      "hint": "Edison invented the practical light bulb",
+      "tags": ["inventions"]
+    },
+    {
+      "id": "i_gk_l4_010",
+      "question": "What is the national game of USA?",
+      "options": ["Football", "Baseball", "Basketball", "Ice Hockey"],
+      "correct": "Baseball",
+      "hint": "Baseball is considered America's national pastime",
+      "tags": ["sports"]
+    },
+    {
+      "id": "i_gk_l4_011",
+      "question": "Which is the largest country by area?",
+      "options": ["China", "Canada", "Russia", "USA"],
+      "correct": "Russia",
+      "hint": "Russia is the largest country",
+      "tags": ["countries"]
+    },
+    {
+      "id": "i_gk_l4_012",
+      "question": "Who wrote 'Romeo and Juliet'?",
+      "options": ["Charles Dickens", "William Shakespeare", "Jane Austen", "Mark Twain"],
+      "correct": "William Shakespeare",
+      "hint": "Shakespeare wrote many famous plays",
+      "tags": ["literature"]
+    },
+    {
+      "id": "i_gk_l4_013",
+      "question": "What is the deepest ocean?",
+      "options": ["Atlantic", "Indian", "Pacific", "Arctic"],
+      "correct": "Pacific",
+      "hint": "Mariana Trench is in Pacific",
+      "tags": ["earth"]
+    },
+    {
+      "id": "i_gk_l4_014",
+      "question": "Which city is called the City of Gardens?",
+      "options": ["Lahore", "Karachi", "Islamabad", "Peshawar"],
+      "correct": "Lahore",
+      "hint": "Lahore is famous for gardens",
+      "tags": ["pakistan"]
+    },
+    {
+      "id": "i_gk_l4_015",
+      "question": "Who was the first woman Prime Minister of Pakistan?",
+      "options": ["Fatima Jinnah", "Benazir Bhutto", "Asma Jahangir", "Hina Rabbani Khar"],
+      "correct": "Benazir Bhutto",
+      "hint": "Benazir Bhutto was the first woman PM",
+      "tags": ["pakistan", "history"]
+    }
+  ],
+  "level5": [
+    {
+      "id": "i_gk_l5_001",
+      "question": "What is the national anthem of Pakistan called?",
+      "options": ["Qaumi Tarana", "Dil Dil Pakistan", "Pak Sarzamin", "Jeevay Pakistan"],
+      "correct": "Qaumi Tarana",
+      "hint": "Qaumi Tarana is our national anthem",
+      "tags": ["pakistan"]
+    },
+    {
+      "id": "i_gk_l5_002",
+      "question": "Which country gifted the Statue of Liberty to USA?",
+      "options": ["England", "France", "Italy", "Germany"],
+      "correct": "France",
+      "hint": "France gave Statue of Liberty",
+      "tags": ["history"]
+    },
+    {
+      "id": "i_gk_l5_003",
+      "question": "What is the highest civilian award in Pakistan?",
+      "options": ["Sitara-e-Imtiaz", "Nishan-e-Haider", "Nishan-e-Pakistan", "Tamgha-e-Jurat"],
+      "correct": "Nishan-e-Pakistan",
+      "hint": "Nishan-e-Pakistan is the highest civilian award",
+      "tags": ["pakistan"]
+    },
+    {
+      "id": "i_gk_l5_004",
+      "question": "Who painted the Mona Lisa?",
+      "options": ["Vincent van Gogh", "Leonardo da Vinci", "Pablo Picasso", "Michelangelo"],
+      "correct": "Leonardo da Vinci",
+      "hint": "Leonardo da Vinci painted Mona Lisa",
+      "tags": ["art"]
+    },
+    {
+      "id": "i_gk_l5_005",
+      "question": "What is the capital of China?",
+      "options": ["Shanghai", "Beijing", "Hong Kong", "Guangzhou"],
+      "correct": "Beijing",
+      "hint": "Beijing is the capital of China",
+      "tags": ["countries"]
+    },
+    {
+      "id": "i_gk_l5_006",
+      "question": "Which animal is the largest mammal?",
+      "options": ["Elephant", "Blue Whale", "Giraffe", "Hippopotamus"],
+      "correct": "Blue Whale",
+      "hint": "Blue whale is the largest animal ever",
+      "tags": ["animals"]
+    },
+    {
+      "id": "i_gk_l5_007",
+      "question": "Who invented the airplane?",
+      "options": ["Wright Brothers", "Thomas Edison", "Alexander Bell", "Nikola Tesla"],
+      "correct": "Wright Brothers",
+      "hint": "Wright Brothers flew the first airplane",
+      "tags": ["inventions"]
+    },
+    {
+      "id": "i_gk_l5_008",
+      "question": "What is the national fruit of Pakistan?",
+      "options": ["Mango", "Orange", "Apple", "Banana"],
+      "correct": "Mango",
+      "hint": "Mango is called the king of fruits",
+      "tags": ["pakistan"]
+    },
+    {
+      "id": "i_gk_l5_009",
+      "question": "Which is the longest wall in the world?",
+      "options": ["Great Wall of China", "Berlin Wall", "Hadrian's Wall", "Khyber Pass Wall"],
+      "correct": "Great Wall of China",
+      "hint": "Great Wall of China is visible from space (myth but longest)",
+      "tags": ["landmarks"]
+    },
+    {
+      "id": "i_gk_l5_010",
+      "question": "What is the national tree of Pakistan?",
+      "options": ["Neem", "Deodar", "Sheesham", "Banyan"],
+      "correct": "Deodar",
+      "hint": "Deodar is our national tree",
+      "tags": ["pakistan"]
+    },
+    {
+      "id": "i_gk_l5_011",
+      "question": "Who was the first man to walk on the Moon?",
+      "options": ["Yuri Gagarin", "Neil Armstrong", "Buzz Aldrin", "John Glenn"],
+      "correct": "Neil Armstrong",
+      "hint": "Neil Armstrong – 1969",
+      "tags": ["history"]
+    },
+    {
+      "id": "i_gk_l5_012",
+      "question": "Which country has the most deserts?",
+      "options": ["Australia", "Saudi Arabia", "Egypt", "India"],
+      "correct": "Australia",
+      "hint": "Australia has many deserts",
+      "tags": ["earth"]
+    },
+    {
+      "id": "i_gk_l5_013",
+      "question": "What is the national sport of Japan?",
+      "options": ["Baseball", "Sumo Wrestling", "Soccer", "Karate"],
+      "correct": "Sumo Wrestling",
+      "hint": "Sumo is traditional Japanese sport",
+      "tags": ["sports"]
+    },
+    {
+      "id": "i_gk_l5_014",
+      "question": "Who discovered penicillin?",
+      "options": ["Louis Pasteur", "Alexander Fleming", "Marie Curie", "Albert Einstein"],
+      "correct": "Alexander Fleming",
+      "hint": "Fleming discovered penicillin",
+      "tags": ["science", "inventions"]
+    },
+    {
+      "id": "i_gk_l5_015",
+      "question": "What is the name of Pakistan's highest civilian award?",
+      "options": ["Nishan-e-Haider", "Nishan-e-Pakistan", "Sitara-e-Imtiaz", "Tamgha-e-Basalat"],
+      "correct": "Nishan-e-Pakistan",
+      "hint": "Nishan-e-Pakistan is highest civilian honor",
+      "tags": ["pakistan"]
+    }
+  ]
+}

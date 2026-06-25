@@ -1,0 +1,612 @@
+{
+"level1": [
+{
+"id": "b_eng_l1_001",
+"question": "What letter makes the 'a' sound like in apple?",
+"options": ["B", "A", "C", "D"],
+"correct": "A",
+"hint": "A is for apple!",
+"tags": ["letters", "phonics"]
+},
+{
+"id": "b_eng_l1_002",
+"question": "Which letter is this: B?",
+"options": ["A", "C", "B", "D"],
+"correct": "B",
+"hint": "B is for ball!",
+"tags": ["letters"]
+},
+{
+"id": "b_eng_l1_003",
+"question": "What sound does 'C' make like in cat?",
+"options": ["Kuh", "Buh", "Duh", "Suh"],
+"correct": "Kuh",
+"hint": "C says 'kuh' like cat!",
+"tags": ["phonics", "animals"]
+},
+{
+"id": "b_eng_l1_004",
+"question": "Which letter comes after A?",
+"options": ["C", "B", "D", "A"],
+"correct": "B",
+"hint": "A, B, C!",
+"tags": ["alphabet"]
+},
+{
+"id": "b_eng_l1_005",
+"question": "What letter starts 'dog'?",
+"options": ["B", "A", "D", "C"],
+"correct": "D",
+"hint": "D is for dog!",
+"tags": ["phonics", "animals"]
+},
+{
+"id": "b_eng_l1_006",
+"question": "Which is the letter E?",
+"options": ["E", "A", "B", "C"],
+"correct": "E",
+"hint": "E is for elephant!",
+"tags": ["letters", "animals"]
+},
+{
+"id": "b_eng_l1_007",
+"question": "What sound does A make in ant?",
+"options": ["Ah", "Buh", "Kuh", "Duh"],
+"correct": "Ah",
+"hint": "A says 'ah' like ant!",
+"tags": ["phonics"]
+},
+{
+"id": "b_eng_l1_008",
+"question": "Which letter is for ball?",
+"options": ["A", "C", "B", "D"],
+"correct": "B",
+"hint": "B starts ball!",
+"tags": ["letters"]
+},
+{
+"id": "b_eng_l1_009",
+"question": "What letter makes 'duh' sound?",
+"options": ["B", "D", "A", "C"],
+"correct": "D",
+"hint": "D says 'duh'!",
+"tags": ["phonics"]
+},
+{
+"id": "b_eng_l1_010",
+"question": "Which comes before C?",
+"options": ["D", "B", "A", "C"],
+"correct": "B",
+"hint": "A, B, C!",
+"tags": ["alphabet"]
+},
+{
+"id": "b_eng_l1_011",
+"question": "What letter starts 'egg'?",
+"options": ["A", "B", "E", "C"],
+"correct": "E",
+"hint": "E is for egg!",
+"tags": ["letters"]
+},
+{
+"id": "b_eng_l1_012",
+"question": "What sound does B make?",
+"options": ["Kuh", "Buh", "Ah", "Duh"],
+"correct": "Buh",
+"hint": "B says 'buh' like ball!",
+"tags": ["phonics"]
+},
+{
+"id": "b_eng_l1_013",
+"question": "Which letter is this: A?",
+"options": ["B", "C", "A", "D"],
+"correct": "A",
+"hint": "That's A!",
+"tags": ["letters"]
+},
+{
+"id": "b_eng_l1_014",
+"question": "What letter makes 'eh' sound like in elephant?",
+"options": ["E", "A", "B", "C"],
+"correct": "E",
+"hint": "E says 'eh'!",
+"tags": ["phonics", "animals"]
+},
+{
+"id": "b_eng_l1_015",
+"question": "Which letter comes after D?",
+"options": ["C", "B", "E", "A"],
+"correct": "E",
+"hint": "D, E, F!",
+"tags": ["alphabet"]
+}
+],
+"level2": [
+{
+"id": "b_eng_l2_001",
+"question": "What letter starts 'fish'?",
+"options": ["G", "F", "H", "E"],
+"correct": "F",
+"hint": "F is for fish!",
+"tags": ["letters", "animals"]
+},
+{
+"id": "b_eng_l2_002",
+"question": "Which color starts with B: blue?",
+"options": ["Red", "Blue", "Green", "Yellow"],
+"correct": "Blue",
+"hint": "B for blue!",
+"tags": ["colors", "letters"]
+},
+{
+"id": "b_eng_l2_003",
+"question": "What sound does G make like in goat?",
+"options": ["Guh", "Fuh", "Huh", "Juh"],
+"correct": "Guh",
+"hint": "G says 'guh'!",
+"tags": ["phonics", "animals"]
+},
+{
+"id": "b_eng_l2_004",
+"question": "Which letter is H?",
+"options": ["G", "F", "H", "I"],
+"correct": "H",
+"hint": "H is for hat!",
+"tags": ["letters"]
+},
+{
+"id": "b_eng_l2_005",
+"question": "What letter makes 'ih' sound like in igloo?",
+"options": ["H", "I", "F", "G"],
+"correct": "I",
+"hint": "I says 'ih'!",
+"tags": ["phonics"]
+},
+{
+"id": "b_eng_l2_006",
+"question": "Which color is R for red?",
+"options": ["Blue", "Green", "Red", "Yellow"],
+"correct": "Red",
+"hint": "R for red!",
+"tags": ["colors"]
+},
+{
+"id": "b_eng_l2_007",
+"question": "What letter starts 'jam'?",
+"options": ["I", "H", "J", "G"],
+"correct": "J",
+"hint": "J is for jam!",
+"tags": ["letters"]
+},
+{
+"id": "b_eng_l2_008",
+"question": "What sound does F make?",
+"options": ["Guh", "Huh", "Fuh", "Juh"],
+"correct": "Fuh",
+"hint": "F says 'fuh' like fish!",
+"tags": ["phonics"]
+},
+{
+"id": "b_eng_l2_009",
+"question": "Which letter comes after G?",
+"options": ["I", "F", "H", "J"],
+"correct": "H",
+"hint": "G, H, I!",
+"tags": ["alphabet"]
+},
+{
+"id": "b_eng_l2_010",
+"question": "What color starts with G: green?",
+"options": ["Green", "Blue", "Red", "Yellow"],
+"correct": "Green",
+"hint": "G for green!",
+"tags": ["colors"]
+},
+{
+"id": "b_eng_l2_011",
+"question": "What letter makes 'juh' sound?",
+"options": ["I", "H", "G", "J"],
+"correct": "J",
+"hint": "J says 'juh'!",
+"tags": ["phonics"]
+},
+{
+"id": "b_eng_l2_012",
+"question": "Which letter is for hat?",
+"options": ["I", "H", "J", "F"],
+"correct": "H",
+"hint": "H starts hat!",
+"tags": ["letters"]
+},
+{
+"id": "b_eng_l2_013",
+"question": "What sound does I make in ink?",
+"options": ["Ih", "Huh", "Fuh", "Guh"],
+"correct": "Ih",
+"hint": "I says 'ih'!",
+"tags": ["phonics"]
+},
+{
+"id": "b_eng_l2_014",
+"question": "Which color is Y for yellow?",
+"options": ["Blue", "Green", "Red", "Yellow"],
+"correct": "Yellow",
+"hint": "Y for yellow!",
+"tags": ["colors"]
+},
+{
+"id": "b_eng_l2_015",
+"question": "What letter comes before J?",
+"options": ["H", "I", "G", "F"],
+"correct": "I",
+"hint": "H, I, J!",
+"tags": ["alphabet"]
+}
+],
+"level3": [
+{
+"id": "b_eng_l3_001",
+"question": "What rhymes with cat: bat, hat, mat?",
+"options": ["Dog", "Bat", "Sun", "Run"],
+"correct": "Bat",
+"hint": "Cat and bat sound alike!",
+"tags": ["rhyming"]
+},
+{
+"id": "b_eng_l3_002",
+"question": "What letter starts 'kite'?",
+"options": ["L", "M", "K", "N"],
+"correct": "K",
+"hint": "K is for kite!",
+"tags": ["letters"]
+},
+{
+"id": "b_eng_l3_003",
+"question": "What sound does L make like in lion?",
+"options": ["Muh", "Luh", "Nuh", "Kuh"],
+"correct": "Luh",
+"hint": "L says 'luh'!",
+"tags": ["phonics", "animals"]
+},
+{
+"id": "b_eng_l3_004",
+"question": "Which rhymes with dog: log, frog, hog?",
+"options": ["Cat", "Log", "Sun", "Run"],
+"correct": "Log",
+"hint": "Dog and log rhyme!",
+"tags": ["rhyming"]
+},
+{
+"id": "b_eng_l3_005",
+"question": "What letter is M?",
+"options": ["L", "K", "N", "M"],
+"correct": "M",
+"hint": "M is for moon!",
+"tags": ["letters"]
+},
+{
+"id": "b_eng_l3_006",
+"question": "What rhymes with sun: fun, run, bun?",
+"options": ["Dog", "Fun", "Hat", "Bat"],
+"correct": "Fun",
+"hint": "Sun and fun rhyme!",
+"tags": ["rhyming"]
+},
+{
+"id": "b_eng_l3_007",
+"question": "What sound does N make in nest?",
+"options": ["Muh", "Kuh", "Nuh", "Luh"],
+"correct": "Nuh",
+"hint": "N says 'nuh'!",
+"tags": ["phonics"]
+},
+{
+"id": "b_eng_l3_008",
+"question": "Which letter comes after K?",
+"options": ["N", "M", "L", "O"],
+"correct": "L",
+"hint": "K, L, M!",
+"tags": ["alphabet"]
+},
+{
+"id": "b_eng_l3_009",
+"question": "What rhymes with bed: red, fed, led?",
+"options": ["Blue", "Red", "Green", "Yellow"],
+"correct": "Red",
+"hint": "Bed and red rhyme!",
+"tags": ["rhyming", "colors"]
+},
+{
+"id": "b_eng_l3_010",
+"question": "What letter starts 'nose'?",
+"options": ["O", "N", "M", "L"],
+"correct": "N",
+"hint": "N is for nose!",
+"tags": ["letters", "body"]
+},
+{
+"id": "b_eng_l3_011",
+"question": "What sound does O make in octopus?",
+"options": ["Oh", "Ah", "Uh", "Eh"],
+"correct": "Oh",
+"hint": "O says 'oh'!",
+"tags": ["phonics", "animals"]
+},
+{
+"id": "b_eng_l3_012",
+"question": "Which rhymes with pig: big, dig, fig?",
+"options": ["Cat", "Big", "Sun", "Run"],
+"correct": "Big",
+"hint": "Pig and big rhyme!",
+"tags": ["rhyming"]
+},
+{
+"id": "b_eng_l3_013",
+"question": "What letter is for moon?",
+"options": ["N", "O", "M", "L"],
+"correct": "M",
+"hint": "M starts moon!",
+"tags": ["letters"]
+},
+{
+"id": "b_eng_l3_014",
+"question": "What comes before O?",
+"options": ["M", "N", "L", "P"],
+"correct": "N",
+"hint": "M, N, O!",
+"tags": ["alphabet"]
+},
+{
+"id": "b_eng_l3_015",
+"question": "What rhymes with hop: top, mop, pop?",
+"options": ["Dog", "Top", "Hat", "Bat"],
+"correct": "Top",
+"hint": "Hop and top rhyme!",
+"tags": ["rhyming"]
+}
+],
+"level4": [
+{
+"id": "b_eng_l4_001",
+"question": "What letter starts 'pig'?",
+"options": ["Q", "R", "P", "O"],
+"correct": "P",
+"hint": "P is for pig!",
+"tags": ["letters", "animals"]
+},
+{
+"id": "b_eng_l4_002",
+"question": "Which sight word is this: the?",
+"options": ["A", "The", "And", "Is"],
+"correct": "The",
+"hint": "Common word 'the'!",
+"tags": ["sight_words"]
+},
+{
+"id": "b_eng_l4_003",
+"question": "What sound does Q make like in queen?",
+"options": ["Kuh", "Quh", "Puh", "Ruh"],
+"correct": "Quh",
+"hint": "Q says 'quh' with U!",
+"tags": ["phonics"]
+},
+{
+"id": "b_eng_l4_004",
+"question": "Which is sight word 'a'?",
+"options": ["The", "Is", "A", "And"],
+"correct": "A",
+"hint": "Little word 'a'!",
+"tags": ["sight_words"]
+},
+{
+"id": "b_eng_l4_005",
+"question": "What letter is R?",
+"options": ["P", "Q", "S", "R"],
+"correct": "R",
+"hint": "R is for rabbit!",
+"tags": ["letters", "animals"]
+},
+{
+"id": "b_eng_l4_006",
+"question": "What sound does S make in sun?",
+"options": ["Sss", "Ruh", "Puh", "Quh"],
+"correct": "Sss",
+"hint": "S says 'sss' like snake!",
+"tags": ["phonics"]
+},
+{
+"id": "b_eng_l4_007",
+"question": "Which sight word is 'and'?",
+"options": ["A", "The", "Is", "And"],
+"correct": "And",
+"hint": "Word 'and' connects things!",
+"tags": ["sight_words"]
+},
+{
+"id": "b_eng_l4_008",
+"question": "What letter starts 'tiger'?",
+"options": ["S", "R", "T", "Q"],
+"correct": "T",
+"hint": "T is for tiger!",
+"tags": ["letters", "animals"]
+},
+{
+"id": "b_eng_l4_009",
+"question": "What sound does P make?",
+"options": ["Quh", "Puh", "Ruh", "Sss"],
+"correct": "Puh",
+"hint": "P says 'puh' like pig!",
+"tags": ["phonics"]
+},
+{
+"id": "b_eng_l4_010",
+"question": "Which is sight word 'is'?",
+"options": ["And", "Is", "The", "A"],
+"correct": "Is",
+"hint": "Word 'is' like 'it is fun'!",
+"tags": ["sight_words"]
+},
+{
+"id": "b_eng_l4_011",
+"question": "What letter comes after Q?",
+"options": ["S", "T", "R", "P"],
+"correct": "R",
+"hint": "Q, R, S!",
+"tags": ["alphabet"]
+},
+{
+"id": "b_eng_l4_012",
+"question": "What sound does T make in top?",
+"options": ["Tuh", "Sss", "Ruh", "Puh"],
+"correct": "Tuh",
+"hint": "T says 'tuh'!",
+"tags": ["phonics"]
+},
+{
+"id": "b_eng_l4_013",
+"question": "Which sight word is 'in'?",
+"options": ["In", "The", "A", "And"],
+"correct": "In",
+"hint": "Word 'in' like 'in the box'!",
+"tags": ["sight_words"]
+},
+{
+"id": "b_eng_l4_014",
+"question": "What letter is for sun?",
+"options": ["T", "R", "S", "Q"],
+"correct": "S",
+"hint": "S starts sun!",
+"tags": ["letters"]
+},
+{
+"id": "b_eng_l4_015",
+"question": "What comes before T?",
+"options": ["R", "S", "Q", "U"],
+"correct": "S",
+"hint": "R, S, T!",
+"tags": ["alphabet"]
+}
+],
+"level5": [
+{
+"id": "b_eng_l5_001",
+"question": "What letter starts 'umbrella'?",
+"options": ["V", "U", "W", "T"],
+"correct": "U",
+"hint": "U is for umbrella!",
+"tags": ["letters"]
+},
+{
+"id": "b_eng_l5_002",
+"question": "Fill in: The cat __ on the mat. (sat)",
+"options": ["Run", "Sat", "Jump", "Eat"],
+"correct": "Sat",
+"hint": "The cat sat on the mat!",
+"tags": ["sentences"]
+},
+{
+"id": "b_eng_l5_003",
+"question": "What sound does V make like in van?",
+"options": ["Vuh", "Uuh", "Wuh", "Xuh"],
+"correct": "Vuh",
+"hint": "V says 'vuh'!",
+"tags": ["phonics", "vehicles"]
+},
+{
+"id": "b_eng_l5_004",
+"question": "What is a simple sentence: I see a ___.",
+"options": ["Dog", "Run", "Jump", "Eat"],
+"correct": "Dog",
+"hint": "I see a dog!",
+"tags": ["grammar"]
+},
+{
+"id": "b_eng_l5_005",
+"question": "What letter is W?",
+"options": ["V", "X", "U", "W"],
+"correct": "W",
+"hint": "W is for water!",
+"tags": ["letters"]
+},
+{
+"id": "b_eng_l5_006",
+"question": "Fill in: __ apple is red. (The)",
+"options": ["A", "The", "And", "Is"],
+"correct": "The",
+"hint": "The apple is red!",
+"tags": ["sentences"]
+},
+{
+"id": "b_eng_l5_007",
+"question": "What sound does X make in fox?",
+"options": ["Ks", "Wuh", "Vuh", "Zuh"],
+"correct": "Ks",
+"hint": "X says 'ks' like box!",
+"tags": ["phonics"]
+},
+{
+"id": "b_eng_l5_008",
+"question": "What letter starts 'yo-yo'?",
+"options": ["X", "Z", "Y", "W"],
+"correct": "Y",
+"hint": "Y is for yo-yo!",
+"tags": ["letters"]
+},
+{
+"id": "b_eng_l5_009",
+"question": "Fill in: It __ fun! (is)",
+"options": ["The", "A", "And", "Is"],
+"correct": "Is",
+"hint": "It is fun!",
+"tags": ["grammar"]
+},
+{
+"id": "b_eng_l5_010",
+"question": "What sound does Z make in zoo?",
+"options": ["Zzz", "Ks", "Yuh", "Wuh"],
+"correct": "Zzz",
+"hint": "Z says 'zzz' like zip!",
+"tags": ["phonics"]
+},
+{
+"id": "b_eng_l5_011",
+"question": "What letter comes after U?",
+"options": ["W", "X", "V", "Y"],
+"correct": "V",
+"hint": "U, V, W!",
+"tags": ["alphabet"]
+},
+{
+"id": "b_eng_l5_012",
+"question": "Fill in: Mom ___ Dad. (and)",
+"options": ["Is", "And", "The", "A"],
+"correct": "And",
+"hint": "Mom and Dad!",
+"tags": ["sentences"]
+},
+{
+"id": "b_eng_l5_013",
+"question": "What letter is for zebra?",
+"options": ["Y", "X", "W", "Z"],
+"correct": "Z",
+"hint": "Z starts zebra!",
+"tags": ["letters", "animals"]
+},
+{
+"id": "b_eng_l5_014",
+"question": "What sound does Y make in yellow?",
+"options": ["Yuh", "Zzz", "Ks", "Vuh"],
+"correct": "Yuh",
+"hint": "Y says 'yuh'!",
+"tags": ["phonics", "colors"]
+},
+{
+"id": "b_eng_l5_015",
+"question": "Fill in: I see __ bird. (a)",
+"options": ["And", "The", "A", "Is"],
+"correct": "A",
+"hint": "I see a bird!",
+"tags": ["grammar"]
+}
+]
+}

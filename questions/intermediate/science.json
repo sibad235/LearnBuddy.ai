@@ -1,0 +1,612 @@
+{
+  "level1": [
+    {
+      "id": "i_sci_l1_001",
+      "question": "Which of these is a living thing?",
+      "options": ["Rock", "Tree", "Chair", "Table"],
+      "correct": "Tree",
+      "hint": "Living things grow, need food, and breathe",
+      "tags": ["living_nonliving"]
+    },
+    {
+      "id": "i_sci_l1_002",
+      "question": "What do plants need to make their food?",
+      "options": ["Darkness", "Sunlight", "Ice", "Fire"],
+      "correct": "Sunlight",
+      "hint": "Plants use sunlight, water, and air",
+      "tags": ["plants"]
+    },
+    {
+      "id": "i_sci_l1_003",
+      "question": "Which sense do we use to hear music?",
+      "options": ["Eyes", "Ears", "Nose", "Tongue"],
+      "correct": "Ears",
+      "hint": "Ears are for hearing sounds",
+      "tags": ["senses"]
+    },
+    {
+      "id": "i_sci_l1_004",
+      "question": "What do animals need to stay alive?",
+      "options": ["Only toys", "Food, water, air", "Only sleep", "Only games"],
+      "correct": "Food, water, air",
+      "hint": "All living things need these basics",
+      "tags": ["animals"]
+    },
+    {
+      "id": "i_sci_l1_005",
+      "question": "Which part of the plant grows under the ground?",
+      "options": ["Leaf", "Flower", "Root", "Stem"],
+      "correct": "Root",
+      "hint": "Roots hold the plant and take in water",
+      "tags": ["plants"]
+    },
+    {
+      "id": "i_sci_l1_006",
+      "question": "What do we use our nose for?",
+      "options": ["Seeing", "Smelling", "Tasting", "Hearing"],
+      "correct": "Smelling",
+      "hint": "Nose helps us smell flowers and food",
+      "tags": ["senses"]
+    },
+    {
+      "id": "i_sci_l1_007",
+      "question": "Which is non-living?",
+      "options": ["Dog", "Bird", "Car", "Fish"],
+      "correct": "Car",
+      "hint": "Non-living things do not grow or need food",
+      "tags": ["living_nonliving"]
+    },
+    {
+      "id": "i_sci_l1_008",
+      "question": "What do we use our tongue for?",
+      "options": ["Seeing colors", "Tasting food", "Hearing songs", "Smelling roses"],
+      "correct": "Tasting food",
+      "hint": "Tongue helps us taste sweet, sour, salty",
+      "tags": ["senses"]
+    },
+    {
+      "id": "i_sci_l1_009",
+      "question": "Where do seeds come from?",
+      "options": ["Flowers", "Roots", "Leaves", "Stems"],
+      "correct": "Flowers",
+      "hint": "Many plants make seeds in flowers",
+      "tags": ["plants"]
+    },
+    {
+      "id": "i_sci_l1_010",
+      "question": "What do we use our eyes for?",
+      "options": ["Hearing", "Seeing", "Smelling", "Tasting"],
+      "correct": "Seeing",
+      "hint": "Eyes help us see colors and shapes",
+      "tags": ["senses"]
+    },
+    {
+      "id": "i_sci_l1_011",
+      "question": "Which animal lives in water?",
+      "options": ["Dog", "Fish", "Bird", "Cat"],
+      "correct": "Fish",
+      "hint": "Fish have gills to breathe underwater",
+      "tags": ["animals"]
+    },
+    {
+      "id": "i_sci_l1_012",
+      "question": "What do plants drink?",
+      "options": ["Juice", "Water", "Milk", "Soda"],
+      "correct": "Water",
+      "hint": "Plants take water through roots",
+      "tags": ["plants"]
+    },
+    {
+      "id": "i_sci_l1_013",
+      "question": "Which is living?",
+      "options": ["Cloud", "Stone", "Baby", "Toy"],
+      "correct": "Baby",
+      "hint": "Babies grow and need food",
+      "tags": ["living_nonliving"]
+    },
+    {
+      "id": "i_sci_l1_014",
+      "question": "What helps birds fly?",
+      "options": ["Fins", "Wings", "Legs", "Tails"],
+      "correct": "Wings",
+      "hint": "Birds have wings to fly",
+      "tags": ["animals"]
+    },
+    {
+      "id": "i_sci_l1_015",
+      "question": "What do we use our hands for?",
+      "options": ["Seeing", "Touching and holding", "Hearing", "Smelling"],
+      "correct": "Touching and holding",
+      "hint": "Hands feel textures and pick things up",
+      "tags": ["senses"]
+    }
+  ],
+  "level2": [
+    {
+      "id": "i_sci_l2_001",
+      "question": "Which simple machine helps us lift heavy things easily?",
+      "options": ["Wheel", "Lever", "Pulley", "Inclined plane"],
+      "correct": "Pulley",
+      "hint": "Pulleys use rope and wheel to lift",
+      "tags": ["simple_machines"]
+    },
+    {
+      "id": "i_sci_l2_002",
+      "question": "What season comes after summer?",
+      "options": ["Spring", "Autumn", "Winter", "Rainy"],
+      "correct": "Autumn",
+      "hint": "Autumn is also called fall",
+      "tags": ["seasons"]
+    },
+    {
+      "id": "i_sci_l2_003",
+      "question": "What do magnets attract?",
+      "options": ["Plastic", "Wood", "Iron", "Paper"],
+      "correct": "Iron",
+      "hint": "Magnets stick to iron and steel",
+      "tags": ["magnets"]
+    },
+    {
+      "id": "i_sci_l2_004",
+      "question": "What is the main source of light during the day?",
+      "options": ["Moon", "Stars", "Sun", "Lamp"],
+      "correct": "Sun",
+      "hint": "The Sun gives us daylight",
+      "tags": ["day_night"]
+    },
+    {
+      "id": "i_sci_l2_005",
+      "question": "Which part of the body pumps blood?",
+      "options": ["Brain", "Heart", "Lungs", "Stomach"],
+      "correct": "Heart",
+      "hint": "Heart beats to move blood",
+      "tags": ["body_parts"]
+    },
+    {
+      "id": "i_sci_l2_006",
+      "question": "What do we call water falling from clouds?",
+      "options": ["Snow", "Rain", "Wind", "Fog"],
+      "correct": "Rain",
+      "hint": "Rain is liquid water from the sky",
+      "tags": ["weather"]
+    },
+    {
+      "id": "i_sci_l2_007",
+      "question": "Which simple machine is a ramp?",
+      "options": ["Wheel", "Lever", "Inclined plane", "Pulley"],
+      "correct": "Inclined plane",
+      "hint": "Inclined plane = sloped surface",
+      "tags": ["simple_machines"]
+    },
+    {
+      "id": "i_sci_l2_008",
+      "question": "What season is very cold with snow in many places?",
+      "options": ["Summer", "Spring", "Winter", "Autumn"],
+      "correct": "Winter",
+      "hint": "Winter is cold and snowy",
+      "tags": ["seasons"]
+    },
+    {
+      "id": "i_sci_l2_009",
+      "question": "What do we breathe in?",
+      "options": ["Carbon dioxide", "Oxygen", "Nitrogen only", "Smoke"],
+      "correct": "Oxygen",
+      "hint": "We need oxygen to live",
+      "tags": ["body"]
+    },
+    {
+      "id": "i_sci_l2_010",
+      "question": "Shadows are long in the morning and evening because...",
+      "options": ["Sun is high", "Sun is low", "No sun", "Clouds"],
+      "correct": "Sun is low",
+      "hint": "Low sun makes long shadows",
+      "tags": ["day_night", "shadows"]
+    },
+    {
+      "id": "i_sci_l2_011",
+      "question": "Which simple machine is a seesaw?",
+      "options": ["Wheel", "Lever", "Pulley", "Ramp"],
+      "correct": "Lever",
+      "hint": "Seesaw is a type of lever",
+      "tags": ["simple_machines"]
+    },
+    {
+      "id": "i_sci_l2_012",
+      "question": "What season has flowers blooming and baby animals born?",
+      "options": ["Winter", "Spring", "Summer", "Autumn"],
+      "correct": "Spring",
+      "hint": "Spring is new growth time",
+      "tags": ["seasons"]
+    },
+    {
+      "id": "i_sci_l2_013",
+      "question": "What gas do plants take in?",
+      "options": ["Oxygen", "Carbon dioxide", "Nitrogen", "Helium"],
+      "correct": "Carbon dioxide",
+      "hint": "Plants use CO₂ to make food",
+      "tags": ["plants"]
+    },
+    {
+      "id": "i_sci_l2_014",
+      "question": "What do lungs do?",
+      "options": ["Pump blood", "Help us breathe", "Digest food", "Think"],
+      "correct": "Help us breathe",
+      "hint": "Lungs take in oxygen",
+      "tags": ["body_parts"]
+    },
+    {
+      "id": "i_sci_l2_015",
+      "question": "What makes a shadow?",
+      "options": ["Light blocked by object", "Dark room", "Rain", "Wind"],
+      "correct": "Light blocked by object",
+      "hint": "Shadows form when light can't pass through",
+      "tags": ["shadows"]
+    }
+  ],
+  "level3": [
+    {
+      "id": "i_sci_l3_001",
+      "question": "What is the first step of the water cycle?",
+      "options": ["Rain falls", "Water evaporates", "Clouds form", "Rivers flow"],
+      "correct": "Water evaporates",
+      "hint": "Heat makes water turn into vapor",
+      "tags": ["water_cycle"]
+    },
+    {
+      "id": "i_sci_l3_002",
+      "question": "Which planet is closest to the Sun?",
+      "options": ["Earth", "Mars", "Mercury", "Venus"],
+      "correct": "Mercury",
+      "hint": "Mercury is the closest planet",
+      "tags": ["solar_system"]
+    },
+    {
+      "id": "i_sci_l3_003",
+      "question": "What do wheels help us do?",
+      "options": ["Lift heavy things", "Move things easily", "Cut things", "Pull things"],
+      "correct": "Move things easily",
+      "hint": "Wheels reduce friction",
+      "tags": ["simple_machines"]
+    },
+    {
+      "id": "i_sci_l3_004",
+      "question": "What season has the longest days?",
+      "options": ["Winter", "Spring", "Summer", "Autumn"],
+      "correct": "Summer",
+      "hint": "Summer has longest daylight",
+      "tags": ["seasons"]
+    },
+    {
+      "id": "i_sci_l3_005",
+      "question": "What do magnets have two ends called?",
+      "options": ["North and South poles", "East and West", "Top and Bottom", "Left and Right"],
+      "correct": "North and South poles",
+      "hint": "Magnets have N and S poles",
+      "tags": ["magnets"]
+    },
+    {
+      "id": "i_sci_l3_006",
+      "question": "What gas do we breathe out?",
+      "options": ["Oxygen", "Carbon dioxide", "Nitrogen", "Helium"],
+      "correct": "Carbon dioxide",
+      "hint": "We exhale CO₂",
+      "tags": ["body"]
+    },
+    {
+      "id": "i_sci_l3_007",
+      "question": "Which simple machine is used in scissors?",
+      "options": ["Wheel", "Lever", "Pulley", "Inclined plane"],
+      "correct": "Lever",
+      "hint": "Scissors are two levers joined",
+      "tags": ["simple_machines"]
+    },
+    {
+      "id": "i_sci_l3_008",
+      "question": "What causes day and night?",
+      "options": ["Earth spins", "Sun moves", "Moon hides", "Clouds block"],
+      "correct": "Earth spins",
+      "hint": "Earth rotates once every 24 hours",
+      "tags": ["day_night"]
+    },
+    {
+      "id": "i_sci_l3_009",
+      "question": "What do clouds form from?",
+      "options": ["Smoke", "Water vapor", "Dust", "Wind"],
+      "correct": "Water vapor",
+      "hint": "Water vapor cools and condenses",
+      "tags": ["weather", "water_cycle"]
+    },
+    {
+      "id": "i_sci_l3_010",
+      "question": "Which planet has rings?",
+      "options": ["Earth", "Mars", "Saturn", "Mercury"],
+      "correct": "Saturn",
+      "hint": "Saturn is famous for its beautiful rings",
+      "tags": ["solar_system"]
+    },
+    {
+      "id": "i_sci_l3_011",
+      "question": "What is a fulcrum?",
+      "options": ["The point a lever turns on", "The wheel part", "The rope part", "The ramp part"],
+      "correct": "The point a lever turns on",
+      "hint": "Fulcrum is the fixed point",
+      "tags": ["simple_machines"]
+    },
+    {
+      "id": "i_sci_l3_012",
+      "question": "What season has colorful falling leaves?",
+      "options": ["Spring", "Summer", "Autumn", "Winter"],
+      "correct": "Autumn",
+      "hint": "Leaves change color and fall in autumn",
+      "tags": ["seasons"]
+    },
+    {
+      "id": "i_sci_l3_013",
+      "question": "Like poles of magnets do what?",
+      "options": ["Attract", "Repel", "Stick", "Break"],
+      "correct": "Repel",
+      "hint": "Like poles push away",
+      "tags": ["magnets"]
+    },
+    {
+      "id": "i_sci_l3_014",
+      "question": "What is the largest planet?",
+      "options": ["Earth", "Mars", "Jupiter", "Venus"],
+      "correct": "Jupiter",
+      "hint": "Jupiter is the biggest planet",
+      "tags": ["solar_system"]
+    },
+    {
+      "id": "i_sci_l3_015",
+      "question": "What happens to water when it is heated?",
+      "options": ["Freezes", "Evaporates", "Stays the same", "Becomes solid"],
+      "correct": "Evaporates",
+      "hint": "Heat turns water into vapor",
+      "tags": ["water_cycle"]
+    }
+  ],
+  "level4": [
+    {
+      "id": "i_sci_l4_001",
+      "question": "What is condensation in the water cycle?",
+      "options": ["Water falling as rain", "Water turning to vapor", "Vapor turning to liquid", "Water flowing in rivers"],
+      "correct": "Vapor turning to liquid",
+      "hint": "Cooling makes vapor → droplets",
+      "tags": ["water_cycle"]
+    },
+    {
+      "id": "i_sci_l4_002",
+      "question": "Which planet is known as the Red Planet?",
+      "options": ["Venus", "Mars", "Jupiter", "Saturn"],
+      "correct": "Mars",
+      "hint": "Mars looks red because of iron in soil",
+      "tags": ["solar_system"]
+    },
+    {
+      "id": "i_sci_l4_003",
+      "question": "What simple machine makes it easier to cut paper?",
+      "options": ["Wheel", "Wedge", "Pulley", "Lever"],
+      "correct": "Wedge",
+      "hint": "Scissors and knives are wedges",
+      "tags": ["simple_machines"]
+    },
+    {
+      "id": "i_sci_l4_004",
+      "question": "What causes seasons?",
+      "options": ["Earth closer to Sun", "Earth tilted and orbiting", "Moon phases", "Clouds changing"],
+      "correct": "Earth tilted and orbiting",
+      "hint": "Tilt causes different sunlight amounts",
+      "tags": ["seasons"]
+    },
+    {
+      "id": "i_sci_l4_005",
+      "question": "What do opposite poles of magnets do?",
+      "options": ["Repel", "Attract", "Break", "Spin"],
+      "correct": "Attract",
+      "hint": "Opposite poles stick together",
+      "tags": ["magnets"]
+    },
+    {
+      "id": "i_sci_l4_006",
+      "question": "Which is the only planet with life (that we know)?",
+      "options": ["Mars", "Venus", "Earth", "Jupiter"],
+      "correct": "Earth",
+      "hint": "Earth has water and air for life",
+      "tags": ["solar_system"]
+    },
+    {
+      "id": "i_sci_l4_007",
+      "question": "What is evaporation?",
+      "options": ["Liquid to gas", "Gas to liquid", "Solid to liquid", "Liquid to solid"],
+      "correct": "Liquid to gas",
+      "hint": "Water turns to vapor when heated",
+      "tags": ["water_cycle"]
+    },
+    {
+      "id": "i_sci_l4_008",
+      "question": "What simple machine is a slide?",
+      "options": ["Lever", "Pulley", "Inclined plane", "Wedge"],
+      "correct": "Inclined plane",
+      "hint": "Slide is a sloped surface",
+      "tags": ["simple_machines"]
+    },
+    {
+      "id": "i_sci_l4_009",
+      "question": "What season is hottest in Pakistan?",
+      "options": ["Winter", "Spring", "Summer", "Autumn"],
+      "correct": "Summer",
+      "hint": "Summer has high temperatures",
+      "tags": ["seasons"]
+    },
+    {
+      "id": "i_sci_l4_010",
+      "question": "What do we call the path Earth takes around the Sun?",
+      "options": ["Rotation", "Revolution", "Axis", "Orbit"],
+      "correct": "Orbit",
+      "hint": "Earth orbits the Sun in one year",
+      "tags": ["day_night", "solar_system"]
+    },
+    {
+      "id": "i_sci_l4_011",
+      "question": "Which organ cleans our blood?",
+      "options": ["Heart", "Lungs", "Kidneys", "Brain"],
+      "correct": "Kidneys",
+      "hint": "Kidneys filter blood",
+      "tags": ["body_parts"]
+    },
+    {
+      "id": "i_sci_l4_012",
+      "question": "What is precipitation?",
+      "options": ["Water evaporating", "Clouds forming", "Rain, snow, hail", "Vapor rising"],
+      "correct": "Rain, snow, hail",
+      "hint": "Water falling from clouds",
+      "tags": ["water_cycle", "weather"]
+    },
+    {
+      "id": "i_sci_l4_013",
+      "question": "What planet is biggest?",
+      "options": ["Earth", "Mars", "Jupiter", "Venus"],
+      "correct": "Jupiter",
+      "hint": "Jupiter is the largest planet",
+      "tags": ["solar_system"]
+    },
+    {
+      "id": "i_sci_l4_014",
+      "question": "What simple machine helps open a door?",
+      "options": ["Wheel", "Lever", "Pulley", "Inclined plane"],
+      "correct": "Lever",
+      "hint": "Door handle is a lever",
+      "tags": ["simple_machines"]
+    },
+    {
+      "id": "i_sci_l4_015",
+      "question": "What causes wind?",
+      "options": ["Sun heating air unevenly", "Rain falling", "Earth spinning fast", "Moon pulling"],
+      "correct": "Sun heating air unevenly",
+      "hint": "Warm air rises, cool air moves in",
+      "tags": ["weather"]
+    }
+  ],
+  "level5": [
+    {
+      "id": "i_sci_l5_001",
+      "question": "What is the center of our solar system?",
+      "options": ["Earth", "Moon", "Sun", "Jupiter"],
+      "correct": "Sun",
+      "hint": "Sun is the star at the center",
+      "tags": ["solar_system"]
+    },
+    {
+      "id": "i_sci_l5_002",
+      "question": "Which simple machine is used in a flagpole?",
+      "options": ["Lever", "Pulley", "Wedge", "Inclined plane"],
+      "correct": "Pulley",
+      "hint": "Pulley raises and lowers the flag",
+      "tags": ["simple_machines"]
+    },
+    {
+      "id": "i_sci_l5_003",
+      "question": "What is transpiration?",
+      "options": ["Plants losing water through leaves", "Water falling as rain", "Roots absorbing water", "Clouds forming"],
+      "correct": "Plants losing water through leaves",
+      "hint": "Plants release water vapor",
+      "tags": ["water_cycle", "plants"]
+    },
+    {
+      "id": "i_sci_l5_004",
+      "question": "Which planet is known for its rings?",
+      "options": ["Mars", "Venus", "Saturn", "Mercury"],
+      "correct": "Saturn",
+      "hint": "Saturn has beautiful rings",
+      "tags": ["solar_system"]
+    },
+    {
+      "id": "i_sci_l5_005",
+      "question": "What is the smallest bone in the body?",
+      "options": ["Femur", "Stapes (in ear)", "Tibia", "Skull"],
+      "correct": "Stapes (in ear)",
+      "hint": "Stapes is in the middle ear",
+      "tags": ["body_parts"]
+    },
+    {
+      "id": "i_sci_l5_006",
+      "question": "What season has the shortest days?",
+      "options": ["Summer", "Spring", "Winter", "Autumn"],
+      "correct": "Winter",
+      "hint": "Winter has shortest daylight",
+      "tags": ["seasons"]
+    },
+    {
+      "id": "i_sci_l5_007",
+      "question": "What force pulls objects toward Earth?",
+      "options": ["Magnetism", "Gravity", "Friction", "Wind"],
+      "correct": "Gravity",
+      "hint": "Gravity keeps us on the ground",
+      "tags": ["physics"]
+    },
+    {
+      "id": "i_sci_l5_008",
+      "question": "Which planet has the most moons?",
+      "options": ["Earth", "Mars", "Jupiter", "Venus"],
+      "correct": "Jupiter",
+      "hint": "Jupiter has many moons",
+      "tags": ["solar_system"]
+    },
+    {
+      "id": "i_sci_l5_009",
+      "question": "What is runoff in the water cycle?",
+      "options": ["Water soaking into ground", "Water flowing over land into rivers", "Water evaporating", "Water freezing"],
+      "correct": "Water flowing over land into rivers",
+      "hint": "Rainwater runs into streams",
+      "tags": ["water_cycle"]
+    },
+    {
+      "id": "i_sci_l5_010",
+      "question": "What simple machine is a screw?",
+      "options": ["Wheel", "Inclined plane wrapped around", "Lever", "Pulley"],
+      "correct": "Inclined plane wrapped around",
+      "hint": "Screw is a wrapped inclined plane",
+      "tags": ["simple_machines"]
+    },
+    {
+      "id": "i_sci_l5_011",
+      "question": "What causes tides?",
+      "options": ["Sun only", "Moon's gravity", "Earth spinning", "Wind"],
+      "correct": "Moon's gravity",
+      "hint": "Moon pulls on Earth's oceans",
+      "tags": ["earth"]
+    },
+    {
+      "id": "i_sci_l5_012",
+      "question": "Which organ helps us breathe?",
+      "options": ["Heart", "Lungs", "Brain", "Stomach"],
+      "correct": "Lungs",
+      "hint": "Lungs exchange oxygen and CO₂",
+      "tags": ["body_parts"]
+    },
+    {
+      "id": "i_sci_l5_013",
+      "question": "What is the hottest planet?",
+      "options": ["Mercury", "Venus", "Earth", "Mars"],
+      "correct": "Venus",
+      "hint": "Venus has thick atmosphere trapping heat",
+      "tags": ["solar_system"]
+    },
+    {
+      "id": "i_sci_l5_014",
+      "question": "What is collection in the water cycle?",
+      "options": ["Water in oceans, lakes, rivers", "Water evaporating", "Clouds forming", "Rain falling"],
+      "correct": "Water in oceans, lakes, rivers",
+      "hint": "Water collects in bodies of water",
+      "tags": ["water_cycle"]
+    },
+    {
+      "id": "i_sci_l5_015",
+      "question": "What is friction?",
+      "options": ["Force that helps us move", "Force that slows things down", "Force that lifts", "Force that spins"],
+      "correct": "Force that slows things down",
+      "hint": "Friction between surfaces resists motion",
+      "tags": ["physics"]
+    }
+  ]
+}

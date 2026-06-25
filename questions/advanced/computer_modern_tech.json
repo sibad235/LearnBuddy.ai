@@ -1,0 +1,612 @@
+{
+  "level1": [
+    {
+      "id": "a_comp_l1_001",
+      "question": "What does CPU stand for?",
+      "options": ["Central Processing Unit", "Computer Personal Unit", "Control Power Unit", "Central Power Unit"],
+      "correct": "Central Processing Unit",
+      "hint": "The CPU is often called the 'brain' of the computer — it performs calculations and runs instructions.",
+      "tags": ["hardware", "basics"]
+    },
+    {
+      "id": "a_comp_l1_002",
+      "question": "Which device do you use to type text into the computer?",
+      "options": ["Mouse", "Monitor", "Keyboard", "Printer"],
+      "correct": "Keyboard",
+      "hint": "The keyboard has letters, numbers, and special keys for input.",
+      "tags": ["input_devices"]
+    },
+    {
+      "id": "a_comp_l1_003",
+      "question": "What is the most common way to connect to the internet at home?",
+      "options": ["Wi-Fi", "Bluetooth", "USB cable", "Satellite"],
+      "correct": "Wi-Fi",
+      "hint": "Wi-Fi allows wireless connection to a router for internet access.",
+      "tags": ["internet", "networking"]
+    },
+    {
+      "id": "a_comp_l1_004",
+      "question": "What should you never share online with strangers?",
+      "options": ["Your favorite color", "Your home address", "Your school name", "Your pet's name"],
+      "correct": "Your home address",
+      "hint": "Personal information like address, phone number, or full name should stay private to stay safe online.",
+      "tags": ["internet_safety", "privacy"]
+    },
+    {
+      "id": "a_comp_l1_005",
+      "question": "Which of these is an output device?",
+      "options": ["Keyboard", "Mouse", "Monitor", "Scanner"],
+      "correct": "Monitor",
+      "hint": "Output devices show or produce results — the monitor displays what the computer is doing.",
+      "tags": ["output_devices"]
+    },
+    {
+      "id": "a_comp_l1_006",
+      "question": "What does WWW stand for?",
+      "options": ["World Wide Web", "Wide Web World", "Web Wide World", "World Web Wide"],
+      "correct": "World Wide Web",
+      "hint": "The WWW is the system of linked pages you access through a browser.",
+      "tags": ["internet", "web"]
+    },
+    {
+      "id": "a_comp_l1_007",
+      "question": "What is software?",
+      "options": ["The physical parts of a computer", "The programs and instructions that tell the computer what to do", "The wires inside the computer", "The screen you look at"],
+      "correct": "The programs and instructions that tell the computer what to do",
+      "hint": "Software includes apps, games, browsers — everything that runs on hardware.",
+      "tags": ["software", "basics"]
+    },
+    {
+      "id": "a_comp_l1_008",
+      "question": "Which button do you click to close a program safely?",
+      "options": ["X in the corner", "Power button", "Enter key", "Spacebar"],
+      "correct": "X in the corner",
+      "hint": "Always use the close (X) button or File → Exit to close programs properly.",
+      "tags": ["computer_use"]
+    },
+    {
+      "id": "a_comp_l1_009",
+      "question": "What is a strong password made of?",
+      "options": ["Only your name", "Letters, numbers, and symbols mixed together", "123456", "Your birthday"],
+      "correct": "Letters, numbers, and symbols mixed together",
+      "hint": "A strong password is long, random, and uses uppercase, lowercase, numbers, and special characters.",
+      "tags": ["cyber_security", "passwords"]
+    },
+    {
+      "id": "a_comp_l1_010",
+      "question": "Which device stores all your files permanently even when the computer is off?",
+      "options": ["RAM", "CPU", "Hard disk / SSD", "Monitor"],
+      "correct": "Hard disk / SSD",
+      "hint": "Hard drives and SSDs are storage — they keep data long-term.",
+      "tags": ["storage"]
+    },
+    {
+      "id": "a_comp_l1_011",
+      "question": "What should you do if someone asks for your password online?",
+      "options": ["Tell them", "Share it with a friend", "Never share it", "Type it backward"],
+      "correct": "Never share it",
+      "hint": "Your password is private — no real company or friend should ever ask for it.",
+      "tags": ["internet_safety"]
+    },
+    {
+      "id": "a_comp_l1_012",
+      "question": "What is the most common web browser?",
+      "options": ["Notepad", "Chrome", "Paint", "Calculator"],
+      "correct": "Chrome",
+      "hint": "Google Chrome is one of the most widely used browsers to visit websites.",
+      "tags": ["web", "browsers"]
+    },
+    {
+      "id": "a_comp_l1_013",
+      "question": "Which key do you press to take a screenshot on most computers?",
+      "options": ["Print Screen", "Delete", "Enter", "Shift"],
+      "correct": "Print Screen",
+      "hint": "Print Screen (PrtSc) captures the screen — then paste it into Paint or Word.",
+      "tags": ["computer_use"]
+    },
+    {
+      "id": "a_comp_l1_014",
+      "question": "What does URL stand for?",
+      "options": ["Uniform Resource Locator", "United Resource Link", "Universal Resource Locator", "User Resource Link"],
+      "correct": "Uniform Resource Locator",
+      "hint": "URL is the web address you type (e.g., www.google.com).",
+      "tags": ["internet", "web"]
+    },
+    {
+      "id": "a_comp_l1_015",
+      "question": "Why should you log out of accounts on shared computers?",
+      "options": ["To save battery", "To prevent others from using your account", "To make the screen brighter", "To restart faster"],
+      "correct": "To prevent others from using your account",
+      "hint": "Logging out protects your personal information and accounts.",
+      "tags": ["cyber_security"]
+    }
+  ],
+  "level2": [
+    {
+      "id": "a_comp_l2_001",
+      "question": "What is the difference between RAM and storage?",
+      "options": ["RAM is temporary, storage is permanent", "RAM is permanent, storage is temporary", "Both are the same", "RAM is only for games"],
+      "correct": "RAM is temporary, storage is permanent",
+      "hint": "RAM holds data while the computer is on (fast but erased on shutdown). Storage (HDD/SSD) keeps files forever.",
+      "tags": ["hardware", "memory"]
+    },
+    {
+      "id": "a_comp_l2_002",
+      "question": "What does HTTPS mean in a website address?",
+      "options": ["HyperText Transfer Protocol Secure", "High Transfer Protocol Safe", "Hyper Transfer Protocol Standard", "Host Text Protocol Secure"],
+      "correct": "HyperText Transfer Protocol Secure",
+      "hint": "HTTPS means the connection is encrypted — safer than plain HTTP.",
+      "tags": ["internet_safety", "web"]
+    },
+    {
+      "id": "a_comp_l2_003",
+      "question": "Which of these is an example of malware?",
+      "options": ["Antivirus software", "Virus or ransomware", "Web browser", "Operating system"],
+      "correct": "Virus or ransomware",
+      "hint": "Malware harms your computer or steals information — always avoid suspicious downloads.",
+      "tags": ["cyber_security"]
+    },
+    {
+      "id": "a_comp_l2_004",
+      "question": "What is an algorithm?",
+      "options": ["A computer part", "A step-by-step set of instructions to solve a problem", "A type of virus", "A screen display"],
+      "correct": "A step-by-step set of instructions to solve a problem",
+      "hint": "Recipes, directions, and computer programs are all algorithms.",
+      "tags": ["programming", "basics"]
+    },
+    {
+      "id": "a_comp_l2_005",
+      "question": "What does IP address stand for?",
+      "options": ["Internet Protocol address", "Internal Power address", "Internet Position address", "Input Protocol address"],
+      "correct": "Internet Protocol address",
+      "hint": "Every device on the internet has a unique IP address (like a digital home address).",
+      "tags": ["networking"]
+    },
+    {
+      "id": "a_comp_l2_006",
+      "question": "Which of these is a safe way to download files?",
+      "options": ["From unknown websites", "From official app stores or trusted sites", "From email attachments from strangers", "From pop-up ads"],
+      "correct": "From official app stores or trusted sites",
+      "hint": "Only download from Google Play, Apple App Store, Microsoft Store, or official company websites.",
+      "tags": ["internet_safety"]
+    },
+    {
+      "id": "a_comp_l2_007",
+      "question": "What is cloud storage?",
+      "options": ["Storage inside your computer", "Storage on remote servers accessed via internet", "A type of RAM", "A physical hard disk"],
+      "correct": "Storage on remote servers accessed via internet",
+      "hint": "Google Drive, iCloud, Dropbox — files are saved online, not just on your device.",
+      "tags": ["storage", "cloud"]
+    },
+    {
+      "id": "a_comp_l2_008",
+      "question": "What is the purpose of a firewall?",
+      "options": ["To make computer faster", "To block unauthorized access", "To display pictures", "To charge the battery"],
+      "correct": "To block unauthorized access",
+      "hint": "Firewall protects your computer from hackers and unwanted network traffic.",
+      "tags": ["cyber_security"]
+    },
+    {
+      "id": "a_comp_l2_009",
+      "question": "Which programming concept means 'making a decision'?",
+      "options": ["Loop", "Variable", "Condition (if-else)", "Function"],
+      "correct": "Condition (if-else)",
+      "hint": "If something is true, do this; else do that — decision making in code.",
+      "tags": ["programming"]
+    },
+    {
+      "id": "a_comp_l2_010",
+      "question": "What is phishing?",
+      "options": ["Fishing game", "Fake emails/websites trying to steal your information", "Fast internet", "Photo sharing"],
+      "correct": "Fake emails/websites trying to steal your information",
+      "hint": "Never click links or enter passwords from suspicious messages.",
+      "tags": ["cyber_security"]
+    },
+    {
+      "id": "a_comp_l2_011",
+      "question": "What does RAM stand for?",
+      "options": ["Read Access Memory", "Random Access Memory", "Run Access Memory", "Real Access Memory"],
+      "correct": "Random Access Memory",
+      "hint": "RAM is fast temporary memory the CPU uses while programs are running.",
+      "tags": ["hardware"]
+    },
+    {
+      "id": "a_comp_l2_012",
+      "question": "Which is an example of personal information you should protect?",
+      "options": ["Favorite color", "Full name and address", "Favorite game", "School name only"],
+      "correct": "Full name and address",
+      "hint": "Never share full name, address, phone, school details, or photos with strangers online.",
+      "tags": ["privacy"]
+    },
+    {
+      "id": "a_comp_l2_013",
+      "question": "What is an operating system?",
+      "options": ["A game", "Software that manages hardware and runs apps (Windows, Android, iOS)", "A type of monitor", "A keyboard"],
+      "correct": "Software that manages hardware and runs apps (Windows, Android, iOS)",
+      "hint": "OS controls everything — Windows, macOS, Linux, Android, iOS.",
+      "tags": ["software"]
+    },
+    {
+      "id": "a_comp_l2_014",
+      "question": "What should you do before clicking any link in an email?",
+      "options": ["Click immediately", "Check sender and hover over link to see real URL", "Type your password", "Share with friends"],
+      "correct": "Check sender and hover over link to see real URL",
+      "hint": "Hover (don't click) to see where the link really goes — avoid phishing.",
+      "tags": ["internet_safety"]
+    },
+    {
+      "id": "a_comp_l2_015",
+      "question": "What is binary code?",
+      "options": ["English letters", "0s and 1s that computers understand", "Colors", "Music notes"],
+      "correct": "0s and 1s that computers understand",
+      "hint": "All computer data is stored and processed as binary (0 and 1).",
+      "tags": ["basics", "digital"]
+    }
+  ],
+  "level3": [
+    {
+      "id": "a_comp_l3_001",
+      "question": "What is the difference between a virus and a worm?",
+      "options": ["Virus needs human action, worm spreads automatically", "Virus is harmless, worm is dangerous", "Both are the same", "Worm needs email"],
+      "correct": "Virus needs human action, worm spreads automatically",
+      "hint": "Viruses attach to files and spread when opened; worms self-replicate over networks.",
+      "tags": ["cyber_security"]
+    },
+    {
+      "id": "a_comp_l3_002",
+      "question": "What does 'encryption' do to your data?",
+      "options": ["Makes it faster", "Scrambles it so only authorized people can read it", "Deletes it", "Makes it public"],
+      "correct": "Scrambles it so only authorized people can read it",
+      "hint": "Encryption protects messages, passwords, and files (e.g., HTTPS, WhatsApp).",
+      "tags": ["cyber_security", "privacy"]
+    },
+    {
+      "id": "a_comp_l3_003",
+      "question": "What is a variable in programming?",
+      "options": ["A fixed number", "A named storage location for data that can change", "A loop", "A screen display"],
+      "correct": "A named storage location for data that can change",
+      "hint": "Like a box with a name — you can put different values in it (score = 10, then score = 15).",
+      "tags": ["programming"]
+    },
+    {
+      "id": "a_comp_l3_004",
+      "question": "What is a loop in coding?",
+      "options": ["A decision", "Repeating a block of code multiple times", "A way to store data", "A function"],
+      "correct": "Repeating a block of code multiple times",
+      "hint": "for, while, repeat — used to avoid writing the same code again and again.",
+      "tags": ["programming"]
+    },
+    {
+      "id": "a_comp_l3_005",
+      "question": "What is two-factor authentication (2FA)?",
+      "options": ["Two passwords", "Password + second verification (code/phone)", "Two computers", "Two monitors"],
+      "correct": "Password + second verification (code/phone)",
+      "hint": "Even if someone gets your password, they can't log in without the second factor.",
+      "tags": ["cyber_security"]
+    },
+    {
+      "id": "a_comp_l3_006",
+      "question": "What is artificial intelligence (AI)?",
+      "options": ["A robot that looks human", "Computers doing tasks that normally require human intelligence", "A video game", "A fast internet"],
+      "correct": "Computers doing tasks that normally require human intelligence",
+      "hint": "Examples: voice assistants (Siri), recommendation systems (Netflix), chatbots.",
+      "tags": ["ai", "modern_tech"]
+    },
+    {
+      "id": "a_comp_l3_007",
+      "question": "What is a cookie in web browsing?",
+      "options": ["Food", "Small text file that stores user data on your device", "A virus", "A browser tab"],
+      "correct": "Small text file that stores user data on your device",
+      "hint": "Cookies remember login info, preferences, shopping cart — can be useful or track you.",
+      "tags": ["web", "privacy"]
+    },
+    {
+      "id": "a_comp_l3_008",
+      "question": "What does 'open source' software mean?",
+      "options": ["Free to use and modify, source code is public", "Only for rich people", "Cannot be changed", "Paid software"],
+      "correct": "Free to use and modify, source code is public",
+      "hint": "Examples: Linux, Firefox, VLC — anyone can see and improve the code.",
+      "tags": ["software"]
+    },
+    {
+      "id": "a_comp_l3_009",
+      "question": "What is the purpose of a VPN?",
+      "options": ["Make internet faster", "Hide your IP and encrypt traffic for privacy", "Play games", "Store files"],
+      "correct": "Hide your IP and encrypt traffic for privacy",
+      "hint": "VPN = Virtual Private Network — great on public Wi-Fi.",
+      "tags": ["privacy", "networking"]
+    },
+    {
+      "id": "a_comp_l3_010",
+      "question": "What is a function in programming?",
+      "options": ["A loop", "A reusable block of code with a name", "A variable", "A screen"],
+      "correct": "A reusable block of code with a name",
+      "hint": "Like a recipe — call the function whenever you need that task done.",
+      "tags": ["programming"]
+    },
+    {
+      "id": "a_comp_l3_011",
+      "question": "Which of these is a social engineering attack?",
+      "options": ["Virus in email", "Tricking someone into giving password by pretending to be bank", "Slow internet", "Broken screen"],
+      "correct": "Tricking someone into giving password by pretending to be bank",
+      "hint": "Social engineering manipulates people, not computers.",
+      "tags": ["cyber_security"]
+    },
+    {
+      "id": "a_comp_l3_012",
+      "question": "What is machine learning?",
+      "options": ["A type of robot", "Computers learning from data without being explicitly programmed", "Fast typing", "Video editing"],
+      "correct": "Computers learning from data without being explicitly programmed",
+      "hint": "Example: recommendation systems learn your taste from what you watch.",
+      "tags": ["ai", "machine_learning"]
+    },
+    {
+      "id": "a_comp_l3_013",
+      "question": "What is a strong password manager good for?",
+      "options": ["Making passwords weaker", "Remembering and generating complex passwords safely", "Sharing passwords", "Deleting accounts"],
+      "correct": "Remembering and generating complex passwords safely",
+      "hint": "Use one master password → manager creates/fills strong unique passwords for each site.",
+      "tags": ["cyber_security"]
+    },
+    {
+      "id": "a_comp_l3_014",
+      "question": "What is the difference between a file and a folder?",
+      "options": ["File contains data, folder organizes files", "Both are the same", "Folder contains hardware", "File is internet link"],
+      "correct": "File contains data, folder organizes files",
+      "hint": "Files = documents, photos; folders = containers to group them.",
+      "tags": ["file_management"]
+    },
+    {
+      "id": "a_comp_l3_015",
+      "question": "What is 'digital footprint'?",
+      "options": ["Shoe size", "All the data you leave online (posts, searches, likes)", "Screen brightness", "Computer weight"],
+      "correct": "All the data you leave online (posts, searches, likes)",
+      "hint": "Be careful — your digital footprint can last forever and affect future opportunities.",
+      "tags": ["privacy", "digital_citizenship"]
+    }
+  ],
+  "level4": [
+    {
+      "id": "a_comp_l4_001",
+      "question": "What is the purpose of version control systems like Git?",
+      "options": ["Play music", "Track changes in code and allow collaboration", "Make computer faster", "Delete files"],
+      "correct": "Track changes in code and allow collaboration",
+      "hint": "Developers use Git to save versions, work together, and revert mistakes.",
+      "tags": ["programming", "tools"]
+    },
+    {
+      "id": "a_comp_l4_002",
+      "question": "What is a DDoS attack?",
+      "options": ["Stealing passwords", "Overwhelming a website with fake traffic to make it crash", "Installing antivirus", "Sending emails"],
+      "correct": "Overwhelming a website with fake traffic to make it crash",
+      "hint": "Distributed Denial of Service — floods server so real users can't access.",
+      "tags": ["cyber_security"]
+    },
+    {
+      "id": "a_comp_l4_003",
+      "question": "What does API stand for?",
+      "options": ["Application Programming Interface", "Advanced Personal Internet", "Automatic Program Installer", "All Purpose Internet"],
+      "correct": "Application Programming Interface",
+      "hint": "API lets different software talk to each other (e.g., weather app gets data from weather service).",
+      "tags": ["programming", "web"]
+    },
+    {
+      "id": "a_comp_l4_004",
+      "question": "What is blockchain technology mainly known for?",
+      "options": ["Video games", "Secure, decentralized record-keeping (e.g., cryptocurrency)", "Fast internet", "Photo editing"],
+      "correct": "Secure, decentralized record-keeping (e.g., cryptocurrency)",
+      "hint": "Bitcoin and many other cryptos use blockchain — no single person controls it.",
+      "tags": ["modern_tech", "blockchain"]
+    },
+    {
+      "id": "a_comp_l4_005",
+      "question": "What is the main goal of ethical hacking?",
+      "options": ["Steal data", "Find and fix security weaknesses before bad hackers do", "Make viruses", "Delete computers"],
+      "correct": "Find and fix security weaknesses before bad hackers do",
+      "hint": "White-hat hackers help companies improve security.",
+      "tags": ["cyber_security"]
+    },
+    {
+      "id": "a_comp_l4_006",
+      "question": "What is a recursive function?",
+      "options": ["A function that never ends", "A function that calls itself", "A loop inside a loop", "A variable"],
+      "correct": "A function that calls itself",
+      "hint": "Example: factorial(n) = n × factorial(n-1) — stops at base case.",
+      "tags": ["programming"]
+    },
+    {
+      "id": "a_comp_l4_007",
+      "question": "What is the dark web?",
+      "options": ["Normal internet with black background", "Hidden part of internet requiring special browser (Tor)", "Broken websites", "Offline websites"],
+      "correct": "Hidden part of internet requiring special browser (Tor)",
+      "hint": "Not indexed by Google — used for privacy but also illegal activities.",
+      "tags": ["internet", "privacy"]
+    },
+    {
+      "id": "a_comp_l4_008",
+      "question": "What does 'IoT' stand for?",
+      "options": ["Internet of Things", "Input Output Terminal", "Internal Operating Tool", "Internet on Television"],
+      "correct": "Internet of Things",
+      "hint": "Everyday objects (lights, thermostats, fridges) connected to the internet.",
+      "tags": ["modern_tech"]
+    },
+    {
+      "id": "a_comp_l4_009",
+      "question": "What is a brute force attack?",
+      "options": ["Trying every possible password until it works", "Sending friendly emails", "Installing updates", "Cleaning keyboard"],
+      "correct": "Trying every possible password until it works",
+      "hint": "Very slow unless password is weak — strong passwords resist this.",
+      "tags": ["cyber_security"]
+    },
+    {
+      "id": "a_comp_l4_010",
+      "question": "What is the purpose of a compiler?",
+      "options": ["Run code directly", "Translate high-level code to machine code", "Store data", "Display graphics"],
+      "correct": "Translate high-level code to machine code",
+      "hint": "C, Java, Python (some) use compilers/interpreters to turn human-readable code into instructions CPU understands.",
+      "tags": ["programming"]
+    },
+    {
+      "id": "a_comp_l4_011",
+      "question": "What is deepfake technology?",
+      "options": ["Very realistic fake videos/audio made with AI", "Deep sea exploration", "Fast internet", "Strong password"],
+      "correct": "Very realistic fake videos/audio made with AI",
+      "hint": "Can be fun but also dangerous (fake news, impersonation).",
+      "tags": ["ai", "ethics"]
+    },
+    {
+      "id": "a_comp_l4_012",
+      "question": "What is the main risk of public Wi-Fi?",
+      "options": ["It's free", "Data can be intercepted if not encrypted", "It's faster", "It has better games"],
+      "correct": "Data can be intercepted if not encrypted",
+      "hint": "Use VPN on public Wi-Fi to encrypt traffic.",
+      "tags": ["networking", "privacy"]
+    },
+    {
+      "id": "a_comp_l4_013",
+      "question": "What is a neural network in AI?",
+      "options": ["A computer brain inspired by human neurons", "A type of virus", "A screen display", "A keyboard layout"],
+      "correct": "A computer brain inspired by human neurons",
+      "hint": "Layers of connected nodes learn patterns from data — used in image recognition, chatbots.",
+      "tags": ["ai", "machine_learning"]
+    },
+    {
+      "id": "a_comp_l4_014",
+      "question": "What is open-source intelligence (OSINT)?",
+      "options": ["Gathering information from publicly available sources", "Secret hacking", "Free software", "Paid courses"],
+      "correct": "Gathering information from publicly available sources",
+      "hint": "Used by journalists, security experts — social media, websites, public records.",
+      "tags": ["cyber_security", "research"]
+    },
+    {
+      "id": "a_comp_l4_015",
+      "question": "What is quantum computing expected to do better than classical computers?",
+      "options": ["Play games faster", "Solve certain complex problems (factoring, optimization) much faster", "Browse internet", "Store more photos"],
+      "correct": "Solve certain complex problems (factoring, optimization) much faster",
+      "hint": "Uses qubits and superposition — huge potential but still early stage.",
+      "tags": ["modern_tech", "future"]
+    }
+  ],
+  "level5": [
+    {
+      "id": "a_comp_l5_001",
+      "question": "What is the main idea behind object-oriented programming (OOP)?",
+      "options": ["Writing everything in one long file", "Organizing code into objects that have properties and behaviors", "Only using loops", "Deleting variables"],
+      "correct": "Organizing code into objects that have properties and behaviors",
+      "hint": "Classes → objects; concepts: encapsulation, inheritance, polymorphism.",
+      "tags": ["programming"]
+    },
+    {
+      "id": "a_comp_l5_002",
+      "question": "What is a zero-day vulnerability?",
+      "options": ["A bug known for zero days", "A security flaw unknown to the vendor and no patch exists yet", "A free update", "A new computer model"],
+      "correct": "A security flaw unknown to the vendor and no patch exists yet",
+      "hint": "Very dangerous — attackers exploit before fix is available.",
+      "tags": ["cyber_security"]
+    },
+    {
+      "id": "a_comp_l5_003",
+      "question": "What does 'Big O notation' describe?",
+      "options": ["Size of screen", "How an algorithm's runtime grows with input size", "Number of colors", "Hard disk speed"],
+      "correct": "How an algorithm's runtime grows with input size",
+      "hint": "O(1) = constant, O(n) = linear, O(n²) = quadratic — important for efficiency.",
+      "tags": ["programming", "algorithms"]
+    },
+    {
+      "id": "a_comp_l5_004",
+      "question": "What is ransomware?",
+      "options": ["Music player", "Malware that encrypts files and demands payment", "Fast browser", "Antivirus"],
+      "correct": "Malware that encrypts files and demands payment",
+      "hint": "Never pay — use backups and keep software updated.",
+      "tags": ["cyber_security"]
+    },
+    {
+      "id": "a_comp_l5_005",
+      "question": "What is supervised learning in machine learning?",
+      "options": ["Learning without any data", "Learning from labeled examples (input + correct output)", "Learning by trial and error", "Learning from videos"],
+      "correct": "Learning from labeled examples (input + correct output)",
+      "hint": "Example: show thousands of cat/dog photos labeled → model learns to classify.",
+      "tags": ["ai", "machine_learning"]
+    },
+    {
+      "id": "a_comp_l5_006",
+      "question": "What is the purpose of a hash function in cryptography?",
+      "options": ["Make text colorful", "Convert data into fixed-size string (fingerprint) that can't be reversed", "Speed up internet", "Delete files"],
+      "correct": "Convert data into fixed-size string (fingerprint) that can't be reversed",
+      "hint": "Used for passwords (stored as hashes), blockchain, data integrity.",
+      "tags": ["cyber_security", "cryptography"]
+    },
+    {
+      "id": "a_comp_l5_007",
+      "question": "What is a 'man-in-the-middle' attack?",
+      "options": ["Two people talking", "Attacker secretly intercepts and possibly alters communication", "Fast typing", "Group chat"],
+      "correct": "Attacker secretly intercepts and possibly alters communication",
+      "hint": "Common on unsecured Wi-Fi — use HTTPS and VPN to protect.",
+      "tags": ["cyber_security"]
+    },
+    {
+      "id": "a_comp_l5_008",
+      "question": "What is edge computing?",
+      "options": ["Computing at the edge of your desk", "Processing data closer to where it's created (not in distant cloud)", "Fast internet", "Small computers"],
+      "correct": "Processing data closer to where it's created (not in distant cloud)",
+      "hint": "Faster, less latency — used in self-driving cars, IoT devices.",
+      "tags": ["modern_tech"]
+    },
+    {
+      "id": "a_comp_l5_009",
+      "question": "What is the main ethical concern with facial recognition AI?",
+      "options": ["It uses too much battery", "Privacy invasion, bias, surveillance", "It makes photos prettier", "It plays music"],
+      "correct": "Privacy invasion, bias, surveillance",
+      "hint": "Can be misused for tracking without consent; many systems have racial/gender bias.",
+      "tags": ["ai", "ethics"]
+    },
+    {
+      "id": "a_comp_l5_010",
+      "question": "What is a DDoS botnet?",
+      "options": ["Group of infected computers controlled to flood a target", "Fast gaming network", "New type of keyboard", "Music playlist"],
+      "correct": "Group of infected computers controlled to flood a target",
+      "hint": "Mirai and others — hackers use thousands of hacked devices to attack websites.",
+      "tags": ["cyber_security"]
+    },
+    {
+      "id": "a_comp_l5_011",
+      "question": "What is the difference between correlation and causation?",
+      "options": ["Same thing", "Correlation = two things happen together; causation = one causes the other", "Correlation is stronger", "Causation is random"],
+      "correct": "Correlation = two things happen together; causation = one causes the other",
+      "hint": "Ice cream sales and drowning both rise in summer — correlated but not causal (hot weather causes both).",
+      "tags": ["ai", "data_science"]
+    },
+    {
+      "id": "a_comp_l5_012",
+      "question": "What is quantum supremacy?",
+      "options": ["Quantum computer beating classical supercomputer on a specific task", "Fast internet", "Strong password", "Big monitor"],
+      "correct": "Quantum computer beating classical supercomputer on a specific task",
+      "hint": "Google claimed this in 2019 — still early days for practical use.",
+      "tags": ["modern_tech", "quantum"]
+    },
+    {
+      "id": "a_comp_l5_013",
+      "question": "What is the purpose of a salt in password hashing?",
+      "options": ["Make food tasty", "Add random data so identical passwords have different hashes", "Delete old passwords", "Speed up login"],
+      "correct": "Add random data so identical passwords have different hashes",
+      "hint": "Prevents rainbow table attacks — even same password looks different.",
+      "tags": ["cyber_security", "cryptography"]
+    },
+    {
+      "id": "a_comp_l5_014",
+      "question": "What is 'bias in AI'?",
+      "options": ["AI being too fast", "Unfair or prejudiced results due to flawed training data", "AI liking certain colors", "AI forgetting things"],
+      "correct": "Unfair or prejudiced results due to flawed training data",
+      "hint": "Example: facial recognition worse on darker skin — caused by unrepresentative training data.",
+      "tags": ["ai", "ethics"]
+    },
+    {
+      "id": "a_comp_l5_015",
+      "question": "What is the main idea of 'privacy by design'?",
+      "options": ["Add privacy features only after launch", "Build privacy and data protection into systems from the start", "Share all data", "Use weak passwords"],
+      "correct": "Build privacy and data protection into systems from the start",
+      "hint": "GDPR, modern apps — minimize data collection, anonymize, secure by default.",
+      "tags": ["privacy", "ethics"]
+    }
+  ]
+}

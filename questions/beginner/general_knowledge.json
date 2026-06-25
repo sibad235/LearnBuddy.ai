@@ -1,0 +1,612 @@
+{
+"level1": [
+{
+"id": "b_sci_l1_001",
+"question": "What part of your body do you use to see?",
+"options": ["Ears", "Eyes", "Nose", "Mouth"],
+"correct": "Eyes",
+"hint": "Your eyes help you look at things!",
+"tags": ["body", "senses"]
+},
+{
+"id": "b_sci_l1_002",
+"question": "What sound does a cow make?",
+"options": ["Meow", "Moo", "Woof", "Tweet"],
+"correct": "Moo",
+"hint": "Cows say moo!",
+"tags": ["animals"]
+},
+{
+"id": "b_sci_l1_003",
+"question": "Where does a bird live?",
+"options": ["Nest", "Hole", "Web", "Hive"],
+"correct": "Nest",
+"hint": "Birds build nests in trees!",
+"tags": ["animals", "habitats"]
+},
+{
+"id": "b_sci_l1_004",
+"question": "What do plants need to grow? (sun)",
+"options": ["Dark", "Sun", "Snow", "Wind"],
+"correct": "Sun",
+"hint": "Plants love the sun to make food!",
+"tags": ["plants"]
+},
+{
+"id": "b_sci_l1_005",
+"question": "What part of your body do you use to hear?",
+"options": ["Eyes", "Nose", "Ears", "Mouth"],
+"correct": "Ears",
+"hint": "Ears listen to sounds!",
+"tags": ["body", "senses"]
+},
+{
+"id": "b_sci_l1_006",
+"question": "What is the weather like when it rains?",
+"options": ["Sunny", "Rainy", "Windy", "Snowy"],
+"correct": "Rainy",
+"hint": "Rainy means water from the sky!",
+"tags": ["weather"]
+},
+{
+"id": "b_sci_l1_007",
+"question": "What color is the sun?",
+"options": ["Blue", "Green", "Yellow", "Red"],
+"correct": "Yellow",
+"hint": "The sun is bright yellow!",
+"tags": ["space"]
+},
+{
+"id": "b_sci_l1_008",
+"question": "What part of your body do you use to smell?",
+"options": ["Ears", "Eyes", "Nose", "Hands"],
+"correct": "Nose",
+"hint": "Nose sniffs flowers!",
+"tags": ["body", "senses"]
+},
+{
+"id": "b_sci_l1_009",
+"question": "Where does a fish live?",
+"options": ["Tree", "Water", "Ground", "Sky"],
+"correct": "Water",
+"hint": "Fish swim in water!",
+"tags": ["animals", "habitats"]
+},
+{
+"id": "b_sci_l1_010",
+"question": "What do plants need besides sun? (water)",
+"options": ["Candy", "Water", "Toys", "Books"],
+"correct": "Water",
+"hint": "Plants drink water to grow!",
+"tags": ["plants"]
+},
+{
+"id": "b_sci_l1_011",
+"question": "What sound does a bird make?",
+"options": ["Moo", "Woof", "Tweet", "Meow"],
+"correct": "Tweet",
+"hint": "Birds tweet songs!",
+"tags": ["animals"]
+},
+{
+"id": "b_sci_l1_012",
+"question": "What is day time?",
+"options": ["Dark", "Light", "Cold", "Hot"],
+"correct": "Light",
+"hint": "Day is when the sun is out and it's light!",
+"tags": ["day_night"]
+},
+{
+"id": "b_sci_l1_013",
+"question": "What part of your body do you use to taste?",
+"options": ["Nose", "Ears", "Tongue", "Eyes"],
+"correct": "Tongue",
+"hint": "Tongue tastes ice cream!",
+"tags": ["body", "senses"]
+},
+{
+"id": "b_sci_l1_014",
+"question": "What is night time?",
+"options": ["Light", "Dark", "Rainy", "Windy"],
+"correct": "Dark",
+"hint": "Night is dark with stars!",
+"tags": ["day_night"]
+},
+{
+"id": "b_sci_l1_015",
+"question": "Where does a bee live?",
+"options": ["Nest", "Hive", "Hole", "Web"],
+"correct": "Hive",
+"hint": "Bees make honey in hives!",
+"tags": ["animals", "habitats"]
+}
+],
+"level2": [
+{
+"id": "b_sci_l2_001",
+"question": "What part of your body do you use to touch?",
+"options": ["Eyes", "Hands", "Ears", "Nose"],
+"correct": "Hands",
+"hint": "Hands feel soft blankets!",
+"tags": ["body", "senses"]
+},
+{
+"id": "b_sci_l2_002",
+"question": "What animal has wings but can't fly? (penguin, simple)",
+"options": ["Dog", "Penguin", "Cat", "Fish"],
+"correct": "Penguin",
+"hint": "Penguins swim instead!",
+"tags": ["animals"]
+},
+{
+"id": "b_sci_l2_003",
+"question": "What makes plants green?",
+"options": ["Water", "Sun", "Chlorophyll", "Soil"],
+"correct": "Chlorophyll",
+"hint": "Chlorophyll is like plant magic for green!",
+"tags": ["plants"]
+},
+{
+"id": "b_sci_l2_004",
+"question": "What is the weather like when it's cold and white?",
+"options": ["Rainy", "Sunny", "Snowy", "Windy"],
+"correct": "Snowy",
+"hint": "Snowy means snowflakes falling!",
+"tags": ["weather"]
+},
+{
+"id": "b_sci_l2_005",
+"question": "What is the moon's shape at night?",
+"options": ["Square", "Circle", "Triangle", "Star"],
+"correct": "Circle",
+"hint": "The moon looks round!",
+"tags": ["space"]
+},
+{
+"id": "b_sci_l2_006",
+"question": "Where does a squirrel live?",
+"options": ["Water", "Tree", "Ground", "Sky"],
+"correct": "Tree",
+"hint": "Squirrels climb trees!",
+"tags": ["animals", "habitats"]
+},
+{
+"id": "b_sci_l2_007",
+"question": "What do babies drink from mommy animals?",
+"options": ["Water", "Milk", "Juice", "Soda"],
+"correct": "Milk",
+"hint": "Milk helps babies grow strong!",
+"tags": ["animals"]
+},
+{
+"id": "b_sci_l2_008",
+"question": "What part of the plant is under ground?",
+"options": ["Leaves", "Flowers", "Roots", "Stem"],
+"correct": "Roots",
+"hint": "Roots drink water from soil!",
+"tags": ["plants"]
+},
+{
+"id": "b_sci_l2_009",
+"question": "What is wind?",
+"options": ["Rain", "Moving air", "Snow", "Sun"],
+"correct": "Moving air",
+"hint": "Wind blows leaves around!",
+"tags": ["weather"]
+},
+{
+"id": "b_sci_l2_010",
+"question": "What twinkles at night?",
+"options": ["Sun", "Moon", "Stars", "Clouds"],
+"correct": "Stars",
+"hint": "Stars are shiny in the sky!",
+"tags": ["space"]
+},
+{
+"id": "b_sci_l2_011",
+"question": "What animal sleeps in winter? (hibernate, simple)",
+"options": ["Bird", "Bear", "Fish", "Dog"],
+"correct": "Bear",
+"hint": "Bears hibernate in caves!",
+"tags": ["animals"]
+},
+{
+"id": "b_sci_l2_012",
+"question": "What do you see after rain? (rainbow)",
+"options": ["Snow", "Rainbow", "Wind", "Clouds"],
+"correct": "Rainbow",
+"hint": "Rainbows have many colors!",
+"tags": ["weather"]
+},
+{
+"id": "b_sci_l2_013",
+"question": "What part of your body pumps blood?",
+"options": ["Brain", "Heart", "Lungs", "Stomach"],
+"correct": "Heart",
+"hint": "Heart beats boom-boom!",
+"tags": ["body"]
+},
+{
+"id": "b_sci_l2_014",
+"question": "Where do worms live?",
+"options": ["Sky", "Water", "Soil", "Trees"],
+"correct": "Soil",
+"hint": "Worms dig in dirt!",
+"tags": ["animals", "habitats"]
+},
+{
+"id": "b_sci_l2_015",
+"question": "What do flowers need to bloom?",
+"options": ["Dark", "Sun", "Snow", "Wind"],
+"correct": "Sun",
+"hint": "Flowers open in the sun!",
+"tags": ["plants"]
+}
+],
+"level3": [
+{
+"id": "b_sci_l3_001",
+"question": "What do living things need? (air)",
+"options": ["Toys", "Air", "Books", "Candy"],
+"correct": "Air",
+"hint": "We breathe air to live!",
+"tags": ["living"]
+},
+{
+"id": "b_sci_l3_002",
+"question": "What pulls things down? (gravity, simple)",
+"options": ["Wind", "Gravity", "Sun", "Rain"],
+"correct": "Gravity",
+"hint": "Gravity makes apples fall!",
+"tags": ["physics"]
+},
+{
+"id": "b_sci_l3_003",
+"question": "What is a baby plant called?",
+"options": ["Seed", "Flower", "Leaf", "Root"],
+"correct": "Seed",
+"hint": "Seeds grow into plants!",
+"tags": ["plants"]
+},
+{
+"id": "b_sci_l3_004",
+"question": "What is thunder?",
+"options": ["Rain", "Lightning sound", "Wind", "Snow"],
+"correct": "Lightning sound",
+"hint": "Thunder booms after lightning!",
+"tags": ["weather"]
+},
+{
+"id": "b_sci_l3_005",
+"question": "What planet do we live on?",
+"options": ["Moon", "Sun", "Earth", "Mars"],
+"correct": "Earth",
+"hint": "Earth is our home!",
+"tags": ["space"]
+},
+{
+"id": "b_sci_l3_006",
+"question": "What animal changes from tadpole to frog?",
+"options": ["Bird", "Frog", "Dog", "Cat"],
+"correct": "Frog",
+"hint": "Frogs start as tadpoles!",
+"tags": ["animals"]
+},
+{
+"id": "b_sci_l3_007",
+"question": "What do lungs do?",
+"options": ["Eat", "Breathe", "See", "Hear"],
+"correct": "Breathe",
+"hint": "Lungs take in air!",
+"tags": ["body"]
+},
+{
+"id": "b_sci_l3_008",
+"question": "Where do butterflies come from?",
+"options": ["Egg", "Caterpillar", "Bird", "Fish"],
+"correct": "Caterpillar",
+"hint": "Caterpillars turn into butterflies!",
+"tags": ["animals"]
+},
+{
+"id": "b_sci_l3_009",
+"question": "What is soil made of?",
+"options": ["Rocks and dirt", "Water", "Air", "Sun"],
+"correct": "Rocks and dirt",
+"hint": "Soil is earth for plants!",
+"tags": ["plants"]
+},
+{
+"id": "b_sci_l3_010",
+"question": "What is a cloud made of?",
+"options": ["Cotton", "Water drops", "Snow", "Wind"],
+"correct": "Water drops",
+"hint": "Clouds are fluffy water!",
+"tags": ["weather"]
+},
+{
+"id": "b_sci_l3_011",
+"question": "What is the biggest star? (sun)",
+"options": ["Moon", "Earth", "Sun", "Mars"],
+"correct": "Sun",
+"hint": "The sun is a star!",
+"tags": ["space"]
+},
+{
+"id": "b_sci_l3_012",
+"question": "What do bees make?",
+"options": ["Milk", "Honey", "Eggs", "Bread"],
+"correct": "Honey",
+"hint": "Bees make sweet honey!",
+"tags": ["animals"]
+},
+{
+"id": "b_sci_l3_013",
+"question": "What bone protects your brain?",
+"options": ["Arm", "Leg", "Skull", "Heart"],
+"correct": "Skull",
+"hint": "Skull is your head bone!",
+"tags": ["body"]
+},
+{
+"id": "b_sci_l3_014",
+"question": "What animal has eight legs?",
+"options": ["Spider", "Dog", "Cat", "Bird"],
+"correct": "Spider",
+"hint": "Spiders spin webs!",
+"tags": ["animals"]
+},
+{
+"id": "b_sci_l3_015",
+"question": "What do plants breathe? (CO2, simple)",
+"options": ["Air", "Water", "Sun", "Soil"],
+"correct": "Air",
+"hint": "Plants take in air too!",
+"tags": ["plants"]
+}
+],
+"level4": [
+{
+"id": "b_sci_l4_001",
+"question": "What sticks to a magnet? (iron, simple)",
+"options": ["Wood", "Iron", "Plastic", "Paper"],
+"correct": "Iron",
+"hint": "Magnets pull iron things!",
+"tags": ["physics"]
+},
+{
+"id": "b_sci_l4_002",
+"question": "What is recycling?",
+"options": ["Throw away", "Reuse", "Break", "Eat"],
+"correct": "Reuse",
+"hint": "Recycling makes new from old!",
+"tags": ["environment"]
+},
+{
+"id": "b_sci_l4_003",
+"question": "What part of plant makes seeds?",
+"options": ["Leaf", "Root", "Flower", "Stem"],
+"correct": "Flower",
+"hint": "Flowers turn into fruits with seeds!",
+"tags": ["plants"]
+},
+{
+"id": "b_sci_l4_004",
+"question": "What causes rain?",
+"options": ["Sun", "Clouds", "Wind", "Snow"],
+"correct": "Clouds",
+"hint": "Clouds drop water as rain!",
+"tags": ["weather"]
+},
+{
+"id": "b_sci_l4_005",
+"question": "What is the Earth's moon?",
+"options": ["Star", "Planet", "Rock", "Sun"],
+"correct": "Rock",
+"hint": "Moon is a big rock in space!",
+"tags": ["space"]
+},
+{
+"id": "b_sci_l4_006",
+"question": "What do caterpillars eat?",
+"options": ["Meat", "Leaves", "Fish", "Candy"],
+"correct": "Leaves",
+"hint": "Caterpillars munch leaves!",
+"tags": ["animals"]
+},
+{
+"id": "b_sci_l4_007",
+"question": "What organ helps you think?",
+"options": ["Heart", "Lungs", "Brain", "Stomach"],
+"correct": "Brain",
+"hint": "Brain is like a computer in your head!",
+"tags": ["body"]
+},
+{
+"id": "b_sci_l4_008",
+"question": "What is a fossil?",
+"options": ["Old bone", "New toy", "Fresh fruit", "Live animal"],
+"correct": "Old bone",
+"hint": "Fossils are ancient animal prints!",
+"tags": ["earth"]
+},
+{
+"id": "b_sci_l4_009",
+"question": "What do roots do for plants?",
+"options": ["Make flowers", "Absorb water", "Fly", "Sing"],
+"correct": "Absorb water",
+"hint": "Roots suck up water like a straw!",
+"tags": ["plants"]
+},
+{
+"id": "b_sci_l4_010",
+"question": "What is lightning?",
+"options": ["Rain", "Electricity in sky", "Wind", "Snow"],
+"correct": "Electricity in sky",
+"hint": "Lightning is a big spark!",
+"tags": ["weather"]
+},
+{
+"id": "b_sci_l4_011",
+"question": "What planet is red?",
+"options": ["Earth", "Mars", "Moon", "Sun"],
+"correct": "Mars",
+"hint": "Mars is the red planet!",
+"tags": ["space"]
+},
+{
+"id": "b_sci_l4_012",
+"question": "What animal lays eggs? (bird)",
+"options": ["Dog", "Cat", "Bird", "Fish"],
+"correct": "Bird",
+"hint": "Birds lay eggs in nests!",
+"tags": ["animals"]
+},
+{
+"id": "b_sci_l4_013",
+"question": "What are teeth for?",
+"options": ["Seeing", "Chewing", "Hearing", "Smelling"],
+"correct": "Chewing",
+"hint": "Teeth chew food!",
+"tags": ["body"]
+},
+{
+"id": "b_sci_l4_014",
+"question": "What is a volcano?",
+"options": ["Mountain with fire", "River", "Tree", "Cloud"],
+"correct": "Mountain with fire",
+"hint": "Volcanoes erupt lava!",
+"tags": ["earth"]
+},
+{
+"id": "b_sci_l4_015",
+"question": "What do leaves do for plants?",
+"options": ["Drink water", "Make food", "Dig soil", "Fly"],
+"correct": "Make food",
+"hint": "Leaves use sun to make plant food!",
+"tags": ["plants"]
+}
+],
+"level5": [
+{
+"id": "b_sci_l5_001",
+"question": "What is the water cycle? (simple: rain from clouds)",
+"options": ["Water disappears", "Water falls as rain", "Water flies", "Water freezes"],
+"correct": "Water falls as rain",
+"hint": "Water evaporates, clouds form, rain falls!",
+"tags": ["weather"]
+},
+{
+"id": "b_sci_l5_002",
+"question": "What are the five senses?",
+"options": ["See, hear, smell, taste, touch", "Run, jump, eat, sleep, play"],
+"correct": "See, hear, smell, taste, touch",
+"hint": "Senses help you experience the world!",
+"tags": ["body", "senses"]
+},
+{
+"id": "b_sci_l5_003",
+"question": "What is photosynthesis? (simple)",
+"options": ["Plants eat soil", "Plants make food with sun", "Plants drink air", "Plants sleep"],
+"correct": "Plants make food with sun",
+"hint": "Plants use light to make energy!",
+"tags": ["plants"]
+},
+{
+"id": "b_sci_l5_004",
+"question": "What causes day and night?",
+"options": ["Earth spins", "Sun moves", "Moon hides", "Clouds cover"],
+"correct": "Earth spins",
+"hint": "Earth turns like a top!",
+"tags": ["space"]
+},
+{
+"id": "b_sci_l5_005",
+"question": "What is a simple machine? (wheel, simple)",
+"options": ["Toy", "Wheel", "Book", "Candy"],
+"correct": "Wheel",
+"hint": "Wheels help things roll!",
+"tags": ["physics"]
+},
+{
+"id": "b_sci_l5_006",
+"question": "What do owls do at night?",
+"options": ["Sleep", "Hunt", "Swim", "Fly during day"],
+"correct": "Hunt",
+"hint": "Owls are nocturnal!",
+"tags": ["animals"]
+},
+{
+"id": "b_sci_l5_007",
+"question": "What is inside your bones?",
+"options": ["Water", "Marrow", "Air", "Food"],
+"correct": "Marrow",
+"hint": "Marrow makes blood!",
+"tags": ["body"]
+},
+{
+"id": "b_sci_l5_008",
+"question": "What is an earthquake?",
+"options": ["Ground shakes", "Sky falls", "Water boils", "Wind blows"],
+"correct": "Ground shakes",
+"hint": "Earth moves under your feet!",
+"tags": ["earth"]
+},
+{
+"id": "b_sci_l5_009",
+"question": "What do seeds need to sprout?",
+"options": ["Dark only", "Water and warmth", "Cold", "Wind"],
+"correct": "Water and warmth",
+"hint": "Seeds wake up with water and sun!",
+"tags": ["plants"]
+},
+{
+"id": "b_sci_l5_010",
+"question": "What is hail?",
+"options": ["Rain", "Ice balls", "Snow", "Wind"],
+"correct": "Ice balls",
+"hint": "Hail is frozen rain!",
+"tags": ["weather"]
+},
+{
+"id": "b_sci_l5_011",
+"question": "What is the solar system?",
+"options": ["Planets around sun", "Stars only", "Moon alone", "Earth only"],
+"correct": "Planets around sun",
+"hint": "Sun and planets family!",
+"tags": ["space"]
+},
+{
+"id": "b_sci_l5_012",
+"question": "What animal migrates?",
+"options": ["Dog", "Bird", "Cat", "Fish"],
+"correct": "Bird",
+"hint": "Birds fly south in winter!",
+"tags": ["animals"]
+},
+{
+"id": "b_sci_l5_013",
+"question": "What is blood for?",
+"options": ["Carry oxygen", "See colors", "Hear sounds", "Taste food"],
+"correct": "Carry oxygen",
+"hint": "Blood brings air to body!",
+"tags": ["body"]
+},
+{
+"id": "b_sci_l5_014",
+"question": "What is a river?",
+"options": ["Big lake", "Flowing water", "Mountain", "Cloud"],
+"correct": "Flowing water",
+"hint": "Rivers run to the sea!",
+"tags": ["earth"]
+},
+{
+"id": "b_sci_l5_015",
+"question": "What is pollination? (simple)",
+"options": ["Bees help flowers", "Plants sleep", "Water boils", "Wind stops"],
+"correct": "Bees help flowers",
+"hint": "Bees carry pollen!",
+"tags": ["plants"]
+}
+]
+}

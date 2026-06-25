@@ -1,0 +1,612 @@
+{
+  "level1": [
+    {
+      "id": "i_eng_l1_001",
+      "question": "Which word has the short 'a' sound like in cat?",
+      "options": ["Hat", "Cake", "Rain", "Day"],
+      "correct": "Hat",
+      "hint": "Hat says short 'a' like cat!",
+      "tags": ["phonics", "short_vowels"]
+    },
+    {
+      "id": "i_eng_l1_002",
+      "question": "What is the missing sight word: I ___ a dog.",
+      "options": ["see", "sees", "saw", "seen"],
+      "correct": "see",
+      "hint": "I see a dog (present tense)",
+      "tags": ["sight_words", "verbs"]
+    },
+    {
+      "id": "i_eng_l1_003",
+      "question": "Which word rhymes with dog?",
+      "options": ["Cat", "Log", "Sun", "Run"],
+      "correct": "Log",
+      "hint": "Dog and log rhyme!",
+      "tags": ["rhyming"]
+    },
+    {
+      "id": "i_eng_l1_004",
+      "question": "Choose the correct sentence.",
+      "options": ["The cat run.", "The cat runs.", "The cat running.", "The cat runing."],
+      "correct": "The cat runs.",
+      "hint": "Add 's' for he/she/it",
+      "tags": ["grammar", "verbs"]
+    },
+    {
+      "id": "i_eng_l1_005",
+      "question": "What is the opposite of big?",
+      "options": ["Large", "Small", "Tall", "Huge"],
+      "correct": "Small",
+      "hint": "Big and small are opposites!",
+      "tags": ["opposites"]
+    },
+    {
+      "id": "i_eng_l1_006",
+      "question": "Which word starts with 'sh' sound?",
+      "options": ["Ship", "Sun", "Cat", "Dog"],
+      "correct": "Ship",
+      "hint": "Ship says 'sh'!",
+      "tags": ["blends"]
+    },
+    {
+      "id": "i_eng_l1_007",
+      "question": "Fill in: This is ___ apple.",
+      "options": ["a", "an", "the", "and"],
+      "correct": "an",
+      "hint": "Use 'an' before vowel sound",
+      "tags": ["articles"]
+    },
+    {
+      "id": "i_eng_l1_008",
+      "question": "Which word has the short 'e' sound like in bed?",
+      "options": ["Red", "Read", "Rain", "See"],
+      "correct": "Red",
+      "hint": "Red says short 'e'!",
+      "tags": ["phonics", "short_vowels"]
+    },
+    {
+      "id": "i_eng_l1_009",
+      "question": "What is a naming word called?",
+      "options": ["Verb", "Noun", "Adjective", "Sentence"],
+      "correct": "Noun",
+      "hint": "Noun names a person, place or thing",
+      "tags": ["grammar", "nouns"]
+    },
+    {
+      "id": "i_eng_l1_010",
+      "question": "Which sentence is correct?",
+      "options": ["i like to play.", "I like to play.", "i Like To Play.", "I like To play."],
+      "correct": "I like to play.",
+      "hint": "Always start with capital 'I'",
+      "tags": ["capitalization"]
+    },
+    {
+      "id": "i_eng_l1_011",
+      "question": "What is the opposite of hot?",
+      "options": ["Warm", "Cold", "Boiling", "Fire"],
+      "correct": "Cold",
+      "hint": "Hot and cold are opposites!",
+      "tags": ["opposites"]
+    },
+    {
+      "id": "i_eng_l1_012",
+      "question": "Choose the word with 'ch' sound.",
+      "options": ["Chair", "Cat", "Sun", "Dog"],
+      "correct": "Chair",
+      "hint": "Chair says 'ch'!",
+      "tags": ["blends"]
+    },
+    {
+      "id": "i_eng_l1_013",
+      "question": "Fill in: The dog ___ fast.",
+      "options": ["run", "runs", "running", "runned"],
+      "correct": "runs",
+      "hint": "He/she/it → add 's'",
+      "tags": ["verbs"]
+    },
+    {
+      "id": "i_eng_l1_014",
+      "question": "Which word is a sight word: the, and, is, ___?",
+      "options": ["Jump", "Of", "Big", "Run"],
+      "correct": "Of",
+      "hint": "Common sight word 'of'",
+      "tags": ["sight_words"]
+    },
+    {
+      "id": "i_eng_l1_015",
+      "question": "What comes at the end of a telling sentence?",
+      "options": ["?", "!", "."],
+      "correct": ".",
+      "hint": "Telling sentences end with a period (.)",
+      "tags": ["punctuation"]
+    }
+  ],
+  "level2": [
+    {
+      "id": "i_eng_l2_001",
+      "question": "Which word has the 'th' sound like in think?",
+      "options": ["That", "This", "Thin", "Them"],
+      "correct": "Thin",
+      "hint": "Thin says 'th'!",
+      "tags": ["blends"]
+    },
+    {
+      "id": "i_eng_l2_002",
+      "question": "Choose the correct past tense: I ___ yesterday.",
+      "options": ["play", "plays", "played", "playing"],
+      "correct": "played",
+      "hint": "Past tense often adds 'ed'",
+      "tags": ["verbs", "past_tense"]
+    },
+    {
+      "id": "i_eng_l2_003",
+      "question": "What is the opposite of happy?",
+      "options": ["Glad", "Sad", "Excited", "Joyful"],
+      "correct": "Sad",
+      "hint": "Happy and sad are opposites!",
+      "tags": ["opposites"]
+    },
+    {
+      "id": "i_eng_l2_004",
+      "question": "Fill in: She ___ to school every day.",
+      "options": ["go", "goes", "going", "gone"],
+      "correct": "goes",
+      "hint": "She → add 'es'",
+      "tags": ["verbs"]
+    },
+    {
+      "id": "i_eng_l2_005",
+      "question": "Which sentence has correct punctuation?",
+      "options": ["What is your name", "What is your name?", "What is your name.", "What is your name!"],
+      "correct": "What is your name?",
+      "hint": "Questions end with ?",
+      "tags": ["punctuation"]
+    },
+    {
+      "id": "i_eng_l2_006",
+      "question": "What do we call words that describe things? (big, red, happy)",
+      "options": ["Nouns", "Verbs", "Adjectives", "Adverbs"],
+      "correct": "Adjectives",
+      "hint": "Adjectives describe nouns",
+      "tags": ["grammar", "adjectives"]
+    },
+    {
+      "id": "i_eng_l2_007",
+      "question": "Which word rhymes with tree?",
+      "options": ["Book", "See", "Cat", "Dog"],
+      "correct": "See",
+      "hint": "Tree and see rhyme!",
+      "tags": ["rhyming"]
+    },
+    {
+      "id": "i_eng_l2_008",
+      "question": "Fill in: This is ___ best day ever!",
+      "options": ["a", "an", "the", "and"],
+      "correct": "the",
+      "hint": "Use 'the' for specific things",
+      "tags": ["articles"]
+    },
+    {
+      "id": "i_eng_l2_009",
+      "question": "What is a word that means the same as big?",
+      "options": ["Small", "Tiny", "Large", "Little"],
+      "correct": "Large",
+      "hint": "Large is a synonym for big",
+      "tags": ["synonyms"]
+    },
+    {
+      "id": "i_eng_l2_010",
+      "question": "Choose the correct sentence.",
+      "options": ["boys plays football.", "Boys plays football.", "Boys play football.", "Boys playing football."],
+      "correct": "Boys play football.",
+      "hint": "Plural subject → no 's' on verb",
+      "tags": ["grammar", "verbs"]
+    },
+    {
+      "id": "i_eng_l2_011",
+      "question": "Which word has the long 'i' sound like in kite?",
+      "options": ["Bit", "Sit", "Light", "Pig"],
+      "correct": "Light",
+      "hint": "Light says long 'i'!",
+      "tags": ["phonics", "long_vowels"]
+    },
+    {
+      "id": "i_eng_l2_012",
+      "question": "What punctuation do we use for excitement?",
+      "options": [".", "?", "!"],
+      "correct": "!",
+      "hint": "Exclamation mark shows strong feeling!",
+      "tags": ["punctuation"]
+    },
+    {
+      "id": "i_eng_l2_013",
+      "question": "Fill in: We ___ to the park yesterday.",
+      "options": ["go", "goes", "went", "going"],
+      "correct": "went",
+      "hint": "Irregular past tense of go is went",
+      "tags": ["verbs", "past_tense"]
+    },
+    {
+      "id": "i_eng_l2_014",
+      "question": "Which is a compound word?",
+      "options": ["Dog", "Sun", "Sunset", "Run"],
+      "correct": "Sunset",
+      "hint": "Sun + set = sunset",
+      "tags": ["compound_words"]
+    },
+    {
+      "id": "i_eng_l2_015",
+      "question": "What is the opposite of fast?",
+      "options": ["Quick", "Slow", "Rapid", "Speedy"],
+      "correct": "Slow",
+      "hint": "Fast and slow are opposites!",
+      "tags": ["opposites"]
+    }
+  ],
+  "level3": [
+    {
+      "id": "i_eng_l3_001",
+      "question": "Choose the correct adjective: The ___ elephant is big.",
+      "options": ["small", "happy", "huge", "sad"],
+      "correct": "huge",
+      "hint": "Huge means very big",
+      "tags": ["adjectives"]
+    },
+    {
+      "id": "i_eng_l3_002",
+      "question": "What is the past tense of eat?",
+      "options": ["Eated", "Ate", "Eat", "Eating"],
+      "correct": "Ate",
+      "hint": "Irregular verb: eat → ate",
+      "tags": ["verbs", "past_tense"]
+    },
+    {
+      "id": "i_eng_l3_003",
+      "question": "Which sentence is a question?",
+      "options": ["I like ice cream.", "Do you like ice cream?", "Ice cream is good.", "We eat ice cream."],
+      "correct": "Do you like ice cream?",
+      "hint": "Questions start with do/does/did or wh- words",
+      "tags": ["sentences"]
+    },
+    {
+      "id": "i_eng_l3_004",
+      "question": "What is a synonym for happy?",
+      "options": ["Sad", "Angry", "Joyful", "Tired"],
+      "correct": "Joyful",
+      "hint": "Joyful means very happy",
+      "tags": ["synonyms"]
+    },
+    {
+      "id": "i_eng_l3_005",
+      "question": "Fill in: She ___ her homework now.",
+      "options": ["do", "does", "is doing", "did"],
+      "correct": "is doing",
+      "hint": "Present continuous: is/am/are + ing",
+      "tags": ["verbs", "present_continuous"]
+    },
+    {
+      "id": "i_eng_l3_006",
+      "question": "Which word is an adverb? (quickly, big, run, dog)",
+      "options": ["Big", "Run", "Quickly", "Dog"],
+      "correct": "Quickly",
+      "hint": "Adverbs tell how something is done",
+      "tags": ["grammar", "adverbs"]
+    },
+    {
+      "id": "i_eng_l3_007",
+      "question": "What punctuation goes here: Wow ___ that's amazing!",
+      "options": [".", "?", ","],
+      "correct": "!",
+      "hint": "Exclamation mark for surprise",
+      "tags": ["punctuation"]
+    },
+    {
+      "id": "i_eng_l3_008",
+      "question": "Choose the correct sentence.",
+      "options": ["The boys is playing.", "The boys are playing.", "The boys plays.", "The boys playes."],
+      "correct": "The boys are playing.",
+      "hint": "Plural subject → are + ing",
+      "tags": ["grammar"]
+    },
+    {
+      "id": "i_eng_l3_009",
+      "question": "What is the opposite of open?",
+      "options": ["Close", "Big", "Happy", "Fast"],
+      "correct": "Close",
+      "hint": "Open and close are opposites!",
+      "tags": ["opposites"]
+    },
+    {
+      "id": "i_eng_l3_010",
+      "question": "Which word has silent 'k'?",
+      "options": ["Know", "Cat", "Dog", "Run"],
+      "correct": "Know",
+      "hint": "K is silent in know",
+      "tags": ["phonics"]
+    },
+    {
+      "id": "i_eng_l3_011",
+      "question": "Fill in: Yesterday I ___ to school.",
+      "options": ["go", "goes", "went", "going"],
+      "correct": "went",
+      "hint": "Past tense of go",
+      "tags": ["verbs", "past_tense"]
+    },
+    {
+      "id": "i_eng_l3_012",
+      "question": "What do we call two words joined together? (sun + set)",
+      "options": ["Rhyme", "Compound word", "Opposite", "Adjective"],
+      "correct": "Compound word",
+      "hint": "Sunset is a compound word",
+      "tags": ["compound_words"]
+    },
+    {
+      "id": "i_eng_l3_013",
+      "question": "Which is correct?",
+      "options": ["He don't like apples.", "He doesn't like apples.", "He don't likes apples.", "He doesn't likes apples."],
+      "correct": "He doesn't like apples.",
+      "hint": "Doesn't for he/she/it",
+      "tags": ["grammar", "negatives"]
+    },
+    {
+      "id": "i_eng_l3_014",
+      "question": "What is a word that means the same as fast?",
+      "options": ["Slow", "Quick", "Big", "Small"],
+      "correct": "Quick",
+      "hint": "Quick is a synonym for fast",
+      "tags": ["synonyms"]
+    },
+    {
+      "id": "i_eng_l3_015",
+      "question": "Choose the correct question form.",
+      "options": ["Where you live?", "Where do you live?", "Where lives you?", "Where you lives?"],
+      "correct": "Where do you live?",
+      "hint": "Questions use do/does",
+      "tags": ["questions"]
+    }
+  ],
+  "level4": [
+    {
+      "id": "i_eng_l4_001",
+      "question": "What punctuation is used in this sentence: I have three things a book, a pen, and a bag.",
+      "options": [".", ",", "?", "!"],
+      "correct": ",",
+      "hint": "Commas separate items in a list",
+      "tags": ["punctuation", "lists"]
+    },
+    {
+      "id": "i_eng_l4_002",
+      "question": "Which is a proper noun?",
+      "options": ["city", "karachi", "dog", "school"],
+      "correct": "karachi",
+      "hint": "Proper nouns start with capital letter (names of places/people)",
+      "tags": ["grammar", "nouns"]
+    },
+    {
+      "id": "i_eng_l4_003",
+      "question": "Fill in: They ___ playing football right now.",
+      "options": ["is", "are", "was", "were"],
+      "correct": "are",
+      "hint": "They → are + ing",
+      "tags": ["present_continuous"]
+    },
+    {
+      "id": "i_eng_l4_004",
+      "question": "What is the comparative form of big?",
+      "options": ["Biger", "Bigger", "More big", "Biggest"],
+      "correct": "Bigger",
+      "hint": "Big → bigger (add er for comparison)",
+      "tags": ["adjectives", "comparatives"]
+    },
+    {
+      "id": "i_eng_l4_005",
+      "question": "Choose the correct sentence.",
+      "options": ["She don't have a pencil.", "She doesn't have a pencil.", "She don't has a pencil.", "She doesn't has a pencil."],
+      "correct": "She doesn't have a pencil.",
+      "hint": "Doesn't + base verb",
+      "tags": ["negatives"]
+    },
+    {
+      "id": "i_eng_l4_006",
+      "question": "Which word is an adverb?",
+      "options": ["Beautiful", "Quickly", "House", "Run"],
+      "correct": "Quickly",
+      "hint": "Adverbs often end in -ly",
+      "tags": ["grammar", "adverbs"]
+    },
+    {
+      "id": "i_eng_l4_007",
+      "question": "What is the superlative of tall?",
+      "options": ["Taller", "Tallest", "More tall", "Most tall"],
+      "correct": "Tallest",
+      "hint": "Tall → tallest (add est)",
+      "tags": ["adjectives", "superlatives"]
+    },
+    {
+      "id": "i_eng_l4_008",
+      "question": "Fill in: I ___ my homework before dinner.",
+      "options": ["do", "does", "did", "doing"],
+      "correct": "did",
+      "hint": "Past tense action completed",
+      "tags": ["past_tense"]
+    },
+    {
+      "id": "i_eng_l4_009",
+      "question": "Which sentence uses correct capitalization?",
+      "options": ["my name is ali.", "My name is ali.", "my Name is Ali.", "My name is Ali."],
+      "correct": "My name is Ali.",
+      "hint": "Capitalize first word and names",
+      "tags": ["capitalization"]
+    },
+    {
+      "id": "i_eng_l4_010",
+      "question": "What is a group of words that tells a complete idea?",
+      "options": ["Word", "Phrase", "Sentence", "Letter"],
+      "correct": "Sentence",
+      "hint": "Sentence has subject and verb",
+      "tags": ["grammar"]
+    },
+    {
+      "id": "i_eng_l4_011",
+      "question": "Choose the correct possessive: This is ___ book.",
+      "options": ["Ali", "Alis", "Ali's", "Alis'"],
+      "correct": "Ali's",
+      "hint": "Use 's for possession",
+      "tags": ["grammar", "possessives"]
+    },
+    {
+      "id": "i_eng_l4_012",
+      "question": "Which word means the same as brave?",
+      "options": ["Scared", "Cowardly", "Courageous", "Weak"],
+      "correct": "Courageous",
+      "hint": "Courageous means brave",
+      "tags": ["synonyms"]
+    },
+    {
+      "id": "i_eng_l4_013",
+      "question": "Fill in: We will ___ to the zoo tomorrow.",
+      "options": ["go", "goes", "going", "went"],
+      "correct": "go",
+      "hint": "Future tense uses will + base verb",
+      "tags": ["future_tense"]
+    },
+    {
+      "id": "i_eng_l4_014",
+      "question": "What punctuation is used for lists?",
+      "options": ["?", "!", ",", "."],
+      "correct": ",",
+      "hint": "Commas separate items in a list",
+      "tags": ["punctuation"]
+    },
+    {
+      "id": "i_eng_l4_015",
+      "question": "Which is correct?",
+      "options": ["The childrens are playing.", "The children is playing.", "The children are playing.", "The childrens is playing."],
+      "correct": "The children are playing.",
+      "hint": "Children is plural → are",
+      "tags": ["grammar", "plural"]
+    }
+  ],
+  "level5": [
+    {
+      "id": "i_eng_l5_001",
+      "question": "What is the past continuous form: I ___ TV when you called.",
+      "options": ["watch", "watched", "was watching", "am watching"],
+      "correct": "was watching",
+      "hint": "Was/were + ing for past continuous",
+      "tags": ["past_continuous"]
+    },
+    {
+      "id": "i_eng_l5_002",
+      "question": "Choose the correct comparative: This bag is ___ than that one.",
+      "options": ["heavy", "heavier", "heaviest", "more heavy"],
+      "correct": "heavier",
+      "hint": "Heavy → heavier",
+      "tags": ["comparatives"]
+    },
+    {
+      "id": "i_eng_l5_003",
+      "question": "What is the superlative of good?",
+      "options": ["Better", "Best", "Goodest", "More good"],
+      "correct": "Best",
+      "hint": "Irregular: good → best",
+      "tags": ["superlatives"]
+    },
+    {
+      "id": "i_eng_l5_004",
+      "question": "Fill in: If it ___ tomorrow, we will stay home.",
+      "options": ["rain", "rains", "rained", "raining"],
+      "correct": "rains",
+      "hint": "First conditional: if + present simple",
+      "tags": ["conditionals"]
+    },
+    {
+      "id": "i_eng_l5_005",
+      "question": "Which sentence uses correct punctuation?",
+      "options": ["Ali said I am happy.", "Ali said, I am happy.", "Ali said \"I am happy.\"", "Ali said I am happy?"],
+      "correct": "Ali said \"I am happy.\"",
+      "hint": "Use quotation marks for direct speech",
+      "tags": ["punctuation", "speech"]
+    },
+    {
+      "id": "i_eng_l5_006",
+      "question": "What do we call words like quickly, slowly, carefully?",
+      "options": ["Adjectives", "Adverbs", "Nouns", "Verbs"],
+      "correct": "Adverbs",
+      "hint": "Adverbs describe verbs",
+      "tags": ["grammar", "adverbs"]
+    },
+    {
+      "id": "i_eng_l5_007",
+      "question": "Choose the correct sentence.",
+      "options": ["There books are on the table.", "Their books are on the table.", "Theyre books are on the table.", "There books is on the table."],
+      "correct": "Their books are on the table.",
+      "hint": "Their = possession",
+      "tags": ["homophones"]
+    },
+    {
+      "id": "i_eng_l5_008",
+      "question": "What is the past tense of bring?",
+      "options": ["Bringed", "Brought", "Brang", "Brung"],
+      "correct": "Brought",
+      "hint": "Irregular verb: bring → brought",
+      "tags": ["past_tense"]
+    },
+    {
+      "id": "i_eng_l5_009",
+      "question": "Fill in: This is the ___ movie I have ever seen.",
+      "options": ["good", "better", "best", "goodest"],
+      "correct": "best",
+      "hint": "Superlative of good",
+      "tags": ["superlatives"]
+    },
+    {
+      "id": "i_eng_l5_010",
+      "question": "Which is a compound sentence?",
+      "options": ["I like apples.", "I like apples and oranges.", "I like apples because they are sweet.", "I like apples, they are sweet."],
+      "correct": "I like apples and oranges.",
+      "hint": "Two simple sentences joined by and",
+      "tags": ["sentences"]
+    },
+    {
+      "id": "i_eng_l5_011",
+      "question": "What is the opposite of remember?",
+      "options": ["Forget", "Know", "Think", "Learn"],
+      "correct": "Forget",
+      "hint": "Remember and forget are opposites",
+      "tags": ["opposites"]
+    },
+    {
+      "id": "i_eng_l5_012",
+      "question": "Choose the correct form: She ___ her homework every day.",
+      "options": ["do", "does", "doing", "did"],
+      "correct": "does",
+      "hint": "She → does + base verb",
+      "tags": ["present_simple"]
+    },
+    {
+      "id": "i_eng_l5_013",
+      "question": "What punctuation is missing: Ali where are you",
+      "options": [".", "?", "!", ","],
+      "correct": "?",
+      "hint": "Question needs ?",
+      "tags": ["punctuation"]
+    },
+    {
+      "id": "i_eng_l5_014",
+      "question": "Which word is a synonym for difficult?",
+      "options": ["Easy", "Hard", "Simple", "Fun"],
+      "correct": "Hard",
+      "hint": "Hard means difficult",
+      "tags": ["synonyms"]
+    },
+    {
+      "id": "i_eng_l5_015",
+      "question": "Fill in: By next year I ___ ten years old.",
+      "options": ["am", "will be", "was", "is"],
+      "correct": "will be",
+      "hint": "Future simple: will + be",
+      "tags": ["future_tense"]
+    }
+  ]
+}

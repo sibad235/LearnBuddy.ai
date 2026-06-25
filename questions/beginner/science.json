@@ -1,0 +1,612 @@
+{
+"level1": [
+{
+"id": "b_gk_l1_001",
+"question": "What color is an apple?",
+"options": ["Blue", "Red", "Yellow", "Green"],
+"correct": "Red",
+"hint": "Apples are often red and yummy!",
+"tags": ["colors", "fruits"]
+},
+{
+"id": "b_gk_l1_002",
+"question": "What animal says 'meow'?",
+"options": ["Dog", "Cat", "Bird", "Fish"],
+"correct": "Cat",
+"hint": "Cats say meow!",
+"tags": ["animals"]
+},
+{
+"id": "b_gk_l1_003",
+"question": "What shape is a ball?",
+"options": ["Square", "Triangle", "Circle", "Rectangle"],
+"correct": "Circle",
+"hint": "Balls are round like a circle!",
+"tags": ["shapes"]
+},
+{
+"id": "b_gk_l1_004",
+"question": "Who is your mommy's mommy?",
+"options": ["Grandma", "Aunt", "Sister", "Daddy"],
+"correct": "Grandma",
+"hint": "Grandma is mommy's mommy!",
+"tags": ["family"]
+},
+{
+"id": "b_gk_l1_005",
+"question": "What fruit is yellow and curved?",
+"options": ["Apple", "Banana", "Orange", "Grape"],
+"correct": "Banana",
+"hint": "Bananas are yellow and fun to peel!",
+"tags": ["fruits"]
+},
+{
+"id": "b_gk_l1_006",
+"question": "What vehicle flies in the sky?",
+"options": ["Car", "Boat", "Airplane", "Bike"],
+"correct": "Airplane",
+"hint": "Airplanes go up high!",
+"tags": ["vehicles"]
+},
+{
+"id": "b_gk_l1_007",
+"question": "What do you feel when you are joyful?",
+"options": ["Sad", "Happy", "Angry", "Scared"],
+"correct": "Happy",
+"hint": "Happy means smiling and laughing!",
+"tags": ["emotions"]
+},
+{
+"id": "b_gk_l1_008",
+"question": "What is the opposite of big?",
+"options": ["Small", "Tall", "Fast", "Hot"],
+"correct": "Small",
+"hint": "Big and small are opposites!",
+"tags": ["opposites"]
+},
+{
+"id": "b_gk_l1_009",
+"question": "What body part do you use to see?",
+"options": ["Ears", "Eyes", "Nose", "Mouth"],
+"correct": "Eyes",
+"hint": "Eyes help you see colors and shapes!",
+"tags": ["body"]
+},
+{
+"id": "b_gk_l1_010",
+"question": "What color is the sky on a sunny day?",
+"options": ["Green", "Red", "Blue", "Yellow"],
+"correct": "Blue",
+"hint": "The sky is blue when the sun shines!",
+"tags": ["colors"]
+},
+{
+"id": "b_gk_l1_011",
+"question": "What animal has a long neck?",
+"options": ["Giraffe", "Dog", "Cat", "Bird"],
+"correct": "Giraffe",
+"hint": "Giraffes reach high leaves!",
+"tags": ["animals"]
+},
+{
+"id": "b_gk_l1_012",
+"question": "What shape has three sides?",
+"options": ["Circle", "Square", "Triangle", "Rectangle"],
+"correct": "Triangle",
+"hint": "Triangle has three sides!",
+"tags": ["shapes"]
+},
+{
+"id": "b_gk_l1_013",
+"question": "Who is your daddy's daddy?",
+"options": ["Uncle", "Grandpa", "Brother", "Mommy"],
+"correct": "Grandpa",
+"hint": "Grandpa is daddy's daddy!",
+"tags": ["family"]
+},
+{
+"id": "b_gk_l1_014",
+"question": "What fruit is round and orange?",
+"options": ["Banana", "Apple", "Orange", "Grape"],
+"correct": "Orange",
+"hint": "Oranges are juicy and orange!",
+"tags": ["fruits"]
+},
+{
+"id": "b_gk_l1_015",
+"question": "What vehicle goes on water?",
+"options": ["Airplane", "Boat", "Car", "Bike"],
+"correct": "Boat",
+"hint": "Boats float on water!",
+"tags": ["vehicles"]
+}
+],
+"level2": [
+{
+"id": "b_gk_l2_001",
+"question": "What do you feel when something is funny?",
+"options": ["Sad", "Angry", "Happy", "Scared"],
+"correct": "Happy",
+"hint": "Funny things make you happy and laugh!",
+"tags": ["emotions"]
+},
+{
+"id": "b_gk_l2_002",
+"question": "What is the opposite of hot?",
+"options": ["Cold", "Big", "Fast", "Tall"],
+"correct": "Cold",
+"hint": "Hot and cold are opposites!",
+"tags": ["opposites"]
+},
+{
+"id": "b_gk_l2_003",
+"question": "What body part do you use to hear?",
+"options": ["Eyes", "Nose", "Ears", "Mouth"],
+"correct": "Ears",
+"hint": "Ears help you hear sounds!",
+"tags": ["body"]
+},
+{
+"id": "b_gk_l2_004",
+"question": "What color is grass?",
+"options": ["Blue", "Green", "Red", "Yellow"],
+"correct": "Green",
+"hint": "Grass is green like trees!",
+"tags": ["colors"]
+},
+{
+"id": "b_gk_l2_005",
+"question": "What animal says 'woof'?",
+"options": ["Cat", "Bird", "Dog", "Fish"],
+"correct": "Dog",
+"hint": "Dogs say woof!",
+"tags": ["animals"]
+},
+{
+"id": "b_gk_l2_006",
+"question": "What shape has four equal sides?",
+"options": ["Triangle", "Circle", "Square", "Oval"],
+"correct": "Square",
+"hint": "Square has four sides the same!",
+"tags": ["shapes"]
+},
+{
+"id": "b_gk_l2_007",
+"question": "Who is your mommy's sister?",
+"options": ["Grandma", "Aunt", "Brother", "Daddy"],
+"correct": "Aunt",
+"hint": "Aunt is mommy's sister!",
+"tags": ["family"]
+},
+{
+"id": "b_gk_l2_008",
+"question": "What fruit is small and purple?",
+"options": ["Banana", "Orange", "Grape", "Apple"],
+"correct": "Grape",
+"hint": "Grapes grow in bunches!",
+"tags": ["fruits"]
+},
+{
+"id": "b_gk_l2_009",
+"question": "What vehicle has two wheels?",
+"options": ["Car", "Boat", "Bike", "Airplane"],
+"correct": "Bike",
+"hint": "Bikes have two wheels and pedals!",
+"tags": ["vehicles"]
+},
+{
+"id": "b_gk_l2_010",
+"question": "What do you feel when you lose a toy?",
+"options": ["Happy", "Sad", "Angry", "Scared"],
+"correct": "Sad",
+"hint": "Losing something makes you sad!",
+"tags": ["emotions"]
+},
+{
+"id": "b_gk_l2_011",
+"question": "What is the opposite of up?",
+"options": ["Down", "Left", "Big", "Fast"],
+"correct": "Down",
+"hint": "Up and down are opposites!",
+"tags": ["opposites"]
+},
+{
+"id": "b_gk_l2_012",
+"question": "What body part do you use to smell?",
+"options": ["Ears", "Eyes", "Nose", "Mouth"],
+"correct": "Nose",
+"hint": "Nose helps you smell flowers!",
+"tags": ["body"]
+},
+{
+"id": "b_gk_l2_013",
+"question": "What color is the sun?",
+"options": ["Blue", "Green", "Yellow", "Red"],
+"correct": "Yellow",
+"hint": "The sun is bright yellow!",
+"tags": ["colors"]
+},
+{
+"id": "b_gk_l2_014",
+"question": "What animal flies with wings?",
+"options": ["Dog", "Cat", "Bird", "Fish"],
+"correct": "Bird",
+"hint": "Birds fly in the sky!",
+"tags": ["animals"]
+},
+{
+"id": "b_gk_l2_015",
+"question": "What shape is a stop sign? (octagon, but simple: eight sides)",
+"options": ["Circle", "Triangle", "Square", "Octagon"],
+"correct": "Octagon",
+"hint": "Stop signs have eight sides!",
+"tags": ["shapes"]
+}
+],
+"level3": [
+{
+"id": "b_gk_l3_001",
+"question": "Who is your daddy's brother?",
+"options": ["Aunt", "Grandpa", "Uncle", "Sister"],
+"correct": "Uncle",
+"hint": "Uncle is daddy's brother!",
+"tags": ["family"]
+},
+{
+"id": "b_gk_l3_002",
+"question": "What vegetable is orange and crunchy?",
+"options": ["Apple", "Carrot", "Banana", "Grape"],
+"correct": "Carrot",
+"hint": "Carrots are good for eyes!",
+"tags": ["vegetables"]
+},
+{
+"id": "b_gk_l3_003",
+"question": "What vehicle helps put out fires?",
+"options": ["Bike", "Boat", "Fire truck", "Airplane"],
+"correct": "Fire truck",
+"hint": "Fire trucks have sirens and hoses!",
+"tags": ["vehicles"]
+},
+{
+"id": "b_gk_l3_004",
+"question": "What do you feel when someone takes your toy?",
+"options": ["Happy", "Sad", "Angry", "Scared"],
+"correct": "Angry",
+"hint": "It might make you angry!",
+"tags": ["emotions"]
+},
+{
+"id": "b_gk_l3_005",
+"question": "What is the opposite of day?",
+"options": ["Night", "Morning", "Hot", "Big"],
+"correct": "Night",
+"hint": "Day and night are opposites!",
+"tags": ["opposites"]
+},
+{
+"id": "b_gk_l3_006",
+"question": "What body part do you use to taste?",
+"options": ["Nose", "Ears", "Tongue", "Eyes"],
+"correct": "Tongue",
+"hint": "Tongue tastes sweet and sour!",
+"tags": ["body"]
+},
+{
+"id": "b_gk_l3_007",
+"question": "What color are leaves on trees?",
+"options": ["Blue", "Red", "Green", "Yellow"],
+"correct": "Green",
+"hint": "Leaves are green in summer!",
+"tags": ["colors"]
+},
+{
+"id": "b_gk_l3_008",
+"question": "What animal lives in water and swims?",
+"options": ["Bird", "Dog", "Fish", "Cat"],
+"correct": "Fish",
+"hint": "Fish have fins and gills!",
+"tags": ["animals"]
+},
+{
+"id": "b_gk_l3_009",
+"question": "What shape has no sides?",
+"options": ["Square", "Triangle", "Circle", "Rectangle"],
+"correct": "Circle",
+"hint": "Circle is round with no straight sides!",
+"tags": ["shapes"]
+},
+{
+"id": "b_gk_l3_010",
+"question": "Who is your mommy's mommy's mommy? (great-grandma, but simple)",
+"options": ["Aunt", "Grandma", "Great-grandma", "Sister"],
+"correct": "Great-grandma",
+"hint": "Great-grandma is very special!",
+"tags": ["family"]
+},
+{
+"id": "b_gk_l3_011",
+"question": "What fruit is red with seeds outside?",
+"options": ["Banana", "Strawberry", "Orange", "Grape"],
+"correct": "Strawberry",
+"hint": "Strawberries are sweet and red!",
+"tags": ["fruits"]
+},
+{
+"id": "b_gk_l3_012",
+"question": "What vehicle carries sick people?",
+"options": ["Fire truck", "Ambulance", "Bike", "Boat"],
+"correct": "Ambulance",
+"hint": "Ambulances have lights and help people!",
+"tags": ["vehicles"]
+},
+{
+"id": "b_gk_l3_013",
+"question": "What do you feel in the dark alone?",
+"options": ["Happy", "Angry", "Sad", "Scared"],
+"correct": "Scared",
+"hint": "Dark can be scary, but it's okay!",
+"tags": ["emotions"]
+},
+{
+"id": "b_gk_l3_014",
+"question": "What is the opposite of fast?",
+"options": ["Slow", "Big", "Hot", "Tall"],
+"correct": "Slow",
+"hint": "Fast and slow are opposites!",
+"tags": ["opposites"]
+},
+{
+"id": "b_gk_l3_015",
+"question": "What body part do you use to touch?",
+"options": ["Eyes", "Hands", "Nose", "Ears"],
+"correct": "Hands",
+"hint": "Hands feel soft and hard things!",
+"tags": ["body"]
+}
+],
+"level4": [
+{
+"id": "b_gk_l4_001",
+"question": "What color is a lemon?",
+"options": ["Red", "Green", "Yellow", "Blue"],
+"correct": "Yellow",
+"hint": "Lemons are sour and yellow!",
+"tags": ["colors", "fruits"]
+},
+{
+"id": "b_gk_l4_002",
+"question": "What animal has stripes?",
+"options": ["Dog", "Zebra", "Cat", "Bird"],
+"correct": "Zebra",
+"hint": "Zebras have black and white stripes!",
+"tags": ["animals"]
+},
+{
+"id": "b_gk_l4_003",
+"question": "What shape is a book usually?",
+"options": ["Circle", "Triangle", "Rectangle", "Square"],
+"correct": "Rectangle",
+"hint": "Books are long rectangles!",
+"tags": ["shapes"]
+},
+{
+"id": "b_gk_l4_004",
+"question": "Who takes care of you when sick? (doctor, but simple)",
+"options": ["Teacher", "Doctor", "Police", "Firefighter"],
+"correct": "Doctor",
+"hint": "Doctors help you feel better!",
+"tags": ["people"]
+},
+{
+"id": "b_gk_l4_005",
+"question": "What vegetable is green and long?",
+"options": ["Carrot", "Cucumber", "Apple", "Banana"],
+"correct": "Cucumber",
+"hint": "Cucumbers are cool and crunchy!",
+"tags": ["vegetables"]
+},
+{
+"id": "b_gk_l4_006",
+"question": "What vehicle helps catch bad guys?",
+"options": ["Ambulance", "Police car", "Fire truck", "Bike"],
+"correct": "Police car",
+"hint": "Police cars have sirens too!",
+"tags": ["vehicles"]
+},
+{
+"id": "b_gk_l4_007",
+"question": "What do you feel when you win a game?",
+"options": ["Sad", "Angry", "Happy", "Scared"],
+"correct": "Happy",
+"hint": "Winning makes you happy!",
+"tags": ["emotions"]
+},
+{
+"id": "b_gk_l4_008",
+"question": "What is the opposite of light?",
+"options": ["Heavy", "Dark", "Big", "Fast"],
+"correct": "Heavy",
+"hint": "Light and heavy are opposites!",
+"tags": ["opposites"]
+},
+{
+"id": "b_gk_l4_009",
+"question": "What body part is on top of your neck?",
+"options": ["Head", "Arm", "Leg", "Foot"],
+"correct": "Head",
+"hint": "Your head has your brain!",
+"tags": ["body"]
+},
+{
+"id": "b_gk_l4_010",
+"question": "What color is chocolate?",
+"options": ["Brown", "Green", "Blue", "Yellow"],
+"correct": "Brown",
+"hint": "Chocolate is yummy brown!",
+"tags": ["colors"]
+},
+{
+"id": "b_gk_l4_011",
+"question": "What animal has a trunk?",
+"options": ["Elephant", "Dog", "Cat", "Bird"],
+"correct": "Elephant",
+"hint": "Elephants have long trunks!",
+"tags": ["animals"]
+},
+{
+"id": "b_gk_l4_012",
+"question": "What shape is an egg?",
+"options": ["Square", "Oval", "Triangle", "Rectangle"],
+"correct": "Oval",
+"hint": "Eggs are oval and smooth!",
+"tags": ["shapes"]
+},
+{
+"id": "b_gk_l4_013",
+"question": "Who teaches you at school?",
+"options": ["Doctor", "Police", "Teacher", "Firefighter"],
+"correct": "Teacher",
+"hint": "Teachers help you learn!",
+"tags": ["people"]
+},
+{
+"id": "b_gk_l4_014",
+"question": "What fruit is green outside and red inside?",
+"options": ["Banana", "Watermelon", "Orange", "Grape"],
+"correct": "Watermelon",
+"hint": "Watermelons are big and juicy!",
+"tags": ["fruits"]
+},
+{
+"id": "b_gk_l4_015",
+"question": "What vehicle goes choo-choo?",
+"options": ["Car", "Boat", "Train", "Airplane"],
+"correct": "Train",
+"hint": "Trains go on tracks!",
+"tags": ["vehicles"]
+}
+],
+"level5": [
+{
+"id": "b_gk_l5_001",
+"question": "What do you say when you meet someone?",
+"options": ["Goodbye", "Hello", "Thank you", "Please"],
+"correct": "Hello",
+"hint": "Hello is a greeting!",
+"tags": ["manners"]
+},
+{
+"id": "b_gk_l5_002",
+"question": "What is the opposite of wet?",
+"options": ["Dry", "Hot", "Big", "Fast"],
+"correct": "Dry",
+"hint": "Wet and dry are opposites!",
+"tags": ["opposites"]
+},
+{
+"id": "b_gk_l5_003",
+"question": "What body part helps you walk?",
+"options": ["Hands", "Head", "Legs", "Ears"],
+"correct": "Legs",
+"hint": "Legs move you around!",
+"tags": ["body"]
+},
+{
+"id": "b_gk_l5_004",
+"question": "What color is a rose?",
+"options": ["Blue", "Green", "Red", "Yellow"],
+"correct": "Red",
+"hint": "Roses are often red!",
+"tags": ["colors", "flowers"]
+},
+{
+"id": "b_gk_l5_005",
+"question": "What animal jumps high?",
+"options": ["Fish", "Kangaroo", "Dog", "Cat"],
+"correct": "Kangaroo",
+"hint": "Kangaroos hop with pouches!",
+"tags": ["animals"]
+},
+{
+"id": "b_gk_l5_006",
+"question": "What shape has five sides?",
+"options": ["Square", "Pentagon", "Triangle", "Hexagon"],
+"correct": "Pentagon",
+"hint": "Pentagon has five sides!",
+"tags": ["shapes"]
+},
+{
+"id": "b_gk_l5_007",
+"question": "Who puts out fires?",
+"options": ["Teacher", "Doctor", "Firefighter", "Police"],
+"correct": "Firefighter",
+"hint": "Firefighters are brave!",
+"tags": ["people"]
+},
+{
+"id": "b_gk_l5_008",
+"question": "What vegetable is red and round?",
+"options": ["Cucumber", "Tomato", "Carrot", "Banana"],
+"correct": "Tomato",
+"hint": "Tomatoes are juicy!",
+"tags": ["vegetables"]
+},
+{
+"id": "b_gk_l5_009",
+"question": "What vehicle flies to space?",
+"options": ["Boat", "Rocket", "Car", "Bike"],
+"correct": "Rocket",
+"hint": "Rockets go to the moon!",
+"tags": ["vehicles", "space"]
+},
+{
+"id": "b_gk_l5_010",
+"question": "What do you say when you get a gift?",
+"options": ["Hello", "Goodbye", "Thank you", "Please"],
+"correct": "Thank you",
+"hint": "Thank you shows gratitude!",
+"tags": ["manners"]
+},
+{
+"id": "b_gk_l5_011",
+"question": "What is the opposite of old?",
+"options": ["New", "Big", "Hot", "Fast"],
+"correct": "New",
+"hint": "Old and new are opposites!",
+"tags": ["opposites"]
+},
+{
+"id": "b_gk_l5_012",
+"question": "What body part is between your shoulders?",
+"options": ["Neck", "Arm", "Leg", "Foot"],
+"correct": "Neck",
+"hint": "Neck holds your head!",
+"tags": ["body"]
+},
+{
+"id": "b_gk_l5_013",
+"question": "What color is snow?",
+"options": ["White", "Green", "Blue", "Yellow"],
+"correct": "White",
+"hint": "Snow is cold and white!",
+"tags": ["colors"]
+},
+{
+"id": "b_gk_l5_014",
+"question": "What animal has a mane?",
+"options": ["Lion", "Dog", "Cat", "Bird"],
+"correct": "Lion",
+"hint": "Lions are kings with manes!",
+"tags": ["animals"]
+},
+{
+"id": "b_gk_l5_015",
+"question": "What shape is a heart?",
+"options": ["Square", "Heart", "Triangle", "Circle"],
+"correct": "Heart",
+"hint": "Hearts show love!",
+"tags": ["shapes"]
+}
+]
+}
