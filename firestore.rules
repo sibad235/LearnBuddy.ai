@@ -1,0 +1,39 @@
+rules_version = '2';
+
+// LearnBuddy.ai Firestore Security Rules
+// ---------------------------------------
+// The Firebase web apiKey in index.html is PUBLIC by design — it only
+// identifies the project. REAL security is enforced here: these rules decide
+// who can read/write data. Paste this into:
+//   Firebase Console -> Firestore Database -> Rules -> Publish.
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Each signed-in user can only access their OWN tree:
+    // users/{uid}/children, /voices, /goals, /badges, etc.
+    match /users/{userId}/{document=**} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+
+    // Session reports — each document stores parentId = the owner's uid.
+    match /sessions/{sessionId} {
+      allow create: if request.auth != null
+                    && request.resource.data.parentId == request.auth.uid;
+      allow read, update, delete: if request.auth != null
+                    && resource.data.parentId == request.auth.uid;
+    }
+
+    // Mistakes are keyed by childId (not the parent uid), so ownership can't be
+    // verified from the path alone. Require sign-in at minimum.
+    // TODO: add a parentId field to these docs and tighten like /sessions above.
+    match /mistakes/{childId}/{document=**} {
+      allow read, write: if request.auth != null;
+    }
+
+    // Deny everything not explicitly matched above.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
